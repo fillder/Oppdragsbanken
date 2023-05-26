@@ -196,15 +196,6 @@ document.addEventListener("DOMContentLoaded", function () {
          return listItem;
       }
 
-      function createSubMenu(children) {
-         const subMenu = document.createElement("ul");
-         for (const [url, value] of Object.entries(children)) {
-            const listItem = createMenuItem(value.displayName, url, value.iconClass);
-            subMenu.appendChild(listItem);
-         }
-         return subMenu;
-      }
-
       // Legger til "Hjem"-elementet i menyen
       const homeMenuItem = createMenuItem(siteHierarchy["/index.html"].displayName, "/index.html", siteHierarchy["/index.html"].iconClass);
       mainMenu.appendChild(homeMenuItem);
@@ -213,11 +204,6 @@ document.addEventListener("DOMContentLoaded", function () {
       for (const [url, value] of Object.entries(siteHierarchy["/index.html"].children)) {
          const menuItem = createMenuItem(value.displayName, url, value.iconClass);
          mainMenu.appendChild(menuItem);
-
-         if (url === "/oppdragsbank.html" && value.children) {
-            const subMenu = createSubMenu(value.children);
-            menuItem.appendChild(subMenu);
-         }
       }
    }
 
