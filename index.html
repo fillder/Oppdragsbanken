@@ -11,28 +11,27 @@
       <link rel="stylesheet" type="text/css" href="/css/im_stilark.css" />
       <link rel="stylesheet" type="text/css" href="/css/im_dag-natt.css" />
       <link rel="stylesheet" type="text/css" href="/css/im_svg-masker.css" />
-      <link rel="stylesheet" type="text/css" href="/css/im_farge_2-spessartin.css" />
-      <link rel="stylesheet" type="text/css" href="/css/index_design.css" />
-      <link rel="stylesheet" type="text/css" href="/css/index_mobil.css" />
+      <link rel="stylesheet" type="text/css" href="/css/ob_design.css" />
+      <link rel="stylesheet" type="text/css" href="/css/ob_mobil.css" />
+      <link rel="stylesheet" type="text/css" href="/css/ob_bildegalleri.css" />
       <link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
       <link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
       <link rel="apple-touch-icon" href="/images/ico/skolelogo.svg" />
       <script type="module" src="/js/im_hovedmeny.js"></script>
       <script type="module" src="/js/im_dag-natt.js"></script>
       <script type="module" src="/js/im_breadcrumbs.js"></script>
-      <title>IM-Fagverket</title>
+      <!-- <script type="module" src="/js/im_hero-bilde.js"></script> -->
+      <title>Oppdragsbanken</title>
    </head>
 
    <body>
       <nav>
-         <div class="navKnapp">
-            <div class="navIkon maskeIndexFill"></div>
-         </div>
+         <a class="navKnapp" target="_self" href="/index.html" title="Hjem" alt="Naviger til startsiden">
+            <div class="navIkon maskeIndexOutline"></div>
+         </a>
          <ul class="breadcrumbsMenu" id="breadcrumbs"></ul>
          <div class="logo">
-            <h1>
-               <b><span>IM-</span>FAGVERKET</b>
-            </h1>
+            <h1><b>OPPDRAGSBANK</b></h1>
          </div>
          <button class="hamburgerIkon navIkon maskeMenyOutline"></button>
          <div class="overlayMeny"></div>
@@ -55,54 +54,151 @@
             </button>
          </div>
       </nav>
-      <header class="hero headerUtenNav">
+      <header class="hero">
          <img class="hero-bilde" src="/images/img/im-standard-header.webp" alt="bilde av en skjerm med kode" />
-         <div class="hero-tittel fargetHeroLinje">
-            <h1><b>Hjemmeside</b></h1>
-         </div>
+         <!-- <div class="hero-tittel fargetHeroLinje">
+            <h1><b>Kategorier</b></h1>
+         </div> -->
          <div class="hero-blend"></div>
-      </header>
-      <main class="mainUtenNav">
-         <div class="velkommen">
-            <h2>Velkommen!</h2>
-            <h5>
-               Dette er et faglig nettsted for alle elever og lærere som jobber med Informasjonsteknologi og Medieproduksjon på videregående skole. Nettstedet er under utviklink og er administrert av <a href="mailto: marius.riseth@osloskolen.no">Marius Strøm Riseth // F21 Skole</a>. Ta gjerne kontakt dersom du har spørsmål eller ønsker å bidra med
-               ressurer eller oppdragstekster.
-            </h5>
+         <div class="hero-emblem rundRamme ixD sB" data-ikon="oppdragsbankIkon">
+            <div class="svgIkon maskeOppdragsbank"></div>
          </div>
-         <div class="indexFlex">
-            <section class="timeplan hoverTP">
-               <a target="_self" rel="noreferrer noopener" href="timeplan.html" alt="F21 Timeplan" title="F21 Timeplan">
-                  <div class="rundRamme ixD sB kategoriIkon">
-                     <div class="svgIkon maskeTimeplan"></div>
+      </header>
+      <main class="mainMedHeader">
+         <div class="ob_hovedsideGrid">
+            <section class="tekstGrid boksRamme tekst sB sPA">
+               <div class="infoIntro">
+                  <h2>Info</h2>
+                  <p>
+                     <b> Oppdragsbanken er et verktøy for elever med Yrkesfaglig fordypning (YFF) innen Informasjonsteknologi og Medieproduksjon (IM) på VGS. Det er designet for å hjelpe elever på 1IM, 2MP og 2IT med å fordype seg i faget ved å gjennomføre selvstendige oppdrag og benytte seg av tilgjengelige ressurser.</b>
+                  </p>
+                  <br />
+                  <p>Innholdet er organisert i fire kategorier: opplæring, oppdrag, ressurser og læringsstier. Opplæring gir veiledning gjennom hele prosessen, mens oppdragene er åpne for tolkning, uten en klar fasit. For å løse oppdragene, må du anvende tidligere kunnskap og tilgjengelige ressurser.</p>
+               </div>
+               <div class="infoBoksGrid infoSpice">
+                  <div class="infoBoks">
+                     <h3>Spiciness</h3>
+                     <div class="spiceIkonStatisk">
+                        <div class="svgIkon maskeSpiceGrad"></div>
+                     </div>
                   </div>
-                  <div class="boksRamme ixD sB sPA kategoriTittel">
-                     <h3>F21 Timeplan</h3>
-                     <p>- for VG1 IM-elever på F21 Skole</p>
+                  <p>For å indikere vanskelighetsgraden til oppdragene, bruker vi "Spiciness"-skalaen. Rangeringen går fra 0x chili (Nøytral), for nybegynnere uten krav til forkunnskap, til 5x chili (Eksplosiv), for komplekse oppdrag for erfarne elever som søker en utfordring.</p>
+               </div>
+               <div class="infoBoksGrid infoTid">
+                  <div class="infoBoks">
+                     <h3>Tid</h3>
+                     <div class="tidIkon">
+                        <div class="svgIkon maskeTid6-9"></div>
+                     </div>
                   </div>
+                  <p>Hvert oppdrag kommer med et tidsestimat, som gir en veiledende indikasjon på arbeidsmengden involvert. Tiden er kun et estimat og vil variere for hver enkelt elev. Det anbefales å bruke tidsestimatet som et personlig mål for å forsøke å fullføre oppdragene innen den angitte tiden.</p>
+               </div>
+            </section>
+            <section class="toD_grafikkGrid hover2d" data-knapp="toD_grafikk">
+               <a target="_self" href="/oppdragsbank/1_grafisk-design.html" alt="2D-grafikk" title="2D-grafikk">
+                  <div class="rundRamme ixD nB kategoriIkon" data-ikon="toD_grafikkIkon">
+                     <div class="svgIkon maskeGrafisk"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB kategoriTittel">1. Grafisk design</h3>
                </a>
             </section>
-            <section class="oppdragsbank hoverOB">
-               <a target="_self" rel="noreferrer noopener" href="oppdragsbank.html" alt="YFF-Oppdragsbank" title="YFF-Oppdragsbank">
-                  <div class="rundRamme ixD sB kategoriIkon">
-                     <div class="svgIkon maskeOppdragsbank"></div>
+            <section class="treD_grafikkGrid hover3d" data-knapp="treD_grafikk">
+               <a target="_self" href="/oppdragsbank/2_3d-design.html" alt="3D-grafikk" title="3D-grafikk">
+                  <div class="rundRamme ixD nB kategoriIkon" data-ikon="treD_grafikkIkon">
+                     <div class="svgIkon maskeTreD"></div>
                   </div>
-                  <div class="boksRamme ixD sB sPA kategoriTittel">
-                     <h3>YFF-Oppdragsbank</h3>
-                     <p>- for IM-elever</p>
-                  </div>
+                  <h3 class="boksRamme ixD xSB kategoriTittel">2. 3D-design</h3>
                </a>
             </section>
-            <section class="im-ressurser hoverRB">
-               <a target="_self" rel="noreferrer noopener" href="ressursbank.html" alt="IM-Ressursbank" title="IM-Ressursbank">
-                  <div class="rundRamme ixD sB kategoriIkon">
-                     <div class="svgIkon maskeRessursbank"></div>
+            <section class="fotografiGrid hoverFoto" data-knapp="fotografi">
+               <a target="_self" href="/oppdragsbank/3_fotografi.html" alt="Fotografi" title="Fotografi">
+                  <div class="rundRamme ixD nB kategoriIkon" data-ikon="fotografiIkon">
+                     <div class="svgIkon maskeFoto"></div>
                   </div>
-                  <div class="boksRamme ixD sB sPA kategoriTittel">
-                     <h3>IM-Ressursbank</h3>
-                     <p>- for IM-lærere</p>
-                  </div>
+                  <h3 class="boksRamme ixD xSB kategoriTittel">3. Fotografi</h3>
                </a>
+            </section>
+            <section class="filmGrid hoverFilm" data-knapp="film">
+               <a target="_self" href="/oppdragsbank/4_film-og-vfx.html" alt="Film og VFX" title="Film og VFX">
+                  <div class="rundRamme ixD nB kategoriIkon" data-ikon="filmIkon">
+                     <div class="svgIkon maskeFilm"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB kategoriTittel">4. Film og VFX</h3>
+               </a>
+            </section>
+            <section class="animasjonGrid hoverAnimasjon" data-knapp="animasjon">
+               <a target="_self" href="/oppdragsbank/5_animasjon.html" alt="Animasjon" title="Animasjon">
+                  <div class="rundRamme ixD nB kategoriIkon" data-ikon="animasjonIkon">
+                     <div class="svgIkon maskeAnim"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB kategoriTittel">5. Animasjon</h3>
+               </a>
+            </section>
+            <section class="lyddesignGrid hoverLyd" data-knapp="lyddesign">
+               <a target="_self" href="/oppdragsbank/6_lyddesign.html" alt="Lyddesign" title="Lyddesign">
+                  <div class="rundRamme ixD nB kategoriIkon" data-ikon="lyddesignIkon">
+                     <div class="svgIkon maskeLyd"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB kategoriTittel">6. Lyddesign</h3>
+               </a>
+            </section>
+            <section class="driftGrid hoverDrift" data-knapp="drift">
+               <a target="_self" href="/oppdragsbank/7_drift.html" alt="Drift" title="Drift">
+                  <div class="rundRamme ixD nB kategoriIkon" data-ikon="driftIkon">
+                     <div class="svgIkon maskeDrift"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB kategoriTittel">7. Drift</h3>
+               </a>
+            </section>
+            <section class="programmeringGrid hoverProgrammering" data-knapp="programmering">
+               <a target="_self" href="/oppdragsbank/8_programmering.html" alt="Programmering" title="Programmering">
+                  <div class="rundRamme ixD nB kategoriIkon" data-ikon="programmeringIkon">
+                     <div class="svgIkon maskeProgrammering"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB kategoriTittel">8. Programmering</h3>
+               </a>
+            </section>
+            <section class="webutviklingGrid hoverWeb" data-knapp="webutvikling">
+               <a target="_self" href="/oppdragsbank/9_webutvikling.html" alt="Webutvikling" title="Webutvikling">
+                  <div class="rundRamme ixD nB kategoriIkon" data-ikon="webutviklingIkon">
+                     <div class="svgIkon maskeWeb"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB kategoriTittel">9. Webutvikling</h3>
+               </a>
+            </section>
+            <section class="ki-Grid hoverKi" data-knapp="ai-teknologi">
+               <a target="_self" href="/oppdragsbank/10_ai-systemer.html" alt="AI-teknologi" title="AI-teknologi">
+                  <div class="rundRamme ixD nB kategoriIkon" data-ikon="ai-teknologiIkon">
+                     <div class="svgIkon maskeKi"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB kategoriTittel">10. AI-teknologi</h3>
+               </a>
+            </section>
+            <section class="infoKnapper">
+               <a target="_self" class="flexInfoKnapp" href="/oppdragsbank/visuell-logg.html">
+                  <div class="rundRamme ixD nB xSP infoKnappIkon">
+                     <div class="svgIkon maskeLoggOutline"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB sPA infoKnappTittel">Visuell logg</h3>
+               </a>
+               <div class="flexInfoKnapp utilgjengelig" data-tooltip="Kommer snart" href="">
+                  <div class="rundRamme ixD nB xSP infoKnappIkon">
+                     <div class="svgIkon maskeSuksessOutline"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB sPA infoKnappTittel">Suksesskriterer</h3>
+               </div>
+               <div class="flexInfoKnapp utilgjengelig" data-tooltip="Kommer snart" href="">
+                  <div class="rundRamme ixD nB xSP infoKnappIkon">
+                     <div class="svgIkon maskePortfolioOutline"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB sPA infoKnappTittel">Portfolio</h3>
+               </div>
+               <div class="flexInfoKnapp utilgjengelig" data-tooltip="Kommer snart" href="">
+                  <div class="rundRamme ixD nB xSP infoKnappIkon">
+                     <div class="svgIkon maskeKarriereOutline"></div>
+                  </div>
+                  <h3 class="boksRamme ixD xSB sPA infoKnappTittel">Karrieresti</h3>
+               </div>
             </section>
          </div>
       </main>
