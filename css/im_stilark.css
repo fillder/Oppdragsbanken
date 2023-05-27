@@ -548,7 +548,7 @@ nav {
 .hero {
    position: absolute;
    top: 0;
-   height: 455px; /* Sett høyden på banneret etter behov */
+   height: 550px; /* Sett høyden på banneret etter behov */
    width: 100%;
    max-width: 1600px;
    left: 50%;
@@ -575,7 +575,6 @@ nav {
 nav.hide-nav ~ .hero-tittel {
    top: 20px; /* 75px - 55px */
 }
-
 .hero-tittel h1 {
    color: whitesmoke;
 }
@@ -604,7 +603,7 @@ nav.hide-nav ~ .hero-tittel {
 /*______ Main ______*/
 .mainMedHeader,
 .mainUtenNav {
-   margin-top: 450px;
+   margin-top: 550px;
 }
 .mainBlur {
    background-color: var(--clr-tekst);
@@ -803,8 +802,11 @@ nav .hovedmenyRamme {
    #breadcrumbs {
       height: 40px;
    }
+   .hero {
+      height: 500px; /* Sett høyden på banneret etter behov */
+   }
    .mainMedHeader {
-      margin-top: 450px;
+      margin-top: 500px;
    }
 }
 @media only screen and (max-width: 992px) {
@@ -813,6 +815,20 @@ nav .hovedmenyRamme {
    }
    .mainBlur {
       height: 50%;
+   }
+   .hero {
+      height: 450px; /* Sett høyden på banneret etter behov */
+   }
+   .mainMedHeader {
+      margin-top: 450px;
+   }
+}
+@media only screen and (max-width: 768px) {
+   .hero {
+      height: 360px; /* Sett høyden på banneret etter behov */
+   }
+   .mainMedHeader {
+      margin-top: 360px;
    }
 }
 @media only screen and (max-width: 600px) {
@@ -833,8 +849,11 @@ nav .hovedmenyRamme {
    .footerContent::after {
       content: "Laget av Marius S. Riseth // F21 VGS";
    }
+   .hero {
+      height: 320px; /* Sett høyden på banneret etter behov */
+   }
    .mainMedHeader {
-      margin-top: 410px;
+      margin-top: 320px;
    }
    .hovedmenyRamme {
       width: 100%;
