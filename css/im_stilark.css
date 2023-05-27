@@ -333,9 +333,6 @@ nav {
 #mainMenu li {
    margin-block: 0.6rem;
 }
-#mainMenu li ul li {
-   margin-left: 2rem;
-}
 #mainMenu li a {
    display: flex;
    padding-block: 0.5rem;
@@ -362,69 +359,98 @@ nav {
 #mainMenu li a:hover .hovedmenyIkon {
    border-color: var(--clr-tekst);
 }
-
-#mainMenu li ul li:nth-child(1) a:focus-visible,
-#mainMenu li ul li:nth-child(1) a:focus-visible .hovedmenyIkon,
-#mainMenu li ul li:nth-child(1) a:hover,
-#mainMenu li ul li:nth-child(1) a:hover .hovedmenyIkon {
-   border-color: var(--clr-rubin);
-}
-#mainMenu li ul li:nth-child(2) a:focus-visible,
-#mainMenu li ul li:nth-child(2) a:focus-visible .hovedmenyIkon,
-#mainMenu li ul li:nth-child(2) a:hover,
-#mainMenu li ul li:nth-child(2) a:hover .hovedmenyIkon {
-   border-color: var(--clr-spessartin);
-}
-#mainMenu li ul li:nth-child(3) a:focus-visible,
-#mainMenu li ul li:nth-child(3) a:focus-visible .hovedmenyIkon,
-#mainMenu li ul li:nth-child(3) a:hover,
-#mainMenu li ul li:nth-child(3) a:hover .hovedmenyIkon {
-   border-color: var(--clr-citrin);
-}
-#mainMenu li ul li:nth-child(4) a:focus-visible,
-#mainMenu li ul li:nth-child(4) a:focus-visible .hovedmenyIkon,
-#mainMenu li ul li:nth-child(4) a:hover,
-#mainMenu li ul li:nth-child(4) a:hover .hovedmenyIkon {
-   border-color: var(--clr-smaragd);
-}
-#mainMenu li ul li:nth-child(5) a:focus-visible,
-#mainMenu li ul li:nth-child(5) a:focus-visible .hovedmenyIkon,
-#mainMenu li ul li:nth-child(5) a:hover,
-#mainMenu li ul li:nth-child(5) a:hover .hovedmenyIkon {
-   border-color: var(--clr-amazonitt);
-}
-#mainMenu li ul li:nth-child(6) a:focus-visible,
-#mainMenu li ul li:nth-child(6) a:focus-visible .hovedmenyIkon,
-#mainMenu li ul li:nth-child(6) a:hover,
-#mainMenu li ul li:nth-child(6) a:hover .hovedmenyIkon {
-   border-color: var(--clr-akvamarin);
-}
-#mainMenu li ul li:nth-child(7) a:focus-visible,
-#mainMenu li ul li:nth-child(7) a:focus-visible .hovedmenyIkon,
-#mainMenu li ul li:nth-child(7) a:hover,
-#mainMenu li ul li:nth-child(7) a:hover .hovedmenyIkon {
-   border-color: var(--clr-safir);
-}
-#mainMenu li ul li:nth-child(8) a:focus-visible,
-#mainMenu li ul li:nth-child(8) a:focus-visible .hovedmenyIkon,
-#mainMenu li ul li:nth-child(8) a:hover,
-#mainMenu li ul li:nth-child(8) a:hover .hovedmenyIkon {
-   border-color: var(--clr-ametyst);
-}
-#mainMenu li ul li:nth-child(9) a:focus-visible,
-#mainMenu li ul li:nth-child(9) a:focus-visible .hovedmenyIkon,
-#mainMenu li ul li:nth-child(9) a:hover,
-#mainMenu li ul li:nth-child(9) a:hover .hovedmenyIkon {
-   border-color: var(--clr-kunzitt);
-}
-#mainMenu li ul li:nth-child(10) a:focus-visible,
-#mainMenu li ul li:nth-child(10) a:focus-visible .hovedmenyIkon,
-#mainMenu li ul li:nth-child(10) a:hover,
-#mainMenu li ul li:nth-child(10) a:hover .hovedmenyIkon {
-   border-color: var(--clr-thulitt);
-}
 #mainMenu li a:hover .hovedmenyIkon .fargetFyll {
    background-color: var(--clr-tekst);
+}
+#mainMenu li:nth-child(2) a:focus-visible,
+#mainMenu li:nth-child(2) a:focus-visible .hovedmenyIkon,
+#mainMenu li:nth-child(2) a:hover,
+#mainMenu li:nth-child(2) a:hover .hovedmenyIkon {
+   border-color: var(--clr-rubin);
+}
+#mainMenu li:nth-child(2) a:hover .hovedmenyIkon .fargetFyll {
+   background-color: var(--clr-rubin);
+}
+#mainMenu li:nth-child(3) a:focus-visible,
+#mainMenu li:nth-child(3) a:focus-visible .hovedmenyIkon,
+#mainMenu li:nth-child(3) a:hover,
+#mainMenu li:nth-child(3) a:hover .hovedmenyIkon {
+   border-color: var(--clr-spessartin);
+}
+#mainMenu li:nth-child(3) a:hover .hovedmenyIkon .fargetFyll {
+   background-color: var(--clr-spessartin);
+}
+#mainMenu li:nth-child(4) a:focus-visible,
+#mainMenu li:nth-child(4) a:focus-visible .hovedmenyIkon,
+#mainMenu li:nth-child(4) a:hover,
+#mainMenu li:nth-child(4) a:hover .hovedmenyIkon {
+   border-color: var(--clr-citrin);
+}
+#mainMenu li:nth-child(4) a:hover .hovedmenyIkon .fargetFyll {
+   background-color: var(--clr-citrin);
+}
+#mainMenu li:nth-child(5) a:focus-visible,
+#mainMenu li:nth-child(5) a:focus-visible .hovedmenyIkon,
+#mainMenu li:nth-child(5) a:hover,
+#mainMenu li:nth-child(5) a:hover .hovedmenyIkon {
+   border-color: var(--clr-smaragd);
+}
+#mainMenu li:nth-child(5) a:hover .hovedmenyIkon .fargetFyll {
+   background-color: var(--clr-smaragd);
+}
+#mainMenu li:nth-child(6) a:focus-visible,
+#mainMenu li:nth-child(6) a:focus-visible .hovedmenyIkon,
+#mainMenu li:nth-child(6) a:hover,
+#mainMenu li:nth-child(6) a:hover .hovedmenyIkon {
+   border-color: var(--clr-amazonitt);
+}
+#mainMenu li:nth-child(6) a:hover .hovedmenyIkon .fargetFyll {
+   background-color: var(--clr-amazonitt);
+}
+#mainMenu li:nth-child(7) a:focus-visible,
+#mainMenu li:nth-child(7) a:focus-visible .hovedmenyIkon,
+#mainMenu li:nth-child(7) a:hover,
+#mainMenu li:nth-child(7) a:hover .hovedmenyIkon {
+   border-color: var(--clr-akvamarin);
+}
+#mainMenu li:nth-child(7) a:hover .hovedmenyIkon .fargetFyll {
+   background-color: var(--clr-akvamarin);
+}
+#mainMenu li:nth-child(8) a:focus-visible,
+#mainMenu li:nth-child(8) a:focus-visible .hovedmenyIkon,
+#mainMenu li:nth-child(8) a:hover,
+#mainMenu li:nth-child(8) a:hover .hovedmenyIkon {
+   border-color: var(--clr-safir);
+}
+#mainMenu li:nth-child(8) a:hover .hovedmenyIkon .fargetFyll {
+   background-color: var(--clr-safir);
+}
+#mainMenu li:nth-child(9) a:focus-visible,
+#mainMenu li:nth-child(9) a:focus-visible .hovedmenyIkon,
+#mainMenu li:nth-child(9) a:hover,
+#mainMenu li:nth-child(9) a:hover .hovedmenyIkon {
+   border-color: var(--clr-ametyst);
+}
+#mainMenu li:nth-child(9) a:hover .hovedmenyIkon .fargetFyll {
+   background-color: var(--clr-ametyst);
+}
+#mainMenu li:nth-child(10) a:focus-visible,
+#mainMenu li:nth-child(10) a:focus-visible .hovedmenyIkon,
+#mainMenu li:nth-child(10) a:hover,
+#mainMenu li:nth-child(10) a:hover .hovedmenyIkon {
+   border-color: var(--clr-kunzitt);
+}
+#mainMenu li:nth-child(10) a:hover .hovedmenyIkon .fargetFyll {
+   background-color: var(--clr-kunzitt);
+}
+#mainMenu li:nth-child(11) a:focus-visible,
+#mainMenu li:nth-child(11) a:focus-visible .hovedmenyIkon,
+#mainMenu li:nth-child(11) a:hover,
+#mainMenu li:nth-child(11) a:hover .hovedmenyIkon {
+   border-color: var(--clr-thulitt);
+}
+#mainMenu li:nth-child(11) a:hover .hovedmenyIkon .fargetFyll {
+   background-color: var(--clr-thulitt);
 }
 .hovedmenyLenke {
    position: relative;
