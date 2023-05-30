@@ -271,9 +271,9 @@
       width: 9rem;
       height: 9rem;
    }
-   main {
+   /* main {
       padding-block-start: 2.5rem;
-   }
+   } */
    .tabTab {
       display: none;
    }
