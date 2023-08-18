@@ -28,8 +28,8 @@
 .kategoriLenke:focus-visible .kategoriKnappIkon,
 .kategoriKnapp:hover,
 .kategoriKnapp:focus-visible,
-.kategoriKnapp:hover .kategoriKnappIkon,
-.kategoriKnapp:focus-visible .kategoriKnappIkon {
+.kategoriKnapp:hover *,
+.kategoriKnapp:focus-visible * {
    border-color: var(--clr-rubin);
 }
 .kategoriFilter button:hover,
