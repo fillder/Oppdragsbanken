@@ -1,0 +1,112 @@
+/*______ fargedeklarering ______*/
+.farge-programfag {
+   color: var(--clr-safir);
+   fill: var(--clr-safir);
+}
+.farge-yff {
+   color: var(--clr-akvamarin);
+   fill: var(--clr-akvamarin);
+}
+.farge-kroppsoving {
+   color: var(--clr-amazonitt);
+   fill: var(--clr-amazonitt);
+}
+.farge-naturfag {
+   color: var(--clr-smaragd);
+   fill: var(--clr-smaragd);
+}
+.farge-matte {
+   color: var(--clr-citrin);
+   fill: var(--clr-citrin);
+}
+.farge-engelsk {
+   color: var(--clr-spessartin);
+   fill: var(--clr-spessartin);
+}
+.farge-norsk {
+   color: var(--clr-rubin);
+   fill: var(--clr-rubin);
+}
+.farge-forum {
+   color: var(--clr-thulitt);
+   fill: var(--clr-thulitt);
+}
+.farge-midttimen {
+   color: var(--clr-kunzitt);
+   fill: var(--clr-kunzitt);
+}
+.farge-workshop {
+   color: var(--clr-ametyst);
+   fill: var(--clr-ametyst);
+}
+/*______ Boksdesign ______*/
+main {
+   display: flex;
+   gap: 0.5rem;
+   justify-content: space-between;
+   background-color: var(--clr-main);
+   max-width: 1600px;
+   height: min-content;
+   padding-inline: 2rem;
+   padding-block-start: 1rem;
+   margin-inline: auto;
+   margin-block-start: 50px;
+   box-shadow: 0 35rem 0 0rem var(--clr-main);
+   text-align: center;
+   overflow-x: scroll;
+}
+.fagtittel {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 2%;
+}
+.gruppe-xy {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+}
+.gruppe-abc {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+}
+.timepPlanBilde {
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+}
+/*______ ikoner og bilder ______*/
+.svgIkon {
+   width: 50px;
+   height: 25px;
+   z-index: 10;
+}
+footer {
+   position: fixed;
+   bottom: 0;
+}
+.dagPil {
+   width: 2rem;
+   height: 100%;
+}
+.pilNeste,
+.pilForrige {
+   display: none;
+}
+.pilForrige[disabled],
+.pilNeste[disabled] {
+   opacity: 0.2;
+   cursor: default;
+}
+
+.ukeNav:hover:not(.utilgjengelig) .displayOutline,
+.ukeNav:focus-visible:not(.utilgjengelig) .displayOutline {
+   display: none;
+}
+.ukeNav:hover:not(.utilgjengelig) .displayFill,
+.ukeNav:focus-visible:not(.utilgjengelig) .displayFill {
+   display: block;
+}
