@@ -485,6 +485,12 @@ table thead tr th {
    width: 2.5rem;
    height: 2.5rem;
    z-index: 100;
+   border-radius: 50rem;
+   background-color: var(--clr-ixDBoks);
+   border-color: var(--clr-ramme);
+   border-width: 1px 1px 2px 2px;
+   border-style: solid;
+   padding: 0.3rem;
 }
 .op_spice {
    display: flex;

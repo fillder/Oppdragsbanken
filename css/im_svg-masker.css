@@ -320,8 +320,8 @@
 
 /* ___________ Oppdragikoner ___________ */
 .maskeOppdragIntern {
-   -webkit-mask: url(/images/svg/ob_internt-oppdrag_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_internt-oppdrag_outline.svg) no-repeat center;
+   -webkit-mask: url(/images/svg/ob_internt-oppdrag_outline2.svg) no-repeat center;
+   mask: url(/images/svg/ob_internt-oppdrag_outline2.svg) no-repeat center;
 }
 .maskeOppdragEkstern {
    -webkit-mask: url(/images/svg/ob_ekstern_outline.svg) no-repeat center;
