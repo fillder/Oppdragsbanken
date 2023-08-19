@@ -394,73 +394,34 @@ table thead tr th {
    font-size: 1rem;
    font-weight: 500;
 }
-/* .kategoriKnapp {
-   display: grid;
-   grid-template-columns: 1fr auto;
-   position: relative;
-   z-index: 80;
-   height: 2.5rem;
-   justify-content: space-between;
-   padding-inline-start: 3.4rem;
-   padding-inline-end: 0.5rem;
-   border-radius: 0.5rem;
-   background-color: var(--clr-ixDBoks);
-   border-color: var(--clr-ramme);
-   border-width: 1px 1px 2px 2px;
-   border-style: solid;
-   z-index: 90;
-   align-content: center;
-} */
-/* .kategoriKnapp > * {
-   margin-block: auto;
-} */
 .kategoriLenke {
    display: flex;
    justify-content: space-between;
    position: relative;
    z-index: 80;
    height: 2.5rem;
-   padding-inline-start: 3.4rem;
-   padding-inline-end: 0.5rem;
-   border-radius: 50rem;
-   background-color: var(--clr-ixDBoks);
-   border-color: var(--clr-ramme);
-   border-width: 1px 1px 2px 2px;
-   border-style: solid;
    z-index: 90;
    height: 2.5rem;
-   /* width: 100%; */
    place-items: center;
 }
-/* .kategoriKnappIkon {
-   position: absolute;
-   top: 50%;
-   transform: translate(-10%, -50%);
-   left: 0;
-   border-radius: 50rem;
-   background-color: var(--clr-ixDBoks);
-   border: 2px solid var(--clr-ramme);
-   width: 2.5rem;
-   height: 2.5rem;
-   z-index: 100;
-} */
 .midtStiltHeader {
    text-align: center;
 }
-/* .kategoriKnappInfo {
-   display: flex;
-   align-items: center;
-   margin-block: 1rem;
-} */
-
 .kategoriKnapp {
    display: grid;
    grid-template-columns: auto 1fr auto auto;
    gap: 0.2rem;
    position: relative;
    z-index: 80;
-   /* justify-content: space-between; */
-   /* padding-inline-start: 3.4rem; */
+   z-index: 90;
+   align-content: center;
+}
+.kategoriKnappSolo {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   gap: 0.2rem;
+   position: relative;
+   z-index: 80;
    z-index: 90;
    align-content: center;
 }
@@ -469,6 +430,7 @@ table thead tr th {
 }
 .kategoriKnappInfo {
    display: flex;
+   position: relative;
    align-items: center;
    justify-content: space-between;
    height: 2.5rem;
@@ -518,21 +480,26 @@ table thead tr th {
    min-width: 130px;
 }
 .kravIkon {
+   position: absolute;
+   right: 0.5rem;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 400;
    width: 25px;
    height: 25px;
 }
 
-/* .op_spice {
+.op_spice-oppdrag {
    display: flex;
    align-items: center;
    min-width: 175px;
 }
-.op_tid {
+.op_tid-oppdrag {
    display: flex;
    min-width: 130px;
    padding-inline: 0.5rem;
    align-items: center;
-} */
+}
 .op_ikon {
    width: 100%;
    height: 100%;
@@ -863,14 +830,6 @@ table thead tr th {
 .bildeGrid h3 {
    margin-block-end: 0.5rem;
 }
-/* .oppdragGrid .kategoriKnappInfo .op_spice {
-   min-width: min-content;
-   padding-inline-end: 1rem;
-}
-.oppdragGrid .kategoriKnappInfo .op_tid {
-   min-width: min-content;
-   padding-inline-end: 1rem;
-} */
 .nettResFlex {
    display: flex;
    gap: 1rem;

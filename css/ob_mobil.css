@@ -65,9 +65,6 @@
       min-width: 115px;
       padding-inline: 0.3rem;
    }
-   .kravIkon {
-      margin-inline-end: 1rem;
-   }
    .stortInspBilde {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
