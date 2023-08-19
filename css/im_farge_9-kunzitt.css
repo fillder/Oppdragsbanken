@@ -16,20 +16,18 @@
 /* ___________ hover-effekt .svg ___________ */
 .kategoriKnapp:hover .fargetFyll,
 .kategoriKnapp:focus-visible .fargetFyll,
-.kategoriLenke:hover .fargetFyll,
-.kategoriLenke:focus-visible .fargetFyll {
+.kategoriKnappSolo:hover .fargetFyll,
+.kategoriKnappSolo:focus-visible .fargetFyll {
    background-color: var(--clr-kunzitt);
 }
 
 /* ___________ hover-effekt Knapper ___________ */
-.kategoriLenke:hover,
-.kategoriLenke:focus-visible,
-.kategoriLenke:hover .kategoriKnappIkon,
-.kategoriLenke:focus-visible .kategoriKnappIkon,
 .kategoriKnapp:hover,
 .kategoriKnapp:focus-visible,
-.kategoriKnapp:hover .kategoriKnappIkon,
-.kategoriKnapp:focus-visible .kategoriKnappIkon {
+.kategoriKnapp:hover *,
+.kategoriKnapp:focus-visible *,
+.kategoriKnappSolo:hover *,
+.kategoriKnappSolo:focus-visible * {
    border-color: var(--clr-kunzitt);
 }
 .kategoriFilter button:hover,

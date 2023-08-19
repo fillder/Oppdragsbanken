@@ -266,10 +266,6 @@ table thead tr th {
    padding-inline: 1rem;
    text-align: start;
 }
-/* .op_spice div,
-.op_tid div {
-   margin-inline-end: 0.5rem;
-} */
 .op_knapp {
    width: max-content;
    display: flex;
@@ -440,6 +436,11 @@ table thead tr th {
    border-color: var(--clr-ramme);
    border-width: 1px 1px 2px 2px;
    border-style: solid;
+}
+.spiceOgTid {
+   display: flex;
+   position: relative;
+   margin-block: 0.5rem;
 }
 .kategoriKnappIkon {
    border-radius: 50rem;
