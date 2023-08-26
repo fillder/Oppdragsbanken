@@ -88,6 +88,20 @@
       "vi" 1fr
       /1fr;
 }
+
+.man p,
+.man ul,
+.tir p,
+.tir ul,
+.ons p,
+.ons ul,
+.tor p,
+.tor ul,
+.fre p,
+.fre ul {
+   text-align: start;
+}
+
 /* Mandag */
 
 .mandag {

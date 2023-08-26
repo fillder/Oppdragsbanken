@@ -20,11 +20,6 @@
    -webkit-mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
    mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
 }
-.maskeTilbakeOutline:hover:not(.utilgjengelig, .pil-tilbake),
-.maskeTilbakeOutline:focus-visible:not(.utilgjengelig, .pil-tilbake) {
-   -webkit-mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
-   mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
-}
 .tilbakeKnapp:hover .maskeTilbakeOutline,
 .tilbakeKnapp:focus-visible .maskeTilbakeOutline {
    -webkit-mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
@@ -33,6 +28,16 @@
 .maskeNesteOutline {
    -webkit-mask: url(/images/svg/tp_pil-neste_outline.svg) no-repeat center;
    mask: url(/images/svg/tp_pil-neste_outline.svg) no-repeat center;
+}
+.maskeNesteOutline:hover:not(.utilgjengelig, .pil-neste),
+.maskeNesteOutline:focus-visible:not(.utilgjengelig, .pil-neste) {
+   -webkit-mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
+   mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
+}
+.tilbakeKnapp:hover .maskeNesteOutline,
+.tilbakeKnapp:focus-visible .maskeNesteOutline {
+   -webkit-mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
+   mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
 }
 .maskeGrafisk {
    background-color: var(--clr-rubin);
