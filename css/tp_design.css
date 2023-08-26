@@ -74,7 +74,9 @@ main {
 .timepPlanBilde {
    position: relative;
    bottom: 0;
-   width: 100%;
+   width: 90%;
+   margin-block-start: 0.5rem;
+   margin-inline: auto;
    height: auto;
    overflow: hidden;
 }
