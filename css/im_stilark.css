@@ -217,8 +217,6 @@ nav {
    left: 0.5rem;
    display: flex;
    width: min-content;
-   /* place-content: center;
-   margin-block: auto; */
 }
 .navIkon {
    background-color: var(--clr-tekst);
