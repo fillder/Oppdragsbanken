@@ -1,5 +1,5 @@
 .man {
-   flex: 1;
+   /* flex: 1; */
    display: grid;
    gap: 0.5rem;
    grid:
@@ -17,7 +17,7 @@
       /1fr;
 }
 .tir {
-   flex: 1;
+   /* flex: 1; */
    display: grid;
    gap: 0.5rem;
    grid:
@@ -35,7 +35,7 @@
       /1fr;
 }
 .ons {
-   flex: 1;
+   /* flex: 1; */
    display: grid;
    gap: 0.5rem;
    grid:
@@ -53,7 +53,7 @@
       /1fr;
 }
 .tor {
-   flex: 1;
+   /* flex: 1; */
    display: grid;
    gap: 0.5rem;
    grid:
@@ -71,7 +71,7 @@
       /1fr;
 }
 .fre {
-   flex: 1;
+   /* flex: 1; */
    display: grid;
    gap: 0.5rem;
    grid:

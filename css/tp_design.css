@@ -41,7 +41,8 @@
 }
 /*______ Boksdesign ______*/
 main {
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
    gap: 0.5rem;
    justify-content: space-between;
    background-color: var(--clr-main);
@@ -65,11 +66,13 @@ main {
    display: grid;
    grid-template-columns: 1fr 1fr;
    align-items: center;
+   min-width: 225px;
 }
 .gruppe-abc {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    align-items: center;
+   min-width: 225px;
 }
 .timepPlanBilde {
    position: relative;
