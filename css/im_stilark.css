@@ -215,8 +215,8 @@ nav {
    position: relative;
    top: 0.6rem;
    left: 0.5rem;
-   /* display: flex; */
-   /* width: max-content; */
+   display: flex;
+   width: min-content;
    /* place-content: center;
    margin-block: auto; */
 }
