@@ -58,13 +58,12 @@
       text-align: start;
    }
    .op_spice {
-      min-width: 50px;
+      min-width: 60px;
+      padding-inline: 0.3rem;
    }
    .op_tid {
       min-width: 115px;
-   }
-   .kravIkon {
-      margin-inline-end: 1rem;
+      padding-inline: 0.3rem;
    }
    .stortInspBilde {
       grid-template-columns: 1fr;
@@ -232,7 +231,7 @@
       line-height: 120%;
    }
    .op_spice {
-      min-width: 45px;
+      min-width: 50px;
    }
    .spiceIkon {
       width: 15px;
@@ -280,10 +279,10 @@
    .ob_kategorisideGrid {
       width: 96%;
    }
-   .op_spice div,
+   /* .op_spice div,
    .op_tid div {
       margin-inline-end: 0.25rem;
-   }
+   } */
    .op_tid {
       min-width: 80px;
       padding-inline: 0.5rem;

@@ -217,8 +217,6 @@ nav {
    left: 0.5rem;
    display: flex;
    width: min-content;
-   /* place-content: center;
-   margin-block: auto; */
 }
 .navIkon {
    background-color: var(--clr-tekst);
@@ -671,7 +669,9 @@ nav.hide-nav ~ .hero-tittel {
    padding-block: 0.5rem;
    padding-inline: 1rem;
 }
-
+.sP06 {
+   padding: 0.6rem;
+}
 .xSPS {
    padding: 0.4rem;
 }

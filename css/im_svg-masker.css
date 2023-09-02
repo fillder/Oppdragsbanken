@@ -20,11 +20,6 @@
    -webkit-mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
    mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
 }
-.maskeTilbakeOutline:hover:not(.utilgjengelig, .pil-tilbake),
-.maskeTilbakeOutline:focus-visible:not(.utilgjengelig, .pil-tilbake) {
-   -webkit-mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
-   mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
-}
 .tilbakeKnapp:hover .maskeTilbakeOutline,
 .tilbakeKnapp:focus-visible .maskeTilbakeOutline {
    -webkit-mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
@@ -33,6 +28,16 @@
 .maskeNesteOutline {
    -webkit-mask: url(/images/svg/tp_pil-neste_outline.svg) no-repeat center;
    mask: url(/images/svg/tp_pil-neste_outline.svg) no-repeat center;
+}
+.maskeNesteOutline:hover:not(.utilgjengelig, .pil-neste),
+.maskeNesteOutline:focus-visible:not(.utilgjengelig, .pil-neste) {
+   -webkit-mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
+   mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
+}
+.tilbakeKnapp:hover .maskeNesteOutline,
+.tilbakeKnapp:focus-visible .maskeNesteOutline {
+   -webkit-mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
+   mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
 }
 .maskeGrafisk {
    background-color: var(--clr-rubin);
@@ -320,12 +325,12 @@
 
 /* ___________ Oppdragikoner ___________ */
 .maskeOppdragIntern {
-   -webkit-mask: url(/images/svg/ob_internt-oppdrag_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_internt-oppdrag_outline.svg) no-repeat center;
+   -webkit-mask: url(/images/svg/ob_ikon-oppdrag.svg) no-repeat center;
+   mask: url(/images/svg/ob_ikon-oppdrag.svg) no-repeat center;
 }
 .maskeOppdragEkstern {
-   -webkit-mask: url(/images/svg/ob_ekstern_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_ekstern_outline.svg) no-repeat center;
+   -webkit-mask: url(/images/svg/ob_ikon-ekstern.svg) no-repeat center;
+   mask: url(/images/svg/ob_ikon-ekstern.svg) no-repeat center;
 }
 .maskeAnimasjon {
    -webkit-mask: url(/images/svg/ob_animasjon.svg) no-repeat center;
@@ -344,8 +349,8 @@
    mask: url(/images/svg/ob_ressurs_outline.svg) no-repeat center;
 }
 .maskeVideo {
-   -webkit-mask: url(/images/svg/ob_play_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_play_outline.svg) no-repeat center;
+   -webkit-mask: url(/images/svg/ob_ikon-video.svg) no-repeat center;
+   mask: url(/images/svg/ob_ikon-video.svg) no-repeat center;
 }
 .maskeFagverket {
    -webkit-mask: url(/images/svg/im_fagverket_outline.svg) no-repeat center;
@@ -432,38 +437,38 @@
 }
 .maskeFaglitteratur {
    background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_faglitteratur.svg) no-repeat center;
-   mask: url(/images/svg/ob_faglitteratur.svg) no-repeat center;
+   -webkit-mask: url(/images/svg/ob_ikon-faglitteratur.svg) no-repeat center;
+   mask: url(/images/svg/ob_ikon-faglitteratur.svg) no-repeat center;
 }
 .maskeProgramvare {
    background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_programvare.svg) no-repeat center;
-   mask: url(/images/svg/ob_programvare.svg) no-repeat center;
+   -webkit-mask: url(/images/svg/ob_ikon-programvare.svg) no-repeat center;
+   mask: url(/images/svg/ob_ikon-programvare.svg) no-repeat center;
 }
 .maskeInteraktivt {
    background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_interaktiv.svg) no-repeat center;
-   mask: url(/images/svg/ob_interaktiv.svg) no-repeat center;
+   -webkit-mask: url(/images/svg/ob_ikon-interaktiv.svg) no-repeat center;
+   mask: url(/images/svg/ob_ikon-interaktiv.svg) no-repeat center;
 }
 .maskeReferanse {
    background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_referanseside.svg) no-repeat center;
-   mask: url(/images/svg/ob_referanseside.svg) no-repeat center;
+   -webkit-mask: url(/images/svg/ob_ikon-referanse.svg) no-repeat center;
+   mask: url(/images/svg/ob_ikon-referanse.svg) no-repeat center;
 }
 .maskeRessurser {
    background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_ressurser.svg) no-repeat center;
-   mask: url(/images/svg/ob_ressurser.svg) no-repeat center;
+   -webkit-mask: url(/images/svg/ob_ikon-ressurser.svg) no-repeat center;
+   mask: url(/images/svg/ob_ikon-ressurser.svg) no-repeat center;
 }
 .maskeSertifisering {
    background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_sertifisering.svg) no-repeat center;
-   mask: url(/images/svg/ob_sertifisering.svg) no-repeat center;
+   -webkit-mask: url(/images/svg/ob_ikon-sertifisering.svg) no-repeat center;
+   mask: url(/images/svg/ob_ikon-sertifisering.svg) no-repeat center;
 }
 .maskeSpill {
    background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_undervisningsspill.svg) no-repeat center;
-   mask: url(/images/svg/ob_undervisningsspill.svg) no-repeat center;
+   -webkit-mask: url(/images/svg/ob_ikon-spill.svg) no-repeat center;
+   mask: url(/images/svg/ob_ikon-spill.svg) no-repeat center;
 }
 @media screen and (max-width: 992px) {
    /* ___________ Spice-ikoner ___________ */
