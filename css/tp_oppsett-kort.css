@@ -1,0 +1,187 @@
+.man {
+   /* flex: 1; */
+   display: grid;
+   gap: 0.5rem;
+   grid:
+      "d1" 0.4fr
+      "t1" 1fr
+      "t1" 1fr
+      "t1" 1fr
+      "t1" 1fr
+      "t1" 0.1fr
+      "t1" 1fr
+      "t1" 1fr
+      "t1" 1fr
+      "t1" 1fr
+      "t1" 1fr
+      /1fr;
+}
+.tir {
+   /* flex: 1; */
+   display: grid;
+   gap: 0.5rem;
+   grid:
+      "d2" 0.4fr
+      "t2" 1fr
+      "t2" 1fr
+      "t2" 1fr
+      "t2" 1fr
+      "t2" 0.1fr
+      "t2" 1fr
+      "t2" 1fr
+      "t2" 1fr
+      "t2" 1fr
+      "t2" 1fr
+      /1fr;
+}
+.ons {
+   /* flex: 1; */
+   display: grid;
+   gap: 0.5rem;
+   grid:
+      "d3" 0.4fr
+      "t3" 1fr
+      "t3" 1fr
+      "t3" 1fr
+      "t3" 1fr
+      "t3" 0.1fr
+      "t3" 1fr
+      "t3" 1fr
+      "t3" 1fr
+      "t3" 1fr
+      "t3" 1fr
+      /1fr;
+}
+.tor {
+   /* flex: 1; */
+   display: grid;
+   gap: 0.5rem;
+   grid:
+      "d4" 0.4fr
+      "nt" 1fr
+      "nt" 1fr
+      "m2" 1fr
+      "m2" 1fr
+      ".." 0.1fr
+      "mt" 1fr
+      "e2" 1fr
+      "e2" 1fr
+      ".." 1fr
+      ".." 1fr
+      /1fr;
+}
+.fre {
+   /* flex: 1; */
+   display: grid;
+   gap: 0.5rem;
+   grid:
+      "d5" 0.4fr
+      "p5" 1fr
+      "p5" 1fr
+      "p5" 1fr
+      "p5" 1fr
+      ".." 0.1fr
+      "p6" 1fr
+      "p6" 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
+      /1fr;
+}
+/* Mandag */
+
+.man p,
+.man ul,
+.tir p,
+.tir ul,
+.ons p,
+.ons ul,
+.tor p,
+.tor ul,
+.fre p,
+.fre ul {
+   text-align: start;
+}
+
+.mandag {
+   grid-area: d1;
+}
+.forum {
+   grid-area: fr;
+}
+.programfag1 {
+   grid-area: p1;
+}
+.programfag2 {
+   grid-area: p2;
+}
+.matte1 {
+   grid-area: m1;
+}
+
+/* tirsdag */
+.tirsdag {
+   grid-area: d2;
+}
+.engelsk1 {
+   grid-area: e1;
+}
+.programfag3 {
+   grid-area: p3;
+}
+.programfag4 {
+   grid-area: p4;
+}
+.kroppsoving {
+   grid-area: gy;
+}
+
+/* onsdag */
+.onsdag {
+   grid-area: d3;
+}
+.yff1 {
+   grid-area: y1;
+}
+.yff2 {
+   grid-area: y2;
+}
+
+/* torsdag */
+.torsdag {
+   grid-area: d4;
+}
+.naturfag {
+   grid-area: nt;
+}
+.matte2 {
+   grid-area: m2;
+}
+.midttimen {
+   grid-area: mt;
+}
+.engelsk2 {
+   grid-area: e2;
+}
+
+/* fredag */
+.fredag {
+   grid-area: d5;
+}
+.programfag5 {
+   grid-area: p5;
+}
+.programfag6 {
+   grid-area: p6;
+}
+
+/* annet */
+.tur1 {
+   grid-area: t1;
+}
+.tur2 {
+   grid-area: t2;
+}
+.tur3 {
+   grid-area: t3;
+}
