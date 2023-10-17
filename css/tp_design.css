@@ -123,3 +123,10 @@ footer {
 .ukeNav:focus-visible:not(.utilgjengelig) .displayFill {
    display: block;
 }
+.man div p:first-of-type,
+.tir div p:first-of-type,
+.ons div p:first-of-type,
+.tor div p:first-of-type,
+.fre div p:first-of-type {
+   margin-block-start: 0.5rem;
+}
