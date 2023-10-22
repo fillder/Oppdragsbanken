@@ -64,10 +64,12 @@ const siteHierarchy = {
             displayName: "7. Drift",
             iconClass: "maskeDriftOutline",
             children: {
-               "/oppdragsbank/7_drift/7-1-1_introduksjon-til-nettverk-netacad.html": { displayName: "Intro til nettverk med netacad" },
-               "/oppdragsbank/7_drift/7-1-2_introduksjon-til-packet-tracer.html": { displayName: "Intro til Pacet Tracker" },
+               "/oppdragsbank/7_drift/7-1-1_utforsk-terminal-i-mac.html": { displayName: "Utforsk terminalen i MAC" },
+               "/oppdragsbank/7_drift/7-1-2_introduksjon-til-nettverk-netacad.html": { displayName: "Intro til nettverk med netacad" },
+               "/oppdragsbank/7_drift/7-1-3_introduksjon-til-packet-tracer.html": { displayName: "Intro til Pacet Tracker" },
                "/oppdragsbank/7_drift/7-2-1_burp-suite.html": { displayName: "Burp Suite" },
                "/oppdragsbank/7_drift/7-2-2_bash-script.html": { displayName: "Bash Script" },
+               "/oppdragsbank/7_drift/7-2-3_skript-i-terminalen.html": { displayName: "Skript i Terminalen" },
                // ...
             },
          },
