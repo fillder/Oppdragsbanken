@@ -23,7 +23,7 @@
       <script type="module" src="/js/im_breadcrumbs.js"></script>
       <script type="module" src="/js/ob_tid-og-spice.js"></script>
       <script type="module" src="/js/ob_oppdragsbilde.js"></script>
-      <title>Navn på oppdrag</title>
+      <title>Skript i terminalen</title>
    </head>
 
    <body>
@@ -71,7 +71,7 @@
             alt="Blått abstrakt mønster som etterligner et kretskort"
          />
          <div class="hero-tittel fargetHeroLinje">
-            <h1><b>7.x.x. Tittel</b></h1>
+            <h1><b>7.2.3. Skript i terminalen</b></h1>
          </div>
          <div class="hero-blend"></div>
          <a target="_self" rel="noreferrer noopener" href="/oppdragsbank/7_drift.html" title="Kategoriside" alt="Naviger til kategoriside">
@@ -95,22 +95,37 @@
                </a>
                <div class="sPS oppdragsInfo">
                   <h2 id="Oppdragsbeskrivelse" class="fargetLinje">Produkt</h2>
-                  <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, magni!</em></p>
+                  <p><em>Lær å bruke automatisering til å analysere innhold i filer. </em></p>
                   <div class="spiceOgTid">
-                     <div class="op_spice-oppdrag spice3"></div>
-                     <div class="op_tid-oppdrag tid3-6"></div>
+                     <div class="op_spice-oppdrag spice5"></div>
+                     <div class="op_tid-oppdrag tid6-9"></div>
                   </div>
                   <h3 class="fargetLinje">Beskrivelse</h3>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptates temporibus, asperiores at sint repudiandae laudantium dolorem blanditiis vel expedita hic porro quas iure, delectus, maiores facilis? Deleniti quisquam adipisci facilis amet rem eos illum minus. Officiis mollitia harum perspiciatis, aspernatur ratione qui
-                     obcaecati, ab amet ullam maiores pariatur facere assumenda reprehenderit iure quasi, eligendi incidunt inventore. Ut blanditiis, adipisci minus dolor molestiae similique consequatur explicabo provident repudiandae nisi reiciendis voluptates labore inventore repellendus modi magnam nostrum, placeat ipsam eum. Adipisci nemo
-                     beatae cumque possimus error sapiente ea est, quo veritatis sint ut sit ducimus modi voluptatibus, itaque, esse deleniti.
-                  </p>
+                  <p>Tenk at du har en loggfil (server.log) som innholder følgende meldinger:</p>
+                  <br />
+                  <h6>
+                     [INFO] 2023-08-24 13:00:00 - Server started. <br />
+                     [ERROR] 2023-08-24 13:45:23 - Database connection failed. <br />
+                     [INFO] 2023-08-24 13:46:10 - Database connection re-established. <br />
+                     [WARN] 2023-08-24 14:12:56 - High memory usage. <br />
+                     ...
+                  </h6>
+                  <p>Du skal lage et skript som gjøre følgende:</p>
+                  <ol class="punktListe">
+                     <li>1. Telle og vise antall INFO, ERROR, og WARN meldinger.</li>
+                     <li>2. Eksportere alle ERROR-meldinger til en ny fil kalt error.log.</li>
+                     <li>3. Finne og vise alle unike datoer en loggmelding(er) har blitt registrert.</li>
+                     <li>4. Lage en sammendragsrapport (summary.txt) som viser antall INFO, ERROR, og WARN meldinger for hver unik dato.</li>
+                  </ol>
+                  <h3 class="fargetLinje">Krav til koden</h3>
+                  <ul class="punktListe">
+                     <li>Du må bruke kommandoer som grep, awk, sort, uniq.</li>
+                     <li>Scriptet bør være så generelt som mulig, slik at det kan brukes på forskjellige loggfiler med samme format.</li>
+                  </ul>
                   <h3 class="fargetLinje">Suksesskriterier</h3>
-                  <ul>
-                     <li>
-                        <p><b>Lorem ipsum</b>: dolor sit amet consectetur adipisicing elit. Quod, quo.</p>
-                     </li>
+                  <ul class="punktListe">
+                     <li>Bruke verktøy for å automatisere og effektivisere driftsoppgaver</li>
+                     <li>Utforske og bruke metoder for feilsøking, utføre utbedringer og dokumentere løsninger</li>
                   </ul>
                </div>
             </section>
