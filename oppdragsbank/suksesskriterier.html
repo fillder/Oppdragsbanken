@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="no">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="color-scheme" content="dark light" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto+Slab:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="/css/im_stilark.css" />
+      <link rel="stylesheet" href="/css/im_dag-natt.css" />
+      <link rel="stylesheet" href="/css/im_svg-masker.css" />
+      <link rel="stylesheet" href="/css/im_farge_2-spessartin.css" />
+      <link rel="stylesheet" href="/css/ob_design.css" />
+      <link rel="stylesheet" href="/css/ob_bildegalleri.css" />
+      <link rel="stylesheet" href="/css/ob_mobil.css" />
+      <link rel="stylesheet" href="/css/sk_design.css" />
+      <link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
+      <link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
+      <link rel="apple-touch-icon" href="/images/ico/skolelogo.svg" />
+      <script type="module" src="/js/im_hovedmeny.js"></script>
+      <script type="module" src="/js/im_dag-natt.js"></script>
+      <script type="module" src="/js/im_breadcrumbs.js"></script>
+      <script type="module" src="/js/ob_tid-og-spice.js"></script>
+      <script type="module" src="/js/ob_oppdragsbilde.js"></script>
+      <title>Suksesskriterier</title>
+   </head>
+
+   <body>
+      <nav>
+         <a class="navKnapp" target="_self" href="/index.html" title="Hjem" alt="Naviger til startsiden">
+            <div class="navIkon maskeIndexOutline"></div>
+         </a>
+         <ul class="breadcrumbsMenu" id="breadcrumbs"></ul>
+         <div class="logo">
+            <h1><b>OPPDRAGSBANK</b></h1>
+         </div>
+         <button class="hamburgerIkon navIkon maskeMenyOutline"></button>
+         <div class="overlayMeny"></div>
+         <div class="hovedmenyRamme">
+            <h1><b>Hovedmeny</b></h1>
+            <ul id="mainMenu"></ul>
+            <button id="dark-mode-toggle" class="dag-natt" aria-label="dark mode toggle">
+               <svg class="svg-anim" viewBox="0 70 100 100">
+                  <line
+                     class="sun"
+                     x1="83.14"
+                     y1="153.14"
+                     x2="69"
+                     y2="139"
+                     stroke-width="6"
+                     stroke-dasharray="20"
+                     stroke-dashoffset="0"
+                  />
+                  <line
+                     class="sun"
+                     x1="3"
+                     y1="120"
+                     x2="23"
+                     y2="120"
+                     stroke-width="6"
+                     stroke-dasharray="20"
+                     stroke-dashoffset="0"
+                  />
+                  <line
+                     class="sun"
+                     x1="16.86"
+                     y1="153.14"
+                     x2="31"
+                     y2="139"
+                     stroke-width="6"
+                     stroke-dasharray="20"
+                     stroke-dashoffset="0"
+                  />
+                  <line
+                     class="sun"
+                     x1="50"
+                     y1="167"
+                     x2="50"
+                     y2="147"
+                     stroke-width="6"
+                     stroke-dasharray="20"
+                     stroke-dashoffset="0"
+                  />
+                  <line
+                     class="sun"
+                     x1="16.86"
+                     y1="86.86"
+                     x2="31"
+                     y2="101"
+                     stroke-width="6"
+                     stroke-dasharray="20"
+                     stroke-dashoffset="0"
+                  />
+                  <line
+                     class="sun"
+                     x1="97"
+                     y1="120"
+                     x2="77"
+                     y2="120"
+                     stroke-width="6"
+                     stroke-dasharray="20"
+                     stroke-dashoffset="0"
+                  />
+                  <line
+                     class="sun"
+                     x1="83.25"
+                     y1="86.86"
+                     x2="69.11"
+                     y2="101"
+                     stroke-width="6"
+                     stroke-dasharray="20"
+                     stroke-dashoffset="0"
+                  />
+                  <line
+                     class="sun"
+                     x1="50"
+                     y1="73"
+                     x2="50"
+                     y2="93"
+                     stroke-width="6"
+                     stroke-dasharray="20"
+                     stroke-dashoffset="0"
+                  />
+                  <circle class="sun" cx="50" cy="120" r="20" />
+                  <circle class="moon" cx="135" cy="40" r="40" />
+               </svg>
+            </button>
+         </div>
+      </nav>
+      <header class="hero" id="hero">
+         <img
+            class="hero-bilde"
+            srcset="
+               /images/img/im-header_600px.webp   600w,
+               /images/img/im-header_768px.webp   768w,
+               /images/img/im-header_992px.webp   992w,
+               /images/img/im-header_1200px.webp 1200w,
+               /images/img/im-header_1600px.webp 1201w
+            "
+            sizes="(max-width: 600px) 600px, (max-width: 768px) 768px, (max-width: 992px) 992px, (max-width: 1200px) 1200px, 1201px"
+            src="/images/img/im-header_1600px.webp"
+            alt="Regnbuefarget abstrakt kunst som symboliserer de ulike fagområdene i oppdragsbanken"
+         />
+         <div class="hero-tittel fargetHeroLinje">
+            <h1><b>Visuell logg</b></h1>
+         </div>
+         <div class="hero-blend"></div>
+         <a target="_self" href="/index.html" title="Kategoriside" alt="Naviger til kategoriside">
+            <div class="hero-emblem rundRamme ixD sB" data-ikon="oppdragsbankIkon">
+               <div class="svgIkon maskeOppdragsbank"></div>
+            </div>
+         </a>
+         <a class="tilbakeKnapp" href="/index.html" target="_self">
+            <div class="tilbakePil maskeTilbakeOutline"></div>
+         </a>
+      </header>
+      <main class="mainMedHeader">
+         <div class="ob_oppdragssideGrid">
+            <div class="mainBlur"></div>
+            <section aria-labelledby="Suksesskriterier" class="sBoksRamme sB tekst oppdragGrid">
+               <div class="modulIkon rundRamme ixD nB">
+                  <div class="op_ikon maskeModulInfo fargetFyll"></div>
+               </div>
+               <!-- <a id="openDeskImg" target="_self" href="">
+                  <img id="deskImg" class="boksRamme oppdragsSideBilde horisontaltStandard bildeDesk fargetHover" src="/images/img/visuell-logg.webp" alt="" />
+               </a> -->
+               <div class="sPS oppdragsInfo">
+                  <h2 class="fargetLinje">Formålet med YFF</h2>
+                  <em>
+                     Innenfor IM finnes det fem ulike fagområder som du kan ta fagbrev i. Dette er Innholdsproduksjon,
+                     medieteknikk, mediedesign, IT-utvikling og IT-drift. Det faglige målet i Yrkesfaglig-fordypning, er
+                     at du skal bli mest mulig yrkesforberedt. På VG1 handler dette om å utforske og lære mest mulig, og
+                     å lære om bredden i faget. På VG2 har du forhåpentlighvis gjort deg noen tanker om hvilket
+                     fagområde du ønsker å ta fagbrev i. Da er det om å bygge spisset kompetanse, lage produkter til
+                     portfolio, og å gjøre deg attraktiv i arbeidsbransjen, gjennom å ta oppdrag, bygge relasjoner og å
+                     utføre praksis.
+                  </em>
+                  <br />
+                  <h3 class="fargetLinje">Suksesskriterier</h3>
+                  <p>
+                     For å gjøre det lettere for deg å vite hva du bør fordype deg i innen de ulike fagområdene, har vi
+                     utarbeidet noen lister som oppsummerer de viktigste ferdighetene og kunnskapene. Disse er inndelig
+                     i det vi kalle “Soft skills” og “Hard skills”.
+                  </p>
+                  <br />
+                  <h2 id="klassevalg">1. Velg klasse</h2>
+                  <h2 id="fagvalg">2. Velg lærefag</h2>
+                  <div class="skillsInfoboks">
+                     <p id="SSInfo">
+                        <b>Soft skills (myke ferdigheter):</b> En overordnet liste som omhandler sosiale ferdigheter og
+                        profesjonell orden og adferd. Disse målene går på tvers av alle lærefagene, og er ofte viktigere
+                        enn deres faglige kompetanse når det kommer til bygge relasjoner og finne en jobb.
+                     </p>
+                     <p id="HSInfo">
+                        <b>Hard skills (fagspesifikke ferdigheter):</b> En liste som omhandler de fagenes viktigste
+                        ferdigheter og kunnskaper. Det er alltid anbefalt å forme YFF-prosjektene rundt et eller to
+                        punktr innen valgt fagområde, for å sikre at prosjektet er relevant.
+                     </p>
+                  </div>
+            </section>
+            <!-- <section aria-labelledby="Oppdragsbilde" class="mobilBildeGrid bildeMob">
+               <a id="openMobImg" href="">
+                  <img id="mobImg" class="boksRamme sB oppdragsBildeMobil fargetHover" src="" alt="" />
+               </a>
+            </section> -->
+         </div>
+      </main>
+      <footer>
+         <p class="footerContent"></p>
+      </footer>
+   </body>
+</html>

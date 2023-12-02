@@ -1,0 +1,7 @@
+.skillsInfoboks {
+   background-color: var(--clr-tabellBoks);
+   padding-inline: 1rem;
+   padding-block: 0.5rem;
+   border-radius: 0.25rem;
+   border: 2px solid var(--clr-ramme);
+}
