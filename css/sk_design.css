@@ -1,7 +1,39 @@
-.skillsInfoboks {
-   background-color: var(--clr-tabellBoks);
+h4 {
+   text-align: center;
+}
+button {
+   background-color: var(--clr-ixDBoks);
+   border: 2px solid var(--clr-ramme);
+   font-size: 2rem;
    padding-inline: 1rem;
    padding-block: 0.5rem;
    border-radius: 0.25rem;
+   transition: filter 100ms;
+}
+button:hover {
+   filter: brightness(2);
+   transition: filter 300ms;
+}
+.skillsInfoboks {
+   background-color: var(--clr-tabellBoks);
    border: 2px solid var(--clr-ramme);
+   padding-inline: 1rem;
+   padding-block: 0.5rem;
+   border-radius: 0.25rem;
+}
+#klasseKnapper {
+   display: flex;
+   gap: 2rem;
+   margin-block: 1rem;
+   justify-content: center;
+}
+#fagKnapper1IM,
+#fagKnapper2MP,
+#fagKnapper2IT {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 1rem;
+   column-gap: 2rem;
+   margin-block: 1rem;
+   justify-content: center;
 }

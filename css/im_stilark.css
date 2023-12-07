@@ -165,6 +165,7 @@ button {
    border: none;
    background: none;
    cursor: pointer;
+   font-family: "Roboto Slab", serif;
 }
 .kategoriFilter div {
    text-align: center;
