@@ -16,7 +16,6 @@
       <link rel="stylesheet" href="/css/im_svg-masker.css" />
       <link rel="stylesheet" href="/css/im_farge_2-spessartin.css" />
       <link rel="stylesheet" href="/css/ob_design.css" />
-      <link rel="stylesheet" href="/css/ob_bildegalleri.css" />
       <link rel="stylesheet" href="/css/ob_mobil.css" />
       <link rel="stylesheet" href="/css/sk_design.css" />
       <link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
@@ -132,21 +131,21 @@
             </button>
          </div>
       </nav>
-      <header class="hero" id="hero">
+      <header class="heroSmall" id="hero">
          <img
             class="hero-bilde"
             srcset="
-               /images/img/im-header_600px.webp   600w,
-               /images/img/im-header_768px.webp   768w,
-               /images/img/im-header_992px.webp   992w,
-               /images/img/im-header_1200px.webp 1200w,
-               /images/img/im-header_1600px.webp 1201w
+               /images/img/im-headerSmall_600px.webp   600w,
+               /images/img/im-headerSmall_768px.webp   768w,
+               /images/img/im-headerSmall_992px.webp   992w,
+               /images/img/im-headerSmall_1200px.webp 1200w,
+               /images/img/im-headerSmall_1600px.webp 1201w
             "
             sizes="(max-width: 600px) 600px, (max-width: 768px) 768px, (max-width: 992px) 992px, (max-width: 1200px) 1200px, 1201px"
             src="/images/img/im-header_1600px.webp"
             alt="Regnbuefarget abstrakt kunst som symboliserer de ulike fagområdene i oppdragsbanken"
          />
-         <div class="hero-tittel fargetHeroLinje">
+         <div class="hero-tittelSmall fargetHeroLinje">
             <h1><b>Visuell logg</b></h1>
          </div>
          <div class="hero-blend"></div>
@@ -159,7 +158,7 @@
             <div class="tilbakePil maskeTilbakeOutline"></div>
          </a>
       </header>
-      <main class="mainMedHeader">
+      <main class="mainMedLitenHeader">
          <div class="ob_oppdragssideGridAlt">
             <div class="mainBlur"></div>
             <section aria-labelledby="YFF-info" class="sBoksRamme sB tekst oppdragGrid">
@@ -170,89 +169,100 @@
                   <img id="deskImg" class="boksRamme oppdragsSideBilde horisontaltStandard bildeDesk fargetHover" src="/images/img/visuell-logg.webp" alt="" />
                </a> -->
                <div class="sPS oppdragsInfo">
-                  <h2 class="fargetLinje">Formålet med YFF</h2>
-                  <em>
-                     Innenfor IM finnes det fem ulike fagområder som du kan ta fagbrev i. Dette er Innholdsproduksjon,
-                     medieteknikk, mediedesign, IT-utvikling og IT-drift. Det faglige målet i Yrkesfaglig-fordypning, er
-                     at du skal bli mest mulig yrkesforberedt. På VG1 handler dette om å utforske og lære mest mulig, og
-                     å lære om bredden i faget. På VG2 har du forhåpentlighvis gjort deg noen tanker om hvilket
-                     fagområde du ønsker å ta fagbrev i. Da er det om å bygge spisset kompetanse, lage produkter til
-                     portfolio, og å gjøre deg attraktiv i arbeidsbransjen, gjennom å ta oppdrag, bygge relasjoner og å
-                     utføre praksis.
-                  </em>
-                  <br />
-                  <h3 class="fargetLinje">Suksesskriterier</h3>
+                  <h2 class="fargetLinje">Yrkesfaglig fordypning</h2>
+                  <em>Formålet med YFF</em>
                   <p>
-                     For å gjøre det lettere for deg å vite hva du bør fordype deg i innen de ulike fagområdene, har vi
-                     utarbeidet noen lister som oppsummerer de viktigste ferdighetene og kunnskapene. Disse er inndelig
-                     i det vi kalle “Soft skills” og “Hard skills”.
+                     På IM finnes det fem ulike fagområder som du kan ta fagbrev i. Dette er Innholdsproduksjon,
+                     medieteknikk, mediedesign, IT-utvikling og IT-drift. Formålet YFF er at du fordyper deg i ett av
+                     disse fagområdene. Dette gjør du ved å jobbe bredt og prøve nye teknologier og temaer, eller jobbe
+                     målrettet mot fagområdene du tenker å søke i løpet av VG2.
                   </p>
+                  <h3>Velg hvordan du vil fordype deg i faget den kommende perioden</h3>
+                  <ul class="punktListe">
+                     <li>Jobbe med bestemte temaer eller teknologier som du interesserer deg for.</li>
+                     <li>Jobbe med fagområdene du tenker å ta fagbrev innen.</li>
+                     <li>Jobbe med yrkesforberedning og lage din egen Portfolio og CV til jobbsøking.</li>
+                  </ul>
                   <br />
-                  <h4>1. Velg Trinn</h4>
                   <div id="klasseKnapper">
-                     <button>1IM</button>
-                     <button>2IT</button>
-                     <button>2MP</button>
-                  </div>
-                  <h4 id="fagvalg">2. Velg lærefag</h4>
-                  <div id="fagKnapper1IM">
-                     <button>IT-Driftsfaget</button>
-                     <button>IT-Utviklerfaget</button>
-                     <button>Medieteknikkfaget</button>
-                     <button>Mediedesignfaget</button>
-                     <button>Innholdsproduksjonsfaget</button>
-                  </div>
-                  <div id="fagKnapper2MP">
-                     <button>Medieteknikkfaget</button>
-                     <button>Mediedesignfaget</button>
-                     <button>Innholdsproduksjonsfaget</button>
-                  </div>
-                  <div id="fagKnapper2IT">
-                     <button>IT-Driftsfag</button>
-                     <button>IT-Utviklerfag</button>
+                     <button>Tema/teknologi</button>
+                     <button>Lærefagområde</button>
+                     <button>Yrkesforberedning</button>
                   </div>
                </div>
             </section>
-            <section id="Medieteknikk1IM" aria-labelledby="Suksesskriterier" class="sBoksRamme sB tekst infoGrid">
+            <section id="Suksesskriterier" aria-labelledby="Suksesskriterier" class="sBoksRamme sB tekst infoGrid">
                <div class="modulIkon rundRamme ixD nB">
                   <div class="op_ikon maskeModulInfo fargetFyll"></div>
                </div>
                <!-- <a id="openDeskImg" target="_self" href="">
                   <img id="deskImg" class="boksRamme oppdragsSideBilde horisontaltStandard bildeDesk fargetHover" src="/images/img/visuell-logg.webp" alt="" />
                </a> -->
-               <div class="sPS oppdragsInfo">
-                  <h2>Medieteknikkfaget</h2>
-                  <h3>Soft Skills</h3>
-                  <ul>
-                     <li>1</li>
-                     <li>2</li>
-                     <li>3</li>
-                     <li>4</li>
-                     <li>5</li>
-                     <li>6</li>
-                  </ul>
-                  <br />
-                  <h3>Hard Skills</h3>
-                  <ul>
-                     <li>1</li>
-                     <li>2</li>
-                     <li>3</li>
-                     <li>4</li>
-                     <li>5</li>
-                     <li>6</li>
-                  </ul>
-                  <!-- <div class="skillsInfoboks">
-                  <p id="SSInfo">
-                     <b>Soft skills (myke ferdigheter):</b> En overordnet liste som omhandler sosiale ferdigheter og
-                     profesjonell orden og adferd. Disse målene går på tvers av alle lærefagene, og er ofte viktigere
-                     enn deres faglige kompetanse når det kommer til bygge relasjoner og finne en jobb.
-                  </p>
-                  <p id="HSInfo">
-                     <b>Hard skills (fagspesifikke ferdigheter):</b> En liste som omhandler de fagenes viktigste
-                     ferdigheter og kunnskaper. Det er alltid anbefalt å forme YFF-prosjektene rundt et eller to punktr
-                     innen valgt fagområde, for å sikre at prosjektet er relevant.
-                  </p>
-               </div> -->
+               <fieldset>
+                  <legend>Filtermeny</legend>
+                  <div>
+                     <input type="checkbox" id="filterVg1" name="vg1" checked />
+                     <label for="vg1">VG1</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="filterVg2" name="vg2" />
+                     <label for="vg2">VG2</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="filterBegge" name="begge" />
+                     <label for="begge">Begge</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="filterTrinn" name="trinn" checked />
+                     <label for="trinn">Skjul klasse</label>
+                  </div>
+               </fieldset>
+               <div id="fagKnapper">
+                  <div class="fagBakgrunn">
+                     <h2>Innholdsproduksjonsfaget</h2>
+                     <div class="skjultInnhold">
+                        <h3>Om fagområdet</h3>
+                        <p>
+                           Innholdsprodusenten jobber med kommunikasjon og utforming av innhold til digitale plattformer
+                           og kanaler. Dette inkluderer jobber hvor en produserer medieinnhold til radio, film- og
+                           TV-bransjen. I nyere tid er det også vanlig at innholdsprodusenter jobber med sosiale
+                           medieplattformer, og er ansvarlig med å produsere og publisere innhold.
+                        </p>
+                        <div class="suksesskriterie" id="innholdsProdSk1">
+                           <h3>1. Innholdsproduksjon</h3>
+                           <ul class="punktListe">
+                              <li class="skVg1">
+                                 <span class="klTekst">VG1:</span> Du planlegger, produserer og klargjør medieinnhold
+                                 for publisering på en relevant digital plattform
+                              </li>
+                              <li class="skVg2">
+                                 <span class="klTekst">VG2:</span> Du planlegger og produserer medieinnhold for
+                                 spesifikke målgrupper, og klargjør produktet for publisering på ulike plattformer etter
+                                 oppdragsgivers ønske.
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="suksesskriterie" id="innholdsProdSk2">
+                           <h3>1. Historiefortelling</h3>
+                           <ul class="punktListe">
+                              <li class="skVg1">
+                                 <span class="klTekst">VG1:</span> Du bearbeider og tilpasser informasjon og data, slik
+                                 at det kan formidles som et budskap på en måte som skaper engasjement og forståelse.
+                              </li>
+                              <li class="skVg2">
+                                 <span class="klTekst">VG2:</span> Du utformer audiovisuelle budskap og tilpasser
+                                 kommunikasjonsform til ulike plattformer, sjangere og målgrupper på en måte som skaper
+                                 engasjement og forståelse.
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <button>IT-Driftsfaget</button>
+                  <button>IT-Utviklerfaget</button>
+                  <button>Medieteknikkfaget</button>
+                  <button>Mediedesignfaget</button>
+                  <button>Innholdsproduksjonsfaget</button>
                </div>
             </section>
             <!-- <section aria-labelledby="Oppdragsbilde" class="mobilBildeGrid bildeMob">

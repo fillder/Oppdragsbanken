@@ -1,18 +1,19 @@
-h4 {
-   text-align: center;
-}
 button {
    background-color: var(--clr-ixDBoks);
    border: 2px solid var(--clr-ramme);
-   font-size: 2rem;
+   font-size: 1.2rem;
    padding-inline: 1rem;
    padding-block: 0.5rem;
    border-radius: 0.25rem;
    transition: filter 100ms;
+   text-align: start;
 }
 button:hover {
    filter: brightness(2);
    transition: filter 300ms;
+}
+#Suksesskriterier {
+   padding-inline: 1rem;
 }
 .skillsInfoboks {
    background-color: var(--clr-tabellBoks);
@@ -23,17 +24,85 @@ button:hover {
 }
 #klasseKnapper {
    display: flex;
-   gap: 2rem;
+   flex-wrap: wrap;
+   column-gap: 2rem;
+   row-gap: 1rem;
    margin-block: 1rem;
    justify-content: center;
 }
-#fagKnapper1IM,
-#fagKnapper2MP,
-#fagKnapper2IT {
+#fagKnapper {
    display: flex;
-   flex-wrap: wrap;
+   flex-direction: column;
    row-gap: 1rem;
    column-gap: 2rem;
    margin-block: 1rem;
    justify-content: center;
+}
+.fagBakgrunn {
+   background-color: var(--clr-tabellBoks);
+   padding-inline: 1rem;
+   padding-block: 0.5rem;
+}
+.suksesskriterie {
+   margin-block-start: 1rem;
+}
+h2 {
+   margin-block-end: 1rem;
+}
+hr {
+   margin-inline: 3rem;
+   margin-block-end: 1rem;
+}
+input {
+   margin: 0.4rem;
+}
+fieldset {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 2rem;
+   border-color: var(--clr-ramme);
+   /* background-color: var(--clr-tabellBoks); */
+   font-family: "Roboto", sans-serif;
+   font-size: 1rem;
+   margin-block: 0.5rem;
+   padding-inline: 1rem;
+   padding-block-start: 0.25rem;
+   padding-block-end: 0.5rem;
+   border-radius: 0.25rem;
+   position: relative;
+}
+fieldset legend {
+   font-family: "Roboto Slab", serif;
+   font-size: 1.2rem;
+}
+/* Skjul original checkbox */
+input[type="checkbox"] {
+   appearance: none;
+   position: relative;
+}
+input[type="checkbox"]::before {
+   content: "";
+   display: inline-block;
+   width: 25px;
+   height: 25px;
+   background-color: var(--clr-ixDBoks);
+   border: 2px solid var(--clr-ramme);
+   border-radius: 0.25rem;
+   vertical-align: middle;
+}
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus-visible {
+   outline: 2px solid var(--clr-spessartin);
+   outline-offset: -2px;
+   border-radius: 0.25rem;
+}
+input[type="checkbox"]:checked::after {
+   content: "✔";
+   display: inline-block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 2.4rem;
+   color: var(--clr-spessartin);
 }

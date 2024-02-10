@@ -762,12 +762,10 @@ table thead tr th {
 .infoGrid {
    grid-area: eks;
    position: relative;
-   padding-inline-end: 1.8rem;
 }
 .ressursGrid {
    grid-area: res;
    position: relative;
-   /* padding-inline-end: 1.8rem; */
 }
 .bildeGrid {
    grid-area: gal;

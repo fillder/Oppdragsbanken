@@ -555,6 +555,16 @@ nav {
    transform: translateX(-50%);
    z-index: 140;
 }
+.heroSmall {
+   position: absolute;
+   top: 0;
+   height: 200px; /* Sett høyden på banneret etter behov */
+   width: 100%;
+   max-width: 1600px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 140;
+}
 .hero-bilde {
    /* Stil for bannerbildet */
    position: absolute;
@@ -564,18 +574,22 @@ nav {
    object-fit: cover; /* Sørger for at bildet fyller hele banneret */
    object-position: bottom;
 }
-.hero-tittel {
+.hero-tittel,
+.hero-tittelSmall {
    position: absolute;
    top: 75px;
    left: 20px;
    padding: 0px 10px 7.5px 7.5px; /* top | right | bottom | left */
    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
    border-radius: 0.2rem;
+   z-index: 150;
 }
-nav.hide-nav ~ .hero-tittel {
+nav.hide-nav ~ .hero-tittel,
+nav.hide-nav ~ .hero-tittelSmall {
    top: 20px; /* 75px - 55px */
 }
-.hero-tittel h1 {
+.hero-tittel h1,
+.hero-tittelSmall h1 {
    color: whitesmoke;
 }
 .hero-emblem {
@@ -604,6 +618,9 @@ nav.hide-nav ~ .hero-tittel {
 .mainMedHeader,
 .mainUtenNav {
    margin-top: 550px;
+}
+.mainMedLitenHeader {
+   margin-top: 200px;
 }
 .mainBlur {
    background-color: var(--clr-tekst);
@@ -807,8 +824,24 @@ nav .hovedmenyRamme {
    .hero {
       height: 500px; /* Sett høyden på banneret etter behov */
    }
+   .heroSmall {
+      height: 180px; /* Sett høyden på banneret etter behov */
+      top: 50px;
+   }
+   .hero-tittelSmall {
+      top: 60px;
+   }
+   .hero-emblem {
+      transform: translate(-50%, 65%);
+      width: 110px;
+      height: 110px;
+      padding: 0.7rem;
+   }
    .mainMedHeader {
       margin-top: 500px;
+   }
+   .mainMedLitenHeader {
+      margin-top: 230px;
    }
 }
 @media only screen and (max-width: 992px) {
@@ -821,16 +854,34 @@ nav .hovedmenyRamme {
    .hero {
       height: 450px; /* Sett høyden på banneret etter behov */
    }
+   .heroSmall {
+      height: 170px; /* Sett høyden på banneret etter behov */
+   }
+   .hero-emblem {
+      transform: translate(-50%, 65%);
+      width: 100px;
+      height: 100px;
+      padding: 0.6rem;
+   }
    .mainMedHeader {
       margin-top: 450px;
+   }
+   .mainMedLitenHeader {
+      margin-top: 210px;
    }
 }
 @media only screen and (max-width: 768px) {
    .hero {
       height: 360px; /* Sett høyden på banneret etter behov */
    }
+   .heroSmall {
+      height: 180px; /* Sett høyden på banneret etter behov */
+   }
    .mainMedHeader {
       margin-top: 360px;
+   }
+   .mainMedLitenHeader {
+      margin-top: 220px;
    }
 }
 @media only screen and (max-width: 600px) {
@@ -854,8 +905,14 @@ nav .hovedmenyRamme {
    .hero {
       height: 320px; /* Sett høyden på banneret etter behov */
    }
+   .heroSmall {
+      height: 160px; /* Sett høyden på banneret etter behov */
+   }
    .mainMedHeader {
       margin-top: 320px;
+   }
+   .mainMedLitenHeader {
+      margin-top: 200px;
    }
    .hovedmenyRamme {
       width: 100%;
