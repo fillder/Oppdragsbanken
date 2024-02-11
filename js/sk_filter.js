@@ -63,6 +63,19 @@ function filterKlasseInput() {
          element.style.display = "inline-block"; // eller 'none' basert på behov
       });
 }
+function filterBeskrivelseInput() {
+   let beskrivelseChecked = document.getElementById("filterBeskrivelse").checked;
+   const beskrivelseElementer = document.querySelectorAll(".fagBeskrivelse");
+
+   if (beskrivelseChecked) {
+      beskrivelseElementer.forEach(function (element) {
+         element.style.display = "none"; // eller 'none' basert på behov
+      });
+   } else if (!beskrivelseChecked)
+      beskrivelseElementer.forEach(function (element) {
+         element.style.display = "block"; // eller 'none' basert på behov
+      });
+}
 function filterVarsel() {
    let vg1Checked = document.getElementById("filterVg1").checked;
    let vg2Checked = document.getElementById("filterVg2").checked;
@@ -78,12 +91,10 @@ function filterVarsel() {
 
 window.onload = function checkFilter() {
    document.getElementById("filterVg1").checked = true;
-   const vg1Elementer = document.querySelectorAll(".skVg1");
-   vg1Elementer.forEach(function (element) {
-      element.style.display = "block"; // eller 'none' basert på behov
-   });
+   document.getElementById("filterTrinn").checked = true;
    filterVg2Input();
    filterVg1Input();
    filterKlasseInput();
    filterVarsel();
+   filterBeskrivelseInput();
 };

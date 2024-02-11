@@ -45,86 +45,14 @@
             <ul id="mainMenu"></ul>
             <button id="dark-mode-toggle" class="dag-natt" aria-label="dark mode toggle">
                <svg class="svg-anim" viewBox="0 70 100 100">
-                  <line
-                     class="sun"
-                     x1="83.14"
-                     y1="153.14"
-                     x2="69"
-                     y2="139"
-                     stroke-width="6"
-                     stroke-dasharray="20"
-                     stroke-dashoffset="0"
-                  />
-                  <line
-                     class="sun"
-                     x1="3"
-                     y1="120"
-                     x2="23"
-                     y2="120"
-                     stroke-width="6"
-                     stroke-dasharray="20"
-                     stroke-dashoffset="0"
-                  />
-                  <line
-                     class="sun"
-                     x1="16.86"
-                     y1="153.14"
-                     x2="31"
-                     y2="139"
-                     stroke-width="6"
-                     stroke-dasharray="20"
-                     stroke-dashoffset="0"
-                  />
-                  <line
-                     class="sun"
-                     x1="50"
-                     y1="167"
-                     x2="50"
-                     y2="147"
-                     stroke-width="6"
-                     stroke-dasharray="20"
-                     stroke-dashoffset="0"
-                  />
-                  <line
-                     class="sun"
-                     x1="16.86"
-                     y1="86.86"
-                     x2="31"
-                     y2="101"
-                     stroke-width="6"
-                     stroke-dasharray="20"
-                     stroke-dashoffset="0"
-                  />
-                  <line
-                     class="sun"
-                     x1="97"
-                     y1="120"
-                     x2="77"
-                     y2="120"
-                     stroke-width="6"
-                     stroke-dasharray="20"
-                     stroke-dashoffset="0"
-                  />
-                  <line
-                     class="sun"
-                     x1="83.25"
-                     y1="86.86"
-                     x2="69.11"
-                     y2="101"
-                     stroke-width="6"
-                     stroke-dasharray="20"
-                     stroke-dashoffset="0"
-                  />
-                  <line
-                     class="sun"
-                     x1="50"
-                     y1="73"
-                     x2="50"
-                     y2="93"
-                     stroke-width="6"
-                     stroke-dasharray="20"
-                     stroke-dashoffset="0"
-                  />
+                  <line class="sun" x1="83.14" y1="153.14" x2="69" y2="139" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+                  <line class="sun" x1="3" y1="120" x2="23" y2="120" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+                  <line class="sun" x1="16.86" y1="153.14" x2="31" y2="139" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+                  <line class="sun" x1="50" y1="167" x2="50" y2="147" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+                  <line class="sun" x1="16.86" y1="86.86" x2="31" y2="101" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+                  <line class="sun" x1="97" y1="120" x2="77" y2="120" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+                  <line class="sun" x1="83.25" y1="86.86" x2="69.11" y2="101" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+                  <line class="sun" x1="50" y1="73" x2="50" y2="93" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
                   <circle class="sun" cx="50" cy="120" r="20" />
                   <circle class="moon" cx="135" cy="40" r="40" />
                </svg>
@@ -172,10 +100,9 @@
                   <h2 class="fargetLinje">Yrkesfaglig fordypning</h2>
                   <em>Formålet med YFF</em>
                   <p>
-                     På IM finnes det fem ulike fagområder som du kan ta fagbrev i. Dette er Innholdsproduksjon,
-                     medieteknikk, mediedesign, IT-utvikling og IT-drift. Formålet YFF er at du fordyper deg i ett av
-                     disse fagområdene. Dette gjør du ved å jobbe bredt og prøve nye teknologier og temaer, eller jobbe
-                     målrettet mot fagområdene du tenker å søke i løpet av VG2.
+                     På IM finnes det fem ulike fagområder som du kan ta fagbrev i. Dette er Innholdsproduksjon, medieteknikk, mediedesign, IT-utvikling og
+                     IT-drift. Formålet YFF er at du fordyper deg i ett av disse fagområdene. Dette gjør du ved å jobbe bredt og prøve nye teknologier og
+                     temaer, eller jobbe målrettet mot fagområdene du tenker å søke i løpet av VG2.
                   </p>
                   <h3>Velg hvordan du vil fordype deg i faget den kommende perioden</h3>
                   <ul class="punktListe">
@@ -209,124 +136,417 @@
                      <label for="vg2">VG2</label>
                   </div>
                   <div>
-                     <input
-                        onchange="filterBeggeInput(), filterVarsel()"
-                        type="checkbox"
-                        id="filterBegge"
-                        name="begge"
-                     />
+                     <input onchange="filterBeggeInput(), filterVarsel()" type="checkbox" id="filterBegge" name="begge" />
                      <label for="begge">Begge</label>
                   </div>
                   <div>
-                     <input onchange="filterKlasseInput()" type="checkbox" id="filterTrinn" name="trinn" checked />
-                     <label for="trinn">Skjul klasse</label>
+                     <input onchange="filterKlasseInput()" type="checkbox" id="filterTrinn" name="trinn" />
+                     <label for="trinn">Skjul klasser</label>
+                  </div>
+                  <div>
+                     <input onchange="filterBeskrivelseInput()" type="checkbox" id="filterBeskrivelse" name="trinn" />
+                     <label for="filterBeskrivelse">Skjul beskrivelse</label>
                   </div>
                   <p id="filterVarsel">Ingen klasser er valgt!!!</p>
                </fieldset>
                <div id="fagKnapper">
                   <details class="fagBakgrunn">
-                     <summary><strong>Innholdsproduksjonsfaget</strong></summary>
-                     <div class="skjultInnhold">
+                     <summary><strong>IT-Driftsfaget</strong></summary>
+                     <div class="fagBeskrivelse">
                         <h3>Om fagområdet</h3>
-                        <p>
-                           Innholdsprodusenten jobber med kommunikasjon og utforming av innhold til digitale plattformer
-                           og kanaler. Dette inkluderer jobber hvor en produserer medieinnhold til radio, film- og
-                           TV-bransjen. I nyere tid er det også vanlig at innholdsprodusenter jobber med sosiale
-                           medieplattformer, og er ansvarlig med å produsere og publisere innhold.
+                        <p id="fagInfoDrift">
+                           En IT-driftstekniker jobber med å installere, holde vedlike og gjør service på teknisk utstyr som sikrer internettilgang for private
+                           og bedrifter. Arbeidsoppgavene kan bestå av å overvåk nettverkstrafikk og jobbe med datasikkerhet, administrere brukertilganger,
+                           eller sette opp servere og databaser.
                         </p>
-                        <div class="suksesskriterie" id="innholdsProdSk1">
-                           <h3>1. Innholdsproduksjon:</h3>
-                           <ul class="punktListe">
-                              <li class="skVg1">
-                                 <span class="klTekst">VG1: </span>Du planlegger, produserer og klargjør medieinnhold
-                                 for publisering på en relevant digital plattform
-                              </li>
-                              <li class="skVg2">
-                                 <span class="klTekst">VG2: </span>Du planlegger og produserer medieinnhold for
-                                 spesifikke målgrupper, og klargjør produktet for publisering på ulike plattformer etter
-                                 oppdragsgivers ønske.
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="suksesskriterie" id="innholdsProdSk2">
-                           <h3>2. Historiefortelling:</h3>
-                           <ul class="punktListe">
-                              <li class="skVg1">
-                                 <span class="klTekst">VG1: </span>Du bearbeider og tilpasser informasjon og data, slik
-                                 at det kan formidles som et budskap på en måte som skaper engasjement og forståelse.
-                              </li>
-                              <li class="skVg2">
-                                 <span class="klTekst">VG2: </span>Du utformer audiovisuelle budskap og tilpasser
-                                 kommunikasjonsform til ulike plattformer, sjangere og målgrupper på en måte som skaper
-                                 engasjement og forståelse.
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="suksesskriterie" id="innholdsProdSk3">
-                           <h3>3. Brukersentrert innhold:</h3>
-                           <ul class="punktListe">
-                              <li class="skVg1">
-                                 <span class="klTekst">VG1: </span>Du utforske og anvender metoder for lære mer om
-                                 brukerne du produsere til, og benytter det du lærer til å lage bedre produkter.
-                              </li>
-                              <li class="skVg2">
-                                 <span class="klTekst">VG2: </span>Du utforske og anvender metoder for å tilegne deg
-                                 brukerinnsikt om aktuelle målgrupper og deres behov, og sørger for at innholdet er
-                                 tilgjengelig og brukervennlig.
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="suksesskriterie" id="innholdsProdSk4">
-                           <h3>4. Metodevalg:</h3>
-                           <ul class="punktListe">
-                              <li class="skVg1">
-                                 <span class="klTekst">VG1: </span>Du jobber praktisk med tekst, lyd, lys og bilde for å
-                                 fremheve form, struktur, farger og budskap i audiovisuelle presentasjoner.
-                              </li>
-                              <li class="skVg2">
-                                 <span class="klTekst">VG2: </span>Du jobber praktisk med innholdsproduksjon og gjør
-                                 konkrete valg av metode og virkemidler for å fremheve budskapet med hensyn til hvor og
-                                 hvordan det skal publiseres.
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="suksesskriterie" id="innholdsProdSk5">
-                           <h3>5. Teknologi og algoritmer:</h3>
-                           <ul class="punktListe">
-                              <li class="skVg1">
-                                 <span class="klTekst">VG1: </span>Du utforske nye plattformer, teknologier og digitale
-                                 verktøy, og eksperimenterer hvordan det kan brukes til publisering og
-                                 innholdsproduksjon.
-                              </li>
-                              <li class="skVg2">
-                                 <span class="klTekst">VG2: </span>Du vet hvordan personalisering og algoritmer styrer
-                                 distribusjon av digitalt innhold, og anvender dette i valg av plattform, teknologi og
-                                 metode for å øke publiseringens nedslagsfelt.
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="suksesskriterie" id="innholdsProdSk6">
-                           <h3>6. Dokumentasjon i innholdsproduksjon:</h3>
-                           <ul class="punktListe">
-                              <li class="skVg1">
-                                 <span class="klTekst">VG1: </span>Du lager en plan og mål før du starter, og
-                                 dokumenterer eget arbeid gjennom bilder, skisser, og utkast til tekst. I tillegg
-                                 reflekterer du over hva du har gjort, lært og tenkt underveis.
-                              </li>
-                              <li class="skVg2">
-                                 <span class="klTekst">VG2: </span>Du dokumenterer eget arbeid og reflekterer over valg
-                                 av plattform og publiseringsmetode, samt benytter presis fagterminologi i kommunikasjon
-                                 med oppdragsgiver og kunder.
-                              </li>
-                           </ul>
-                        </div>
+                     </div>
+                     <div class="suksesskriterie" id="driftSk1">
+                        <h3>1.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="driftSk2">
+                        <h3>2.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="driftSk3">
+                        <h3>3.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="driftSk4">
+                        <h3>4.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="driftSk5">
+                        <h3>5.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="driftSk6">
+                        <h3>6.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
                      </div>
                   </details>
-                  <button>IT-Driftsfaget</button>
-                  <button>IT-Utviklerfaget</button>
-                  <button>Medieteknikkfaget</button>
-                  <button>Mediedesignfaget</button>
-                  <button>Innholdsproduksjonsfaget</button>
+                  <details class="fagBakgrunn">
+                     <summary><strong>IT-Utviklerfaget</strong></summary>
+                     <div class="fagBeskrivelse">
+                        <h3>Om fagområdet</h3>
+                        <p id="fagInfoUtvikler">
+                           En IT-utvikler jobber med å utforme og programmer applikasjoner, nettsider og spill. Noen ganger er innebærer dette statiske
+                           løsninger, mens andre ganger avanserte interaktive opplevelser med dynamisk innhold og databasefunksjonalitet for kommunikasjon og
+                           samhandling.
+                        </p>
+                     </div>
+                     <div class="suksesskriterie" id="utviklerSk1">
+                        <h3>1.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="utviklerSk2">
+                        <h3>2.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="utviklerSk3">
+                        <h3>3.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="utviklerSk4">
+                        <h3>4.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="utviklerSk5">
+                        <h3>5.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="utviklerSk6">
+                        <h3>6.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                  </details>
+                  <details class="fagBakgrunn">
+                     <summary><strong>Medieteknikkfaget</strong></summary>
+                     <div class="fagBeskrivelse">
+                        <h3>Om fagområdet</h3>
+                        <p id="fagInfoTeknikk">
+                           Medieteknikeren jobber med audiovisuelt innhold og utstyr i alle typer medieproduksjoner. Arbeidsoppgavene består av å ha ansvar for
+                           utstyr i film- og tv produksjoner, konferanser og kulturarrangementer, vedlikeholde og drifte teknisk utstyr, og å jobbe med
+                           flerkameraproduksjon.
+                        </p>
+                     </div>
+                     <div class="suksesskriterie" id="teknikkSk1">
+                        <h3>1.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="teknikkSk2">
+                        <h3>2.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="teknikkSk3">
+                        <h3>3.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="teknikkSk4">
+                        <h3>4.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="teknikkSk5">
+                        <h3>5.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="teknikkSk6">
+                        <h3>6.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                  </details>
+                  <details class="fagBakgrunn">
+                     <summary><strong>Mediedesignfaget</strong></summary>
+                     <div class="fagBeskrivelse">
+                        <h3>Om fagområdet</h3>
+                        <p id="fagInfoDesign">
+                           Mediedesigneren jobber med visuell kommunikasjon og design av medierelaterte produkter til digitale og fysiske flater. Dette
+                           innebærer å jobbe med design og produksjon av tekst, lyd og bilde for ulike publiseringsløsninger. En mediedesigner jobber også ofte
+                           med å lage brukerinteraksjoner, brukeropplevelser og merkevarebygging.
+                        </p>
+                     </div>
+                     <div class="suksesskriterie" id="designSk1">
+                        <h3>1.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="designSk2">
+                        <h3>2.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="designSk3">
+                        <h3>3.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="designSk4">
+                        <h3>4.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="designSk5">
+                        <h3>5.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="designSk6">
+                        <h3>6.</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>
+                           </li>
+                        </ul>
+                     </div>
+                  </details>
+                  <details class="fagBakgrunn">
+                     <summary><strong>Innholdsproduksjonsfaget</strong></summary>
+                     <div class="fagBeskrivelse">
+                        <h3>Om fagområdet</h3>
+                        <p id="fagInfoInhold ">
+                           Innholdsprodusenten jobber med kommunikasjon og utforming av innhold til digitale plattformer og kanaler. Dette inkluderer jobber
+                           hvor en produserer medieinnhold til radio, film- og TV-bransjen. I nyere tid er det også vanlig at innholdsprodusenter jobber med
+                           sosiale medieplattformer, og er ansvarlig med å produsere og publisere innhold.
+                        </p>
+                     </div>
+                     <div class="suksesskriterie" id="innholdsProdSk1">
+                        <h3>1. Innholdsproduksjon:</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>Du planlegger, produserer og klargjør medieinnhold for publisering på en relevant digital
+                              plattform
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>Du planlegger og produserer medieinnhold for spesifikke målgrupper, og klargjør produktet for
+                              publisering på ulike plattformer etter oppdragsgivers ønske.
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="innholdsProdSk2">
+                        <h3>2. Historiefortelling:</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>Du bearbeider og tilpasser informasjon og data, slik at det kan formidles som et budskap på en
+                              måte som skaper engasjement og forståelse.
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>Du utformer audiovisuelle budskap og tilpasser kommunikasjonsform til ulike plattformer,
+                              sjangere og målgrupper på en måte som skaper engasjement og forståelse.
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="innholdsProdSk3">
+                        <h3>3. Brukersentrert innhold:</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>Du utforske og anvender metoder for lære mer om brukerne du produsere til, og benytter det du
+                              lærer til å lage bedre produkter.
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>Du utforske og anvender metoder for å tilegne deg brukerinnsikt om aktuelle målgrupper og deres
+                              behov, og sørger for at innholdet er tilgjengelig og brukervennlig.
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="innholdsProdSk4">
+                        <h3>4. Metodevalg:</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>Du jobber praktisk med tekst, lyd, lys og bilde for å fremheve form, struktur, farger og budskap
+                              i audiovisuelle presentasjoner.
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>Du jobber praktisk med innholdsproduksjon og gjør konkrete valg av metode og virkemidler for å
+                              fremheve budskapet med hensyn til hvor og hvordan det skal publiseres.
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="innholdsProdSk5">
+                        <h3>5. Teknologi og algoritmer:</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>Du utforske nye plattformer, teknologier og digitale verktøy, og eksperimenterer hvordan det kan
+                              brukes til publisering og innholdsproduksjon.
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>Du vet hvordan personalisering og algoritmer styrer distribusjon av digitalt innhold, og
+                              anvender dette i valg av plattform, teknologi og metode for å øke publiseringens nedslagsfelt.
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="suksesskriterie" id="innholdsProdSk6">
+                        <h3>6. Dokumentasjon i innholdsproduksjon:</h3>
+                        <ul class="punktListe">
+                           <li class="skVg1">
+                              <span class="klTekst">VG1: </span>Du lager en plan og mål før du starter, og dokumenterer eget arbeid gjennom bilder, skisser, og
+                              utkast til tekst. I tillegg reflekterer du over hva du har gjort, lært og tenkt underveis.
+                           </li>
+                           <li class="skVg2">
+                              <span class="klTekst">VG2: </span>Du dokumenterer eget arbeid og reflekterer over valg av plattform og publiseringsmetode, samt
+                              benytter presis fagterminologi i kommunikasjon med oppdragsgiver og kunder.
+                           </li>
+                        </ul>
+                     </div>
+                  </details>
                </div>
             </section>
             <!-- <section aria-labelledby="Oppdragsbilde" class="mobilBildeGrid bildeMob">
