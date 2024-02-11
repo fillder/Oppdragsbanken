@@ -52,16 +52,24 @@ function filterBeggeInput() {
 }
 function filterKlasseInput() {
    let klasseChecked = document.getElementById("filterTrinn").checked;
-   const klTekstElementer = document.querySelectorAll(".klTekst");
+   const kl1TekstElementer = document.querySelectorAll(".kl1Tekst");
+   const kl2TekstElementer = document.querySelectorAll(".kl2Tekst");
 
    if (klasseChecked) {
-      klTekstElementer.forEach(function (element) {
-         element.style.display = "none"; // eller 'none' basert på behov
+      kl1TekstElementer.forEach(function (element) {
+         element.textContent = "";
       });
-   } else if (!klasseChecked)
-      klTekstElementer.forEach(function (element) {
-         element.style.display = "inline-block"; // eller 'none' basert på behov
+      kl2TekstElementer.forEach(function (element) {
+         element.textContent = "";
       });
+   } else if (!klasseChecked) {
+      kl1TekstElementer.forEach(function (element) {
+         element.textContent = "VG1: ";
+      });
+      kl2TekstElementer.forEach(function (element) {
+         element.textContent = "VG2: ";
+      });
+   }
 }
 function filterBeskrivelseInput() {
    let beskrivelseChecked = document.getElementById("filterBeskrivelse").checked;
@@ -73,7 +81,7 @@ function filterBeskrivelseInput() {
       });
    } else if (!beskrivelseChecked)
       beskrivelseElementer.forEach(function (element) {
-         element.style.display = "block"; // eller 'none' basert på behov
+         element.style.display = "grid"; // eller 'none' basert på behov
       });
 }
 function filterVarsel() {

@@ -130,7 +130,7 @@ h2 {
    font-weight: 700;
 }
 h3 {
-   font-size: clamp(1rem, 1.1vw, 1.2rem);
+   font-size: clamp(1.1rem, 1.1vw, 1.2rem);
    font-weight: 500;
 }
 h4 {
@@ -156,7 +156,7 @@ b {
    font-weight: 500;
 }
 em {
-   font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+   font-size: 1rem;
    font-weight: 700;
 }
 /*______ Knapper og lenker ______*/
@@ -737,22 +737,60 @@ ol li::before {
    color: var(--clr-tekst);
    display: inline-block;
    width: 1rem;
-   margin-left: -1em;
+   margin-left: -1rem;
 }
 .nummerertPunktListe li::before {
    content: "\25CF";
+}
+.punktListe li,
+.subPunktListe li {
+   position: relative; /* Legger til relativ posisjonering til <li>-elementer */
+   left: 1rem; /* Flytter hele <li>-elementet høyre */
+   padding-right: 1rem; /* Gir rom til høyre for å unngå kollisjon med egendefinerte punkter */
 }
 .punktListe li::before,
 .subPunktListe li::before {
    content: "\2022";
    color: var(--clr-tekst);
    font-weight: bold;
-   display: inline-block;
-   width: 1rem;
-   margin-left: -1em;
+   position: absolute; /* Posisjonerer punkten absolutt i forhold til <li>-elementet */
+   left: -1rem; /* Plasserer punkten til venstre for <li>-elementet */
+   top: 0; /* Justerer punkten vertikalt til toppen av <li>-elementet */
 }
+
 ul li a button {
-   margin-left: -1em;
+   margin-left: -1rem;
+}
+/*______ Details ______*/
+
+details {
+   background-color: var(--clr-tabellBoks);
+   padding-block: 0.5rem;
+}
+/* details[open] {
+}*/
+summary {
+   font-size: 1.4rem;
+   font-family: "Roboto Slab", serif;
+   padding-inline: 1rem;
+}
+details[open] summary {
+   border-bottom: 1px solid var(--clr-ramme);
+   padding-bottom: 0.5rem;
+   margin-bottom: 0.5rem;
+   cursor: pointer;
+}
+details:hover:not([open]) {
+   background-color: var(--clr-ixDBoks);
+   cursor: pointer;
+}
+
+details[open] summary:hover {
+   background-color: var(--clr-ixDBoks);
+   margin-block-start: -0.5rem;
+   padding-block-start: 0.5rem;
+   border-top-right-radius: clamp(0.1rem, 0.2rem, 0.3vw);
+   border-top-left-radius: clamp(0.4rem, 0.8rem, 0.8vw);
 }
 /*______ svgIkon ______*/
 .svgIkon {

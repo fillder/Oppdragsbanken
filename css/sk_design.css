@@ -105,36 +105,6 @@ input[type="checkbox"]:checked::after {
 #filterVarsel {
    color: var(--clr-spessartin);
 }
-details {
-   background-color: var(--clr-tabellBoks);
-   padding-inline: 1rem;
-   padding-block: 0.5rem;
-}
-summary {
-   font-size: 1.4rem;
-   font-family: "Roboto Slab", serif;
-}
-details:hover:not([open]) {
-   background-color: var(--clr-ixDBoks);
-   cursor: pointer;
-}
-details[open] {
-   padding: 0.5em;
-}
-
-details[open] summary {
-   border-bottom: 1px solid var(--clr-ramme);
-   padding-bottom: 0.5rem;
-   margin-bottom: 0.5rem;
-   cursor: pointer;
-}
-details[open] summary:hover {
-   background-color: var(--clr-ixDBoks);
-   margin-inline: -0.5rem;
-   padding-inline: 0.5rem;
-   margin-block-start: -0.5rem;
-   padding-block-start: 0.5rem;
-}
 .suksesskriterie {
    padding-inline: 1rem;
    padding-block: 0.5rem;
@@ -143,4 +113,27 @@ details[open] summary:hover {
    background-color: var(--clr-ixDBoks);
    border-radius: 0.5rem;
    cursor: pointer;
+}
+.fagBeskrivelse {
+   display: grid;
+   grid-template-columns: 1fr auto;
+   padding-inline: 1rem;
+   padding-block: 0.5rem;
+   gap: 1rem;
+   @media only screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+   }
+}
+.fagBeskrivelse img {
+   max-height: 300px;
+   object-fit: contain;
+   overflow: hidden;
+   margin-inline: auto;
+   @media only screen and (max-width: 1200px) {
+      max-height: 250px;
+   }
+   @media only screen and (max-width: 992px) {
+      max-height: 300px;
+   }
 }
