@@ -201,25 +201,31 @@
                <fieldset>
                   <legend>Filtermeny</legend>
                   <div>
-                     <input type="checkbox" id="filterVg1" name="vg1" checked />
+                     <input onchange="filterVg1Input(), filterVarsel()" type="checkbox" id="filterVg1" name="vg1" />
                      <label for="vg1">VG1</label>
                   </div>
                   <div>
-                     <input type="checkbox" id="filterVg2" name="vg2" />
+                     <input onchange="filterVg2Input(), filterVarsel()" type="checkbox" id="filterVg2" name="vg2" />
                      <label for="vg2">VG2</label>
                   </div>
                   <div>
-                     <input type="checkbox" id="filterBegge" name="begge" />
+                     <input
+                        onchange="filterBeggeInput(), filterVarsel()"
+                        type="checkbox"
+                        id="filterBegge"
+                        name="begge"
+                     />
                      <label for="begge">Begge</label>
                   </div>
                   <div>
-                     <input type="checkbox" id="filterTrinn" name="trinn" checked />
+                     <input onchange="filterKlasseInput()" type="checkbox" id="filterTrinn" name="trinn" checked />
                      <label for="trinn">Skjul klasse</label>
                   </div>
+                  <p id="filterVarsel">Ingen klasser er valgt!!!</p>
                </fieldset>
                <div id="fagKnapper">
-                  <div class="fagBakgrunn">
-                     <h2>Innholdsproduksjonsfaget</h2>
+                  <details class="fagBakgrunn">
+                     <summary><strong>Innholdsproduksjonsfaget</strong></summary>
                      <div class="skjultInnhold">
                         <h3>Om fagområdet</h3>
                         <p>
@@ -229,35 +235,93 @@
                            medieplattformer, og er ansvarlig med å produsere og publisere innhold.
                         </p>
                         <div class="suksesskriterie" id="innholdsProdSk1">
-                           <h3>1. Innholdsproduksjon</h3>
+                           <h3>1. Innholdsproduksjon:</h3>
                            <ul class="punktListe">
                               <li class="skVg1">
-                                 <span class="klTekst">VG1:</span> Du planlegger, produserer og klargjør medieinnhold
+                                 <span class="klTekst">VG1: </span>Du planlegger, produserer og klargjør medieinnhold
                                  for publisering på en relevant digital plattform
                               </li>
                               <li class="skVg2">
-                                 <span class="klTekst">VG2:</span> Du planlegger og produserer medieinnhold for
+                                 <span class="klTekst">VG2: </span>Du planlegger og produserer medieinnhold for
                                  spesifikke målgrupper, og klargjør produktet for publisering på ulike plattformer etter
                                  oppdragsgivers ønske.
                               </li>
                            </ul>
                         </div>
                         <div class="suksesskriterie" id="innholdsProdSk2">
-                           <h3>1. Historiefortelling</h3>
+                           <h3>2. Historiefortelling:</h3>
                            <ul class="punktListe">
                               <li class="skVg1">
-                                 <span class="klTekst">VG1:</span> Du bearbeider og tilpasser informasjon og data, slik
+                                 <span class="klTekst">VG1: </span>Du bearbeider og tilpasser informasjon og data, slik
                                  at det kan formidles som et budskap på en måte som skaper engasjement og forståelse.
                               </li>
                               <li class="skVg2">
-                                 <span class="klTekst">VG2:</span> Du utformer audiovisuelle budskap og tilpasser
+                                 <span class="klTekst">VG2: </span>Du utformer audiovisuelle budskap og tilpasser
                                  kommunikasjonsform til ulike plattformer, sjangere og målgrupper på en måte som skaper
                                  engasjement og forståelse.
                               </li>
                            </ul>
                         </div>
+                        <div class="suksesskriterie" id="innholdsProdSk3">
+                           <h3>3. Brukersentrert innhold:</h3>
+                           <ul class="punktListe">
+                              <li class="skVg1">
+                                 <span class="klTekst">VG1: </span>Du utforske og anvender metoder for lære mer om
+                                 brukerne du produsere til, og benytter det du lærer til å lage bedre produkter.
+                              </li>
+                              <li class="skVg2">
+                                 <span class="klTekst">VG2: </span>Du utforske og anvender metoder for å tilegne deg
+                                 brukerinnsikt om aktuelle målgrupper og deres behov, og sørger for at innholdet er
+                                 tilgjengelig og brukervennlig.
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="suksesskriterie" id="innholdsProdSk4">
+                           <h3>4. Metodevalg:</h3>
+                           <ul class="punktListe">
+                              <li class="skVg1">
+                                 <span class="klTekst">VG1: </span>Du jobber praktisk med tekst, lyd, lys og bilde for å
+                                 fremheve form, struktur, farger og budskap i audiovisuelle presentasjoner.
+                              </li>
+                              <li class="skVg2">
+                                 <span class="klTekst">VG2: </span>Du jobber praktisk med innholdsproduksjon og gjør
+                                 konkrete valg av metode og virkemidler for å fremheve budskapet med hensyn til hvor og
+                                 hvordan det skal publiseres.
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="suksesskriterie" id="innholdsProdSk5">
+                           <h3>5. Teknologi og algoritmer:</h3>
+                           <ul class="punktListe">
+                              <li class="skVg1">
+                                 <span class="klTekst">VG1: </span>Du utforske nye plattformer, teknologier og digitale
+                                 verktøy, og eksperimenterer hvordan det kan brukes til publisering og
+                                 innholdsproduksjon.
+                              </li>
+                              <li class="skVg2">
+                                 <span class="klTekst">VG2: </span>Du vet hvordan personalisering og algoritmer styrer
+                                 distribusjon av digitalt innhold, og anvender dette i valg av plattform, teknologi og
+                                 metode for å øke publiseringens nedslagsfelt.
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="suksesskriterie" id="innholdsProdSk6">
+                           <h3>6. Dokumentasjon i innholdsproduksjon:</h3>
+                           <ul class="punktListe">
+                              <li class="skVg1">
+                                 <span class="klTekst">VG1: </span>Du lager en plan og mål før du starter, og
+                                 dokumenterer eget arbeid gjennom bilder, skisser, og utkast til tekst. I tillegg
+                                 reflekterer du over hva du har gjort, lært og tenkt underveis.
+                              </li>
+                              <li class="skVg2">
+                                 <span class="klTekst">VG2: </span>Du dokumenterer eget arbeid og reflekterer over valg
+                                 av plattform og publiseringsmetode, samt benytter presis fagterminologi i kommunikasjon
+                                 med oppdragsgiver og kunder.
+                              </li>
+                           </ul>
+                        </div>
                      </div>
-                  </div>
+                  </details>
                   <button>IT-Driftsfaget</button>
                   <button>IT-Utviklerfaget</button>
                   <button>Medieteknikkfaget</button>
@@ -275,5 +339,6 @@
       <footer>
          <p class="footerContent"></p>
       </footer>
+      <script src="/js/sk_filter.js"></script>
    </body>
 </html>

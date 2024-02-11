@@ -38,11 +38,6 @@ button:hover {
    margin-block: 1rem;
    justify-content: center;
 }
-.fagBakgrunn {
-   background-color: var(--clr-tabellBoks);
-   padding-inline: 1rem;
-   padding-block: 0.5rem;
-}
 .suksesskriterie {
    margin-block-start: 1rem;
 }
@@ -70,6 +65,7 @@ fieldset {
    padding-block-end: 0.5rem;
    border-radius: 0.25rem;
    position: relative;
+   align-items: center;
 }
 fieldset legend {
    font-family: "Roboto Slab", serif;
@@ -105,4 +101,46 @@ input[type="checkbox"]:checked::after {
    transform: translate(-50%, -50%);
    font-size: 2.4rem;
    color: var(--clr-spessartin);
+}
+#filterVarsel {
+   color: var(--clr-spessartin);
+}
+details {
+   background-color: var(--clr-tabellBoks);
+   padding-inline: 1rem;
+   padding-block: 0.5rem;
+}
+summary {
+   font-size: 1.4rem;
+   font-family: "Roboto Slab", serif;
+}
+details:hover:not([open]) {
+   background-color: var(--clr-ixDBoks);
+   cursor: pointer;
+}
+details[open] {
+   padding: 0.5em;
+}
+
+details[open] summary {
+   border-bottom: 1px solid var(--clr-ramme);
+   padding-bottom: 0.5rem;
+   margin-bottom: 0.5rem;
+   cursor: pointer;
+}
+details[open] summary:hover {
+   background-color: var(--clr-ixDBoks);
+   margin-inline: -0.5rem;
+   padding-inline: 0.5rem;
+   margin-block-start: -0.5rem;
+   padding-block-start: 0.5rem;
+}
+.suksesskriterie {
+   padding-inline: 1rem;
+   padding-block: 0.5rem;
+}
+.suksesskriterie:hover {
+   background-color: var(--clr-ixDBoks);
+   border-radius: 0.5rem;
+   cursor: pointer;
 }
