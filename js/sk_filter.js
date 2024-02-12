@@ -1,3 +1,53 @@
+let visTema = document.getElementById("temaer");
+let visHardSkills = document.getElementById("hardSkills");
+let visSoftSkills = document.getElementById("softSkills");
+let velgTemeKnapp = document.getElementById("velgTemeKnapp");
+let velgFagKnapp = document.getElementById("velgFagKnapp");
+let velgYrkeKnapp = document.getElementById("velgYrkeKnapp");
+
+function velgTema() {
+   if (visTema.classList.contains("skjult")) {
+      visTema.classList.remove("skjult");
+      visHardSkills.classList.add("skjult");
+      visSoftSkills.classList.add("skjult");
+      velgFagKnapp.classList.add("knappInaktiv");
+      velgYrkeKnapp.classList.add("knappInaktiv");
+      velgTemeKnapp.classList.remove("knappInaktiv");
+   } else {
+      visTema.classList.add("skjult");
+      velgFagKnapp.classList.remove("knappInaktiv");
+      velgYrkeKnapp.classList.remove("knappInaktiv");
+   }
+}
+function velgFag() {
+   if (visHardSkills.classList.contains("skjult")) {
+      visHardSkills.classList.remove("skjult");
+      visTema.classList.add("skjult");
+      visSoftSkills.classList.add("skjult");
+      velgTemeKnapp.classList.add("knappInaktiv");
+      velgYrkeKnapp.classList.add("knappInaktiv");
+      velgFagKnapp.classList.remove("knappInaktiv");
+   } else {
+      visHardSkills.classList.add("skjult");
+      velgTemeKnapp.classList.remove("knappInaktiv");
+      velgYrkeKnapp.classList.remove("knappInaktiv");
+   }
+}
+function velgYrke() {
+   if (visSoftSkills.classList.contains("skjult")) {
+      visSoftSkills.classList.remove("skjult");
+      visTema.classList.add("skjult");
+      visHardSkills.classList.add("skjult");
+      velgFagKnapp.classList.add("knappInaktiv");
+      velgTemeKnapp.classList.add("knappInaktiv");
+      velgYrkeKnapp.classList.remove("knappInaktiv");
+   } else {
+      visSoftSkills.classList.add("skjult");
+      velgFagKnapp.classList.remove("knappInaktiv");
+      velgTemeKnapp.classList.remove("knappInaktiv");
+   }
+}
+
 function filterVg1Input() {
    let vg1Checked = document.getElementById("filterVg1").checked;
    const vg1Elementer = document.querySelectorAll(".skVg1");
