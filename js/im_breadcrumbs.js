@@ -102,6 +102,10 @@ const siteHierarchy = {
             displayName: "Visuell logg",
             iconClass: "maskeLoggOutline",
          },
+         "/oppdragsbank/suksesskriterier.html": {
+            displayName: "suksesskriterier",
+            iconClass: "maskeSuksessOutline",
+         },
       },
    },
 };

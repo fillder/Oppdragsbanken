@@ -14,9 +14,9 @@
       <link rel="stylesheet" href="/css/im_stilark.css" />
       <link rel="stylesheet" href="/css/im_dag-natt.css" />
       <link rel="stylesheet" href="/css/im_svg-masker.css" />
-      <link rel="stylesheet" href="/css/im_farge_2-spessartin.css" />
       <link rel="stylesheet" href="/css/ob_design.css" />
       <link rel="stylesheet" href="/css/ob_mobil.css" />
+      <link rel="stylesheet" href="/css/im_farge_2-spessartin.css" />
       <link rel="stylesheet" href="/css/sk_design.css" />
       <link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
       <link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
@@ -74,7 +74,7 @@
             alt="Regnbuefarget abstrakt kunst som symboliserer de ulike fagområdene i oppdragsbanken"
          />
          <div class="hero-tittelSmall fargetHeroLinje">
-            <h1><b>Visuell logg</b></h1>
+            <h1><b>Suksesskriterer</b></h1>
          </div>
          <div class="hero-blend"></div>
          <a target="_self" href="/index.html" title="Kategoriside" alt="Naviger til kategoriside">
@@ -88,7 +88,6 @@
       </header>
       <main class="mainMedLitenHeader">
          <div class="ob_oppdragssideGridAlt">
-            <div class="mainBlur"></div>
             <section aria-labelledby="YFF-info" class="sBoksRamme sB tekst oppdragGrid">
                <div class="modulIkon rundRamme ixD nB">
                   <div class="op_ikon maskeModulInfo fargetFyll"></div>
@@ -97,12 +96,13 @@
                   <img id="deskImg" class="boksRamme oppdragsSideBilde horisontaltStandard bildeDesk fargetHover" src="/images/img/visuell-logg.webp" alt="" />
                </a> -->
                <div class="sPS oppdragsInfo">
-                  <h2 class="fargetLinje">Yrkesfaglig fordypning</h2>
-                  <em>Formålet med YFF</em>
+                  <h2 class="fargetLinje">Formålet med YFF</h2>
                   <p>
-                     På IM finnes det fem ulike fagområder som du kan ta fagbrev i. Dette er Innholdsproduksjon, medieteknikk, mediedesign, IT-utvikling og
-                     IT-drift. Formålet YFF er at du fordyper deg i ett av disse fagområdene. Dette gjør du ved å jobbe bredt og prøve nye teknologier og
-                     temaer, eller jobbe målrettet mot fagområdene du tenker å søke i løpet av VG2.
+                     <em>
+                        em På IM finnes det fem ulike fagområder som du kan ta fagbrev i. Dette er Innholdsproduksjon, medieteknikk, mediedesign, IT-utvikling
+                        og IT-drift. Formålet YFF er at du fordyper deg i ett av disse fagområdene. Dette gjør du ved å jobbe bredt og prøve nye teknologier og
+                        temaer, eller jobbe målrettet mot fagområdene du tenker å søke i løpet av VG2.
+                     </em>
                   </p>
                   <h3>Velg hvordan du vil fordype deg i faget den kommende perioden</h3>
                   <ul class="punktListe">
@@ -112,16 +112,16 @@
                   </ul>
                   <br />
                   <div id="klasseKnapper">
-                     <button>Tema/teknologi</button>
+                     <button class="utilgjengelig">Tema/teknologi</button>
                      <button>Lærefagområde</button>
-                     <button>Yrkesforberedning</button>
+                     <button class="utilgjengelig">Yrkesforberedning</button>
                   </div>
                </div>
             </section>
             <section id="Suksesskriterier" aria-labelledby="Suksesskriterier" class="sBoksRamme sB tekst infoGrid">
-               <div class="modulIkon rundRamme ixD nB">
+               <!-- <div class="modulIkon rundRamme ixD nB">
                   <div class="op_ikon maskeModulInfo fargetFyll"></div>
-               </div>
+               </div> -->
                <!-- <a id="openDeskImg" target="_self" href="">
                   <img id="deskImg" class="boksRamme oppdragsSideBilde horisontaltStandard bildeDesk fargetHover" src="/images/img/visuell-logg.webp" alt="" />
                </a> -->
@@ -147,10 +147,14 @@
                      <input onchange="filterBeskrivelseInput()" type="checkbox" id="filterBeskrivelse" name="trinn" />
                      <label for="filterBeskrivelse">Skjul beskrivelse</label>
                   </div>
+                  <div>
+                     <input onchange="filterOpenInput()" type="checkbox" id="filterOpen" name="trinn" />
+                     <label for="filterOpen">Åpne alle</label>
+                  </div>
                   <p id="filterVarsel">Ingen klasser er valgt!!!</p>
                </fieldset>
                <div id="fagKnapper">
-                  <details class="fagBakgrunn">
+                  <details class="fagBakgrunn sB boksRamme">
                      <summary><strong>IT-Driftsfaget</strong></summary>
                      <div class="fagBeskrivelse">
                         <div>
@@ -170,7 +174,8 @@
                         </div>
                         <img src="/images/img/suksesskriterier/fagområdePlakatDrift.webp" alt="" />
                      </div>
-                     <div class="suksesskriterie" id="driftSk1">
+                     <button id="fjernFilterKnapp" onclick="fjernFiltrering()">Tilbake</button>
+                     <div class="suksesskriterie" id="driftSk1" onclick="filtrerKriterie('driftSk1')">
                         <h3>1.Drift og infrastruktur</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
@@ -183,7 +188,7 @@
                            </li>
                         </ul>
                      </div>
-                     <div class="suksesskriterie" id="driftSk2">
+                     <div class="suksesskriterie" id="driftSk2" onclick="filtrerKriterie('driftSk2')">
                         <h3>2. IT-løsninger og datasikkerhet</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
@@ -196,7 +201,7 @@
                            </li>
                         </ul>
                      </div>
-                     <div class="suksesskriterie" id="driftSk3">
+                     <div class="suksesskriterie" id="driftSk3" onclick="filtrerKriterie('driftSk3')">
                         <h3>3. Bærekraftighet og økonomi</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
@@ -209,7 +214,7 @@
                            </li>
                         </ul>
                      </div>
-                     <div class="suksesskriterie" id="driftSk4">
+                     <div class="suksesskriterie" id="driftSk4" onclick="filtrerKriterie('driftSk4')">
                         <h3>4. Personvern og sikkerhet</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
@@ -222,7 +227,7 @@
                            </li>
                         </ul>
                      </div>
-                     <div class="suksesskriterie" id="driftSk5">
+                     <div class="suksesskriterie" id="driftSk5" onclick="filtrerKriterie('driftSk5')">
                         <h3>5. Brukerstøtte og veiledning</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
@@ -233,7 +238,7 @@
                            </li>
                         </ul>
                      </div>
-                     <div class="suksesskriterie" id="driftSk6">
+                     <div class="suksesskriterie" id="driftSk6" onclick="filtrerKriterie('driftSk6')">
                         <h3>6. Dokumentasjon og rutiner</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
@@ -247,7 +252,7 @@
                         </ul>
                      </div>
                   </details>
-                  <details class="fagBakgrunn">
+                  <details class="fagBakgrunn sB boksRamme">
                      <summary><strong>IT-Utviklerfaget</strong></summary>
                      <div class="fagBeskrivelse">
                         <div>
@@ -271,12 +276,12 @@
                         <h3>1. Programmering</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du utforsker og lærer deg nye kodespråk, og bruker innrykk for å skrive oversiktlig og lesbar
-                              kode. I tillegg kommenterer du koden slik at du vet hva den gjør og hvordan.
+                              <span class="klTekst"></span>Du utforsker og lærer deg nye kodespråk, og bruker innrykk for å skrive oversiktlig og lesbar kode. I
+                              tillegg kommenterer du koden slik at du vet hva den gjør og hvordan.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du bruker programmering til å utvikle applikasjoner, tjenester og for å løse problemstillinger.
-                              Koden er oversiktlig og korrekt, og kommenteres der det er nødvendig.
+                              <span class="klTekst"></span>Du bruker programmering til å utvikle applikasjoner, tjenester og for å løse problemstillinger. Koden
+                              er oversiktlig og korrekt, og kommenteres der det er nødvendig.
                            </li>
                         </ul>
                      </div>
@@ -284,12 +289,12 @@
                         <h3>2. Algoritmisk tenking</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du inspiserer og tester egen og andres kode for feil, og utforsker og utformer algoritmer for
-                              rette opp i problemet.
+                              <span class="klTekst"></span>Du inspiserer og tester egen og andres kode for feil, og utforsker og utformer algoritmer for rette
+                              opp i problemet.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du analysere kodeproblemer og velger riktige algoritmer for å komme frem til effektive
-                              løsninger, og vet hvordan jobbe med feilsøking og testing av kode.
+                              <span class="klTekst"></span>Du analysere kodeproblemer og velger riktige algoritmer for å komme frem til effektive løsninger, og
+                              vet hvordan jobbe med feilsøking og testing av kode.
                            </li>
                         </ul>
                      </div>
@@ -297,11 +302,11 @@
                         <h3>3. Datamodellering</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du utforsker hvordan data lagres og behandles, hvilke relasjoner det har og hvordan det kan
+                              <span class="klTekst"></span>Du utforsker hvordan data lagres og behandles, hvilke relasjoner det har og hvordan det kan
                               organiseres i form av tabeller og modeller.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du behandler ulike datatyper og -modeller for visualisering og analysering. Du kan sette opp
+                              <span class="klTekst"></span>Du behandler ulike datatyper og -modeller for visualisering og analysering. Du kan sette opp
                               interaktive og søkbare databaser
                            </li>
                         </ul>
@@ -310,12 +315,12 @@
                         <h3>4. Informasjonssikkerhet</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du utforsker og prøver ut metoder for hvordan brukerdata samles, samles og behandles i ulike
+                              <span class="klTekst"></span>Du utforsker og prøver ut metoder for hvordan brukerdata samles, samles og behandles i ulike
                               tjenester og IT- systemer.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du utvikler stabile løsninger som ivaretar personvernet til brukerne, og behandler deres data på
-                              en sikker måte. Videre kan du vurdere sikkerheten i eksisterende løsninger.
+                              <span class="klTekst"></span>Du utvikler stabile løsninger som ivaretar personvernet til brukerne, og behandler deres data på en
+                              sikker måte. Videre kan du vurdere sikkerheten i eksisterende løsninger.
                            </li>
                         </ul>
                      </div>
@@ -323,11 +328,11 @@
                         <h3>5. Infrastrukturer</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du setter deg inn i og utforsker hvordan operativsystem og tjenester påvirker hvordan du jobber
-                              med IT- utvikling.
+                              <span class="klTekst"></span>Du setter deg inn i og utforsker hvordan operativsystem og tjenester påvirker hvordan du jobber med
+                              IT- utvikling.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du velger tekniske løsninger, kodespråk, og datalagringsmetoder som tar hensyn til systemet og
+                              <span class="klTekst"></span>Du velger tekniske løsninger, kodespråk, og datalagringsmetoder som tar hensyn til systemet og
                               infrastrukturen det skal kjøre på når du jobber.
                            </li>
                         </ul>
@@ -336,192 +341,236 @@
                         <h3>6. Dokumentasjon i IT-utviklerfaget</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du lager en plan og mål før du starter, og sikrer arbeidet ditt gjennom skylagring og
+                              <span class="klTekst"></span>Du lager en plan og mål før du starter, og sikrer arbeidet ditt gjennom skylagring og
                               versjonskontroll, og reflekterer over hva du har gjort, lært og tenkt underveis.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du dokumenterer eget arbeid, brukerveiledning og inkludere systemavhengigheter. I tillegg bruke
-                              du presis fagterminologi i kommunikasjon med oppdragsgiver og kunder.
+                              <span class="klTekst"></span>Du dokumenterer eget arbeid, brukerveiledning og inkludere systemavhengigheter. I tillegg bruke du
+                              presis fagterminologi i kommunikasjon med oppdragsgiver og kunder.
                            </li>
                         </ul>
                      </div>
                   </details>
-                  <details class="fagBakgrunn">
+                  <details class="fagBakgrunn sB boksRamme">
                      <summary><strong>Medieteknikkfaget</strong></summary>
                      <div class="fagBeskrivelse">
-                        <h3>Om fagområdet</h3>
-                        <p id="fagInfoTeknikk">
-                           Medieteknikeren jobber med audiovisuelt innhold og utstyr i alle typer medieproduksjoner. Arbeidsoppgavene består av å ha ansvar for
-                           utstyr i film- og tv produksjoner, konferanser og kulturarrangementer, vedlikeholde og drifte teknisk utstyr, og å jobbe med
-                           flerkameraproduksjon.
-                        </p>
-                        <img src="/images/img/suksesskriterier/fagområdePlakatDesign.webp" alt="" />
+                        <div>
+                           <h3>Om fagområdet</h3>
+                           <p id="fagInfoTeknikk">
+                              <em>
+                                 Medieteknikeren jobber med audiovisuelt innhold og utstyr i alle typer medieproduksjoner. Arbeidsoppgavene består av å ha
+                                 ansvar for utstyr i film- og tv produksjoner, konferanser og kulturarrangementer, vedlikeholde og drifte teknisk utstyr, og å
+                                 jobbe med flerkameraproduksjon.</em
+                              >
+                           </p>
+                           <br />
+                           <p>
+                              Relevante arbeidsplasser: Hotell og konferansesenter, eventbyrå, TV- og radio-selskap, teater, kulturhus, bedrifter som leverer
+                              tjenester innenfor lys, lyd og streaming mm.
+                           </p>
+                        </div>
+                        <img src="/images/img/suksesskriterier/fagområdePlakatTeknikk.webp" alt="" />
                      </div>
                      <div class="suksesskriterie" id="teknikkSk1">
-                        <h3>1.</h3>
+                        <h3>1. Teknisk Produksjon:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du planlegger og gjennomfører tekniske produksjoner hvor du har ansvar for lyd, lys og/eller bilde.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du planlegger og gjennomfører tekniske produksjoner etter oppdragsgivers ønsker, og sikrer at det
+                              audiovisuelle innholdet har høy teknisk kvalitet.
                            </li>
                         </ul>
                      </div>
                      <div class="suksesskriterie" id="teknikkSk2">
-                        <h3>2.</h3>
+                        <h3>2. Distribuering:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du velger og benytter riktige filformater og filsystemer som passer til planlagt produksjon og
+                              distribuering.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du velger og bruker teknisk utstyr som fungerer bra sammen, og håndtere og distribuere audiovisuelt
+                              innhold i sanntid og til senere publisering.
                            </li>
                         </ul>
                      </div>
                      <div class="suksesskriterie" id="teknikkSk3">
-                        <h3>3.</h3>
+                        <h3>3. Installasjoner:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du sette opp installasjoner innenfor film, tv, konferanser og kulturarrangement og tester lyd, lys og
+                              bilde i forkant av produksjon, og oppsøker nødvendig tekniske brukerveiledninger.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du planlegger og setter opp installasjoner innenfor film, tv, konferanser og kultur-arrangement og
+                              benytte programvarer og utstyr for testing, konfigurering og feilsøking.
                            </li>
                         </ul>
                      </div>
                      <div class="suksesskriterie" id="teknikkSk4">
-                        <h3>4.</h3>
+                        <h3>4. Teknologi og metode:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du tester ut ulike teknologier og utforsker hvordan utstyret kan brukes i produksjon, og gjør deg
+                              kjent med teknologiens krav til strømbruk, installering og vedlikehold.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du eksperimenterer med ulike teknologier og nye medietekniske løsninger, og utforsker hvordan det kan
+                              effektivisere produksjoner, samt bidra til et lavere miljøavtrykk.
                            </li>
                         </ul>
                      </div>
                      <div class="suksesskriterie" id="teknikkSk5">
-                        <h3>5.</h3>
+                        <h3>5. Sanntidsproduksjon:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du deltar og utfører ulike roller i sanntidsproduksjoner, gjør deg kjent med ditt og de involvertes
+                              ansvarsområde, og følger oppdragsbeskrivelsen til beste evne.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du planlegger og gjennomfører sanntidsproduksjoner, sikrer god signalflyt og ansvarsfordeling, og
+                              sikrer at retningslinjer og rammer for produksjonen følges.
                            </li>
                         </ul>
                      </div>
                      <div class="suksesskriterie" id="teknikkSk6">
-                        <h3>6.</h3>
+                        <h3>6. Dokumentasjon i medieteknikkfaget:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du lager en plan og mål før du starter, og dokumenterer eget arbeid gjennom bilder, skisser, og
+                              utstyrsliste. Dokumentasjonen inkludere hva du har gjort, lært og tenkt underveis.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du dokumenterer egen prosess, utfører risikovurdering, beregne tidsbruk og budsjetterer arbeidet. I
+                              tillegg bruke du presis fagterminologi i kommunikasjon med oppdragsgiver og kunder.
                            </li>
                         </ul>
                      </div>
                   </details>
-                  <details class="fagBakgrunn">
+                  <details class="fagBakgrunn sB boksRamme">
                      <summary><strong>Mediedesignfaget</strong></summary>
                      <div class="fagBeskrivelse">
-                        <h3>Om fagområdet</h3>
-                        <p id="fagInfoDesign">
-                           Mediedesigneren jobber med visuell kommunikasjon og design av medierelaterte produkter til digitale og fysiske flater. Dette
-                           innebærer å jobbe med design og produksjon av tekst, lyd og bilde for ulike publiseringsløsninger. En mediedesigner jobber også ofte
-                           med å lage brukerinteraksjoner, brukeropplevelser og merkevarebygging.
-                        </p>
+                        <div>
+                           <h3>Om fagområdet</h3>
+                           <p id="fagInfoDesign">
+                              Mediedesigneren jobber med visuell kommunikasjon og design av medierelaterte produkter til digitale og fysiske flater. Dette
+                              innebærer å jobbe med design og produksjon av tekst, lyd og bilde for ulike publiseringsløsninger. En mediedesigner jobber også
+                              ofte med å lage brukerinteraksjoner, brukeropplevelser og merkevarebygging.
+                           </p>
+                           <br />
+                           <p>
+                              Relevante arbeidsplasser: Markedsavdelinger, design- og reklamebyrå, konsulent-selskap, animasjon- og spillprodusenter, offentlige
+                              organisasjoner og instanser, teknologibedrifter...
+                           </p>
+                        </div>
                         <img src="/images/img/suksesskriterier/fagområdePlakatDesign.webp" alt="" />
                      </div>
                      <div class="suksesskriterie" id="designSk1">
-                        <h3>1.</h3>
+                        <h3>1. Medierelatert produksjon:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du planlegger og gjennomfører medierelaterte design fra idé til ferdig produkt til konkrete
+                              plattformer eller flater
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du planlegger og gjennomfører medierelaterte design og tilpasser produktet til ulike medieflater,
+                              formater, og målgrupper etter oppdragsgivers ønsker.
                            </li>
                         </ul>
                      </div>
                      <div class="suksesskriterie" id="designSk2">
-                        <h3>2.</h3>
+                        <h3>2. Visuell kommunikasjon:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du jobber praktisk med tekst, symbolikk, grafikk og bilder for å designe visuelle medieprodukter som
+                              er tilpasset til bruk på skjerm og på fysiske flater.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du bruker virkemidler innen design og komposisjon i utforming og formidling av budskap og
+                              medierelaterte produkter, og tar hensyn til hvor og hvordan det skal brukes.
                            </li>
                         </ul>
                      </div>
                      <div class="suksesskriterie" id="designSk3">
-                        <h3>3.</h3>
+                        <h3>3. Brukersentrert design:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du designer produkter i tråd med prinsippet for universell utforming, med spesiell hensyn til
+                              fargekontrast, lesbarhet og bildetekst.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du designer produkter, tjenester og brukeropplevelser i tråd med prinsippet for universell utforming,
+                              og du følger lovpålagte krav til offentlig og privat sektor (WCAG)
                            </li>
                         </ul>
                      </div>
                      <div class="suksesskriterie" id="designSk4">
-                        <h3>4.</h3>
+                        <h3>4. Sammensatt produksjon:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du designer og produserer sammensatte medieprodukter ved å kombinere egenlaget materiale med
+                              ressurser laget av andre eller innhentet fra nett.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du designer og produserer sammensatte medieprodukter ved å bruke ulike kilder, og jobber i tråd med
+                              retningslinjer for bruk og kreditering ved publisering.
                            </li>
                         </ul>
                      </div>
                      <div class="suksesskriterie" id="designSk5">
-                        <h3>5.</h3>
+                        <h3>5. Medieteknologi:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du utforske og lærer deg å bruke ulike programvarer, verktøy og metoder i egen produksjon.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du holder deg oppdatert og eksperimenterer med nye verktøy, teknologier og metoder, samt utforsker
+                              hvordan det kan påvirker og effektivisere bransjen og eget arbeid.
                            </li>
                         </ul>
                      </div>
                      <div class="suksesskriterie" id="designSk6">
-                        <h3>6.</h3>
+                        <h3>6. Dokumentasjon i Mediedesign:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>
+                              <span class="klTekst"></span>Du lager en plan og mål før du starter, og dokumenterer eget arbeid gjennom bilder, skisser, og
+                              interaktive prototyper. Dokumentasjonen inkludere hva du har gjort, lært og tenkt underveis.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>
+                              <span class="klTekst"></span>Du utformer relevant dokumentasjon som prosessbok, designmanual, stilguide eller lignende, og
+                              benytter presis fagterminologi i kommunikasjon med oppdragsgiver og kunder.
                            </li>
                         </ul>
                      </div>
                   </details>
-                  <details class="fagBakgrunn">
+                  <details class="fagBakgrunn sB boksRamme">
                      <summary><strong>Innholdsproduksjonsfaget</strong></summary>
                      <div class="fagBeskrivelse">
-                        <h3>Om fagområdet</h3>
-                        <p id="fagInfoInhold ">
-                           Innholdsprodusenten jobber med kommunikasjon og utforming av innhold til digitale plattformer og kanaler. Dette inkluderer jobber
-                           hvor en produserer medieinnhold til radio, film- og TV-bransjen. I nyere tid er det også vanlig at innholdsprodusenter jobber med
-                           sosiale medieplattformer, og er ansvarlig med å produsere og publisere innhold.
-                        </p>
-                        <img src="/images/img/suksesskriterier/fagområdePlakatDesign.webp" alt="" />
+                        <div>
+                           <h3>Om fagområdet</h3>
+                           <p id="fagInfoInhold ">
+                              Innholdsprodusenten jobber med kommunikasjon og utforming av innhold til digitale plattformer og kanaler. Dette inkluderer jobber
+                              hvor en produserer medieinnhold til radio, film- og TV-bransjen. I nyere tid er det også vanlig at innholdsprodusenter jobber med
+                              sosiale medieplattformer, og er ansvarlig med å produsere og publisere innhold.
+                           </p>
+                           <br />
+                           <p>
+                              Relevante arbeidsplasser: Markedsavdelinger, reklamebyrå, offentlige organisasjoner og instanser, produksjon- og
+                              informasjonsselskap, selvstendig næringsvirksomhet mm.
+                           </p>
+                        </div>
+                        <img src="/images/img/suksesskriterier/fagområdePlakatInnhold.webp" alt="" />
                      </div>
                      <div class="suksesskriterie" id="innholdsProdSk1">
                         <h3>1. Innholdsproduksjon:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du planlegger, produserer og klargjør medieinnhold for publisering på en relevant digital
-                              plattform
+                              <span class="klTekst"></span>Du planlegger, produserer og klargjør medieinnhold for publisering på en relevant digital plattform
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du planlegger og produserer medieinnhold for spesifikke målgrupper, og klargjør produktet for
+                              <span class="klTekst"></span>Du planlegger og produserer medieinnhold for spesifikke målgrupper, og klargjør produktet for
                               publisering på ulike plattformer etter oppdragsgivers ønske.
                            </li>
                         </ul>
@@ -530,12 +579,12 @@
                         <h3>2. Historiefortelling:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du bearbeider og tilpasser informasjon og data, slik at det kan formidles som et budskap på en
-                              måte som skaper engasjement og forståelse.
+                              <span class="klTekst"></span>Du bearbeider og tilpasser informasjon og data, slik at det kan formidles som et budskap på en måte
+                              som skaper engasjement og forståelse.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du utformer audiovisuelle budskap og tilpasser kommunikasjonsform til ulike plattformer,
-                              sjangere og målgrupper på en måte som skaper engasjement og forståelse.
+                              <span class="klTekst"></span>Du utformer audiovisuelle budskap og tilpasser kommunikasjonsform til ulike plattformer, sjangere og
+                              målgrupper på en måte som skaper engasjement og forståelse.
                            </li>
                         </ul>
                      </div>
@@ -543,11 +592,11 @@
                         <h3>3. Brukersentrert innhold:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du utforske og anvender metoder for lære mer om brukerne du produsere til, og benytter det du
-                              lærer til å lage bedre produkter.
+                              <span class="klTekst"></span>Du utforske og anvender metoder for lære mer om brukerne du produsere til, og benytter det du lærer
+                              til å lage bedre produkter.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du utforske og anvender metoder for å tilegne deg brukerinnsikt om aktuelle målgrupper og deres
+                              <span class="klTekst"></span>Du utforske og anvender metoder for å tilegne deg brukerinnsikt om aktuelle målgrupper og deres
                               behov, og sørger for at innholdet er tilgjengelig og brukervennlig.
                            </li>
                         </ul>
@@ -556,11 +605,11 @@
                         <h3>4. Metodevalg:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du jobber praktisk med tekst, lyd, lys og bilde for å fremheve form, struktur, farger og budskap
-                              i audiovisuelle presentasjoner.
+                              <span class="klTekst"></span>Du jobber praktisk med tekst, lyd, lys og bilde for å fremheve form, struktur, farger og budskap i
+                              audiovisuelle presentasjoner.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du jobber praktisk med innholdsproduksjon og gjør konkrete valg av metode og virkemidler for å
+                              <span class="klTekst"></span>Du jobber praktisk med innholdsproduksjon og gjør konkrete valg av metode og virkemidler for å
                               fremheve budskapet med hensyn til hvor og hvordan det skal publiseres.
                            </li>
                         </ul>
@@ -569,12 +618,12 @@
                         <h3>5. Teknologi og algoritmer:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du utforske nye plattformer, teknologier og digitale verktøy, og eksperimenterer hvordan det kan
+                              <span class="klTekst"></span>Du utforske nye plattformer, teknologier og digitale verktøy, og eksperimenterer hvordan det kan
                               brukes til publisering og innholdsproduksjon.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du vet hvordan personalisering og algoritmer styrer distribusjon av digitalt innhold, og
-                              anvender dette i valg av plattform, teknologi og metode for å øke publiseringens nedslagsfelt.
+                              <span class="klTekst"></span>Du vet hvordan personalisering og algoritmer styrer distribusjon av digitalt innhold, og anvender
+                              dette i valg av plattform, teknologi og metode for å øke publiseringens nedslagsfelt.
                            </li>
                         </ul>
                      </div>
@@ -582,11 +631,11 @@
                         <h3>6. Dokumentasjon i innholdsproduksjon:</h3>
                         <ul class="punktListe">
                            <li class="skVg1">
-                              <span class="klTekst">VG1: </span>Du lager en plan og mål før du starter, og dokumenterer eget arbeid gjennom bilder, skisser, og
+                              <span class="klTekst"></span>Du lager en plan og mål før du starter, og dokumenterer eget arbeid gjennom bilder, skisser, og
                               utkast til tekst. I tillegg reflekterer du over hva du har gjort, lært og tenkt underveis.
                            </li>
                            <li class="skVg2">
-                              <span class="klTekst">VG2: </span>Du dokumenterer eget arbeid og reflekterer over valg av plattform og publiseringsmetode, samt
+                              <span class="klTekst"></span>Du dokumenterer eget arbeid og reflekterer over valg av plattform og publiseringsmetode, samt
                               benytter presis fagterminologi i kommunikasjon med oppdragsgiver og kunder.
                            </li>
                         </ul>
@@ -594,11 +643,84 @@
                   </details>
                </div>
             </section>
-            <!-- <section aria-labelledby="Oppdragsbilde" class="mobilBildeGrid bildeMob">
-               <a id="openMobImg" href="">
-                  <img id="mobImg" class="boksRamme sB oppdragsBildeMobil fargetHover" src="" alt="" />
+            <section aria-labelledby="driftOppdrag" id="driftOppdrag" class="sBoksRamme sB sPA tekst bildeGrid">
+               <fieldset>
+                  <legend>Filtermeny</legend>
+                  <div>
+                     <input onchange="filterSpice0()" type="checkbox" id="filterNoytral" name="Nøytral" />
+                     <label for="filterNoytral">Noytral</label>
+                  </div>
+                  <div>
+                     <input onchange="filterSpice1()" type="checkbox" id="filterKrydret" name="Krydret" />
+                     <label for="filterKrydret">Krydret</label>
+                  </div>
+                  <div>
+                     <input onchange="filterSpice2()" type="checkbox" id="filterSmakfull" name="Smakfull" />
+                     <label for="filterSmakfull">Smakfull</label>
+                  </div>
+                  <div>
+                     <input onchange="filterSpice3()" type="checkbox" id="filterSterk" name="Sterk" />
+                     <label for="filterSterk">Sterk</label>
+                  </div>
+                  <div>
+                     <input onchange="filterSpice4()" type="checkbox" id="filterBrennhet" name="Brennhet" />
+                     <label for="filterBrennhet">Brennhet</label>
+                  </div>
+                  <div>
+                     <input onchange="filterSpice5()" type="checkbox" id="filterEksplosiv" name="Eksplosiv" />
+                     <label for="filterEksplosiv">Eksplosiv</label>
+                  </div>
+               </fieldset>
+               <h2 class="fargetLinje">Relaterte Oppdrag</h2>
+               <a target="_self" href="/oppdragsbank/7_drift/7-1-1_utforsk-terminal-i-mac.html" class="kategoriKnapp terminal">
+                  <div class="kategoriKnappIkon interntOppdrag"></div>
+                  <div class="kategoriKnappInfo">
+                     <h5>7.1.1. Utforsk terminalen i MAC</h5>
+                  </div>
+                  <div class="op_spice spice1"></div>
+                  <div class="op_tid tid1-3"></div>
                </a>
-            </section> -->
+               <a target="_self" href="/oppdragsbank/7_drift/7-1-2_introduksjon-til-nettverk-netacad.html" class="kategoriKnapp nettverk">
+                  <div class="kategoriKnappIkon interntOppdrag"></div>
+                  <div class="kategoriKnappInfo">
+                     <h5>7.1.2. Intro til nettverk med netacad</h5>
+                  </div>
+                  <div class="op_spice spice2"></div>
+                  <div class="op_tid tid3-6"></div>
+               </a>
+               <a target="_self" href="/oppdragsbank/7_drift/7-1-3_introduksjon-til-packet-tracer.html" class="kategoriKnapp nettverk">
+                  <div class="kategoriKnappIkon interntOppdrag"></div>
+                  <div class="kategoriKnappInfo">
+                     <h5>7.1.3. Intro til Packet Tracer</h5>
+                  </div>
+                  <div class="op_spice spice2"></div>
+                  <div class="op_tid tid3-6"></div>
+               </a>
+               <a target="_self" href="/oppdragsbank/7_drift/7-2-1_burp-suite.html" class="kategoriKnapp sikkerhet">
+                  <div class="kategoriKnappIkon interntOppdrag"></div>
+                  <div class="kategoriKnappInfo">
+                     <h5>7.2.1. Utforsk Burp-suite</h5>
+                  </div>
+                  <div class="op_spice spice3"></div>
+                  <div class="op_tid tid12-15"></div>
+               </a>
+               <a target="_self" href="/oppdragsbank/7_drift/7-2-2_bash-script.html" class="kategoriKnapp terminal">
+                  <div class="kategoriKnappIkon interntOppdrag"></div>
+                  <div class="kategoriKnappInfo">
+                     <h5>7.2.2. Utforsk Bash-script</h5>
+                  </div>
+                  <div class="op_spice spice1"></div>
+                  <div class="op_tid tid3-6"></div>
+               </a>
+               <a target="_self" href="/oppdragsbank/7_drift/7-2-3_skript-i-terminalen.html" class="kategoriKnapp terminal">
+                  <div class="kategoriKnappIkon interntOppdrag"></div>
+                  <div class="kategoriKnappInfo">
+                     <h5>7.2.3. Skript i terminalen</h5>
+                  </div>
+                  <div class="op_spice spice5"></div>
+                  <div class="op_tid tid6-9"></div>
+               </a>
+            </section>
          </div>
       </main>
       <footer>
