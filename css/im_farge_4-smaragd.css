@@ -10,7 +10,11 @@
    text-decoration: 4px underline var(--clr-smaragd);
    text-underline-offset: 4px;
 }
-.fargetTekst {
+.fargetTekst,
+a,
+a:focus,
+a:visited,
+a:link {
    color: var(--clr-smaragd);
 }
 /* ___________ hover-effekt .svg ___________ */
