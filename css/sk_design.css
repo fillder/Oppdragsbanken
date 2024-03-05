@@ -1,4 +1,4 @@
-button {
+button:not(.hamburgerIkon, .dag-natt) {
    background-color: var(--clr-ixDBoks);
    color: var(--clr-tekst);
    border: 2px solid var(--clr-ramme);
@@ -9,7 +9,7 @@ button {
    transition: filter 100ms;
    text-align: start;
 }
-button:hover {
+button:not(.hamburgerIkon, .dag-natt):hover {
    filter: brightness(2);
    transition: filter 300ms;
 }
@@ -110,11 +110,11 @@ input[type="checkbox"]:checked::after {
    padding-inline: 1rem;
    padding-block: 0.5rem;
 }
-.suksesskriterie:hover {
+/* .suksesskriterie:hover {
    background-color: var(--clr-ixDBoks);
    border-radius: 0.5rem;
    cursor: pointer;
-}
+} */
 .fagBakgrunn button {
    margin-inline: 1rem;
    display: none;
