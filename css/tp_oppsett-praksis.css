@@ -1,0 +1,156 @@
+.man {
+   /* flex: 1; */
+   display: grid;
+   gap: 0.5rem;
+   grid:
+      "d01" 0.4fr
+      "yf1" 1fr
+      "yf1" 1fr
+      "yf1" 1fr
+      "yf1" 1fr
+      "..." 0.1fr
+      "yf2" 1fr
+      "yf2" 1fr
+      "yf2" 1fr
+      "..." 1fr
+      "..." 1fr
+      /1fr;
+}
+.tir {
+   /* flex: 1; */
+   display: grid;
+   gap: 0.5rem;
+   grid:
+      "d02" 0.4fr
+      "yf3" 1fr
+      "yf3" 1fr
+      "yf3" 1fr
+      "yf3" 1fr
+      "..." 0.1fr
+      "yf4" 1fr
+      "yf4" 1fr
+      "yf4" 1fr
+      "..." 1fr
+      "..." 1fr
+      /1fr;
+}
+.ons {
+   /* flex: 1; */
+   display: grid;
+   gap: 0.5rem;
+   grid:
+      "d03" 0.4fr
+      "..." 1fr
+      "..." 1fr
+      "yf5" 1fr
+      "yf5" 1fr
+      "..." 0.1fr
+      "yf6" 1fr
+      "yf6" 1fr
+      "yf6" 1fr
+      "..." 1fr
+      "..." 1fr
+      /1fr;
+}
+.tor {
+   /* flex: 1; */
+   display: grid;
+   gap: 0.5rem;
+   grid:
+      "d04" 0.4fr
+      "yf7" 1fr
+      "yf7" 1fr
+      "yf7" 1fr
+      "yf7" 1fr
+      "..." 0.1fr
+      "yf8" 1fr
+      "yf8" 1fr
+      "yf8" 1fr
+      "..." 1fr
+      "..." 1fr
+      /1fr;
+}
+.fre {
+   /* flex: 1; */
+   display: grid;
+   gap: 0.5rem;
+   grid:
+      "d05" 0.4fr
+      "yf9" 1fr
+      "yf9" 1fr
+      "yf9" 1fr
+      "yf9" 1fr
+      "..." 0.1fr
+      "yf0" 1fr
+      "yf0" 1fr
+      "yf0" 1fr
+      "..." 1fr
+      "..." 1fr
+      /1fr;
+}
+/* Mandag */
+
+.man p,
+.man ul,
+.tir p,
+.tir ul,
+.ons p,
+.ons ul,
+.tor p,
+.tor ul,
+.fre p,
+.fre ul {
+   text-align: start;
+}
+
+.mandag {
+   grid-area: d01;
+}
+.yff1 {
+   grid-area: yf1;
+}
+.yff2 {
+   grid-area: yf2;
+}
+/* tirsdag */
+.tirsdag {
+   grid-area: d02;
+}
+.yff3 {
+   grid-area: yf3;
+}
+.yff4 {
+   grid-area: yf4;
+}
+
+/* onsdag */
+.onsdag {
+   grid-area: d03;
+}
+.yff5 {
+   grid-area: yf5;
+}
+.yff6 {
+   grid-area: yf6;
+}
+/* torsdag */
+.torsdag {
+   grid-area: d04;
+}
+.yff7 {
+   grid-area: yf7;
+}
+.yff8 {
+   grid-area: yf8;
+}
+
+/* fredag */
+.fredag {
+   grid-area: d05;
+}
+.yff9 {
+   grid-area: yf9;
+}
+.yff10 {
+   grid-area: yf0;
+}
