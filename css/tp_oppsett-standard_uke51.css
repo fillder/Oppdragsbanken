@@ -45,9 +45,9 @@
       "y1" 1fr
       "y1" 1fr
       ".." 0.1fr
-      ".." 1fr
-      ".." 1fr
-      ".." 1fr
+      "y2" 1fr
+      "y2" 1fr
+      "y2" 1fr
       ".." 1fr
       ".." 1fr
       /1fr;
@@ -59,15 +59,15 @@
    grid:
       "d4" 0.4fr
       "j1" 1fr
-      "j1" 1fr
-      "j1" 1fr
-      "j1" 1fr
-      "j1" 0.1fr
-      "j1" 1fr
-      "j1" 1fr
-      "j1" 1fr
-      "j1" 1fr
-      "j1" 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 0.1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
       /1fr;
 }
 .fre {
@@ -77,15 +77,15 @@
    grid:
       "d5" 0.4fr
       "j2" 1fr
-      "j2" 1fr
-      "j2" 1fr
-      "j2" 1fr
-      "j2" 0.1fr
-      "j2" 1fr
-      "j2" 1fr
-      "j2" 1fr
-      "j2" 1fr
-      "j2" 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 0.1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
       /1fr;
 }
 /* Mandag */
@@ -189,9 +189,9 @@
 }
 .jul1 {
    grid-area: j1;
-   opacity: 0.25;
+   opacity: 0.4;
 }
 .jul2 {
    grid-area: j2;
-   opacity: 0.25;
+   opacity: 0.4;
 }
