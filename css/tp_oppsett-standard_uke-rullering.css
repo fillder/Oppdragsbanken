@@ -41,7 +41,7 @@
    grid:
       "d3" 0.4fr
       ".." 1fr
-      ".." 1fr
+      "ek" 1fr
       "y1" 1fr
       "y1" 1fr
       ".." 0.1fr
@@ -118,7 +118,9 @@
 .matte1 {
    grid-area: m1;
 }
-
+.eksamen {
+   grid-area: ek;
+}
 /* tirsdag */
 .tirsdag {
    grid-area: d2;
