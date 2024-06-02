@@ -88,6 +88,24 @@
       ".." 1fr
       /1fr;
 }
+.fre2 {
+   /* flex: 1; */
+   display: grid;
+   gap: 0.5rem;
+   grid:
+      "d5" 0.4fr
+      ".." 1fr
+      "p5" 1fr
+      "p6" 1fr
+      "p6" 1fr
+      ".." 0.1fr
+      "p7" 1fr
+      "p7" 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
+      /1fr;
+}
 /* Mandag */
 
 .man p,
@@ -99,7 +117,9 @@
 .tor p,
 .tor ul,
 .fre p,
-.fre ul {
+.fre ul,
+.fre2 p,
+.fre2 ul {
    text-align: start;
 }
 
@@ -178,6 +198,9 @@
 }
 .programfag7 {
    grid-area: p7;
+}
+.programfag8 {
+   grid-area: p8;
 }
 
 /* annet */
