@@ -4,8 +4,8 @@
    gap: 0.5rem;
    grid:
       "d1" 0.4fr
-      ".." 1fr
-      "p1" 1fr
+      "fr" 1fr
+      "fr" 1fr
       "p1" 1fr
       "p1" 1fr
       ".." 0.1fr
@@ -23,14 +23,14 @@
    grid:
       "d2" 0.4fr
       "e1" 1fr
-      "e1" 1fr
-      "e1" 1fr
-      "p3" 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
       ".." 0.1fr
-      "p4" 1fr
-      "p4" 1fr
-      "gy" 1fr
-      "gy" 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
+      ".." 1fr
       ".." 1fr
       /1fr;
 }
@@ -76,10 +76,10 @@
    gap: 0.5rem;
    grid:
       "d5" 0.4fr
-      ".." 1fr
       "p5" 1fr
       "p5" 1fr
-      "p5" 1fr
+      "p6" 1fr
+      "p6" 1fr
       ".." 0.1fr
       "p7" 1fr
       "p7" 1fr
@@ -127,6 +127,7 @@
 }
 .engelsk1 {
    grid-area: e1;
+   opacity: 0.4;
 }
 .programfag3 {
    grid-area: p3;
