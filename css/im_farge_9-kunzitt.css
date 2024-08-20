@@ -1,24 +1,24 @@
 /* ___________ Generelle farger ___________ */
 .fargetRamme {
-   border-color: var(--clr-kunzitt);
+	border-color: var(--clr-kunzitt);
 }
 .fargetLinje {
-   text-decoration: 2px underline var(--clr-kunzitt);
-   text-underline-offset: 3px;
+	text-decoration: 2px underline var(--clr-kunzitt);
+	text-underline-offset: 3px;
 }
 .fargetHeroLinje {
-   text-decoration: 4px underline var(--clr-kunzitt);
-   text-underline-offset: 4px;
+	text-decoration: 4px underline var(--clr-kunzitt);
+	text-underline-offset: 4px;
 }
 .fargetTekst {
-   color: var(--clr-kunzitt);
+	color: var(--clr-kunzitt);
 }
 /* ___________ hover-effekt .svg ___________ */
 .kategoriKnapp:hover .fargetFyll,
 .kategoriKnapp:focus-visible .fargetFyll,
 .kategoriKnappSolo:hover .fargetFyll,
 .kategoriKnappSolo:focus-visible .fargetFyll {
-   background-color: var(--clr-kunzitt);
+	background-color: var(--clr-kunzitt);
 }
 
 /* ___________ hover-effekt Knapper ___________ */
@@ -28,30 +28,30 @@
 .kategoriKnapp:focus-visible *,
 .kategoriKnappSolo:hover *,
 .kategoriKnappSolo:focus-visible * {
-   border-color: var(--clr-kunzitt);
+	border-color: var(--clr-kunzitt);
 }
 .kategoriFilter button:hover,
 .kategoriFilter button:focus-visible {
-   border: 2px solid var(--clr-kunzitt);
+	border: 2px solid var(--clr-kunzitt);
 }
 
 /* ___________ hover-effekt Bilder ___________ */
 .fargetHover {
-   border: 2px solid var(--clr-ramme);
+	border: 2px solid var(--clr-ramme);
 }
 .fargetHover:hover,
 .fargetHover:focus-visible {
-   transition: border 0.1s ease-in-out;
-   border: 2px solid var(--clr-kunzitt);
+	transition: border 0.1s ease-in-out;
+	border: 2px solid var(--clr-kunzitt);
 }
 
 /* ___________ Punktlistefarge ___________ */
 .punktListe li::before,
 .subPunktListe li::before {
-   color: var(--clr-kunzitt);
+	color: var(--clr-kunzitt);
 }
 .nummerertPunktListe li::before {
-   color: var(--clr-kunzitt);
+	color: var(--clr-kunzitt);
 }
 .subPunktListe li a,
 .punktListe li a,
@@ -59,30 +59,30 @@
 .subPunktListe li a:visited,
 .punktListe li a:visited,
 .nummerertPunktListe li a:visited {
-   color: var(--clr-kunzitt);
-   text-decoration: underline;
+	color: var(--clr-kunzitt);
+	text-decoration: underline;
 }
 /* ___________ Bildefremvisning ___________ */
 .nyFane:hover,
 .nyFane:focus-visible {
-   color: var(--clr-kunzitt);
-   text-decoration: underline;
+	color: var(--clr-kunzitt);
+	text-decoration: underline;
 }
 /* ___________ Hovedmenyen ___________ */
 .fargetFyll {
-   background-color: var(--clr-tekst);
+	background-color: var(--clr-tekst);
 }
 #mainMenu li a:focus-visible,
 #mainMenu li a:focus-visible .hovedmenyIkon,
 #mainMenu li a:hover,
 #mainMenu li a:hover .hovedmenyIkon {
-   border-color: var(--clr-kunzitt);
+	border-color: var(--clr-kunzitt);
 }
 /* #mainMenu li a:hover .hovedmenyIkon .fargetFyll {
    background-color: var(--clr-kunzitt);
 } */
 .mainBlur {
-   background-color: var(--clr-kunzitt);
+	background-color: var(--clr-kunzitt);
 }
 .nettResFlex a:hover,
 .nettResFlex a:focus-visible,
@@ -90,5 +90,13 @@
 .nettResFlexKol a:focus-visible,
 .nettResMono a:hover,
 .nettResMono a:focus-visible {
-   border-color: var(--clr-kunzitt);
+	border-color: var(--clr-kunzitt);
+}
+.tir a,
+.tir a:focus-visible,
+.tir a:focus-visible .hovedmenyIkon,
+.tir a:hover,
+.tir a:hover .hovedmenyIkon {
+	color: var(--clr-kunzitt);
+	font: roboto;
 }
