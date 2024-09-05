@@ -17,11 +17,12 @@
 		<link rel="stylesheet" href="/css/tp_design.css" />
 		<link rel="stylesheet" href="/css/tp_oppsett-standard_uke.css" />
 		<link rel="stylesheet" href="/css/tp_mobil-lite.css" />
+		<link rel="stylesheet" href="/css/tp_dialog.css" />
 		<link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
 		<link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
 		<link rel="apple-touch-icon" href="/images/ico/skolelogo.svg" />
 		<script type="module" src="/js/im_dag-natt.js"></script>
-		<title>Timeplan uke 36</title>
+		<title>Timeplan uke 37</title>
 	</head>
 
 	<body>
@@ -31,13 +32,13 @@
 				<div class="navIkon maskeIndexOutline"></div>
 			</a>
 			<div class="logo">
-				<a href="/timeplan/uke_35.html" target="_self" class="ukeNav" alt="Timeplan uke 35" title="Timeplan uke 35">
+				<a href="/timeplan/uke_36.html" target="_self" class="ukeNav" alt="Timeplan uke 36" title="Timeplan uke 36">
 					<div class="pil maskeTilbakeOutline"></div>
 				</a>
-				<h1><span>TIMEPLAN - </span>UKE 36</h1>
-				<a href="/timeplan/uke_37.html" target="_self" class="ukeNav" alt="Timeplan uke 37" title="Timeplan uke 37">
+				<h1><span>TIMEPLAN - </span>UKE 37</h1>
+				<!-- <a href="/timeplan/uke_36.html" target="_self" class="ukeNav" alt="Timeplan uke 36" title="Timeplan uke 36">
 					<div class="pil maskeNesteOutline"></div>
-				</a>
+				</a> -->
 			</div>
 			<button id="dark-mode-toggle" class="dag-natt2" aria-label="dark mode toggle">
 				<svg class="svg-anim" viewBox="0 70 100 100">
@@ -59,7 +60,7 @@
 			<div class="man" id="dag1">
 				<div class="mandag">
 					<h2>Mandag</h2>
-					<h4>2. september</h4>
+					<h4>9. september</h4>
 				</div>
 				<div class="boksRamme tekst xSPA sB programfag1">
 					<div class="fagtittel">
@@ -69,10 +70,9 @@
 					</div>
 					<h4 class="farge-programfag">207 / 211</h4>
 					<h5>Jon, Stian og Marius</h5>
-					<p>Vi ferdigstiller avatarene som vi begynte på forrige uke</p>
-					<img class="timepPlanBilde sBoksRamme xSB" src="/timeplan/deg-selv-i-vektro_utklipp2.webp" alt="" />
+					<p>Gjennomgang av uke 37</p>
 					<br />
-					<p><b>Kickout:</b> Periode 1</p>
+					<p>Oppstart av periodens hovedprosjekt: Nettside om IM</p>
 				</div>
 				<div class="boksRamme tekst xSPA sB programfag2">
 					<div class="fagtittel">
@@ -82,9 +82,7 @@
 					</div>
 					<h4 class="farge-programfag">207 / 211</h4>
 					<h5>Jon, Stian og Marius</h5>
-					<p><b>Kickoff:</b> periode 2 - Webutvikling og design</p>
-					<br />
-					<p>Oppsett av VSCode og viktige begreper for perioden</p>
+					<p>Prototyping i Figma</p>
 				</div>
 				<div class="boksRamme tekst sP06 sB engelsk1">
 					<div class="fagtittel">
@@ -102,25 +100,33 @@
 							<h5>Stine Cecilie</h5>
 						</div>
 					</div>
+					<p>Lesing i 15 min og ferdigstilling av presentasjonene</p>
 				</div>
 			</div>
 			<!-- Tirsdags-økter -->
 			<div class="tir" id="dag2">
 				<div class="tirsdag">
 					<h2>Tirsdag</h2>
-					<h4>3. september</h4>
+					<h4>10. september</h4>
 				</div>
-				<div class="boksRamme tekst sP06 sB forum">
+				<button onClick="forumDialog.showModal()" class="boksRamme tekst sP06 sB forum">
 					<div class="fagtittel">
 						<div class="svgIkon maskeForum"></div>
 						<h3 class="farge-forum">Forum</h3>
 						<h6>09:00<br />09:45</h6>
 					</div>
-					<div>
-						<h4 class="farge-forum">207 / 211</h4>
-						<h5>Jon og Stian</h5>
-					</div>
-				</div>
+				</button>
+				<!-- Dialogvindu Forum start-->
+				<dialog onClick="forumDialog.close()" id="forumDialog" class="boksRamme tekst sP06 sB">
+					<div class="svgIkon maskeForum"></div>
+					<h3 class="farge-forum">Forum</h3>
+					<h4 class="farge-forum">207 / 211</h4>
+					<h5>Marius og Stian</h5>
+					<p>Tema: Lag nettside med KI</p>
+					<button id="lukk" onClick="popUp.close()">X</button>
+					<h6>09:00 - 09:45</h6>
+				</dialog>
+				<!-- Dialogvindu Forum slutt-->
 				<div class="boksRamme tekst sP06 sB matte1">
 					<div class="fagtittel">
 						<div class="svgIkon maskeMatte"></div>
@@ -142,6 +148,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- Stian har oddetallsuker, Haidar har partallsuker-->
 				<div class="boksRamme tekst xSPA sB programfag3">
 					<div class="fagtittel">
 						<div class="svgIkon maskeProgramfag"></div>
@@ -149,10 +156,8 @@
 						<h6>12:10<br />13.40</h6>
 					</div>
 					<h4 class="farge-programfag">207 / 211</h4>
-					<h5>Jon, Haidar og Marius</h5>
-					<p>Versjonskontroll med GitHub</p>
-					<br />
-					<p>Din første nettside</p>
+					<h5>Jon, Stian og Marius</h5>
+					<p>Introduksjon til flex-layout</p>
 				</div>
 				<div class="boksRamme tekst sP06 sB engelsk2">
 					<div class="fagtittel">
@@ -170,20 +175,26 @@
 							<h5>Stine Cecilie</h5>
 						</div>
 					</div>
+					<p>Presentasjoner i puljer på 10 stk.</p>
 				</div>
 			</div>
 			<!-- Onsdags-økter -->
 			<div class="ons" id="dag3">
 				<div class="onsdag">
 					<h2>Onsdag</h2>
-					<h4>4. september</h4>
+					<h4>11. september</h4>
 				</div>
-				<div class="boksRamme tekst sP06 sB matte2">
+				<button onClick="matteDialog.showModal()" class="boksRamme tekst sP06 sB matte2">
 					<div class="fagtittel">
 						<div class="svgIkon maskeMatte"></div>
 						<h3 class="farge-matte">Matte</h3>
 						<h6>09:55<br />10.40</h6>
 					</div>
+				</button>
+				<!-- Dialogvindu Matte start-->
+				<dialog onClick="matteDialog.close()" id="matteDialog" class="boksRamme tekst sP06 sB">
+					<div class="svgIkon maskeMatte"></div>
+					<h3 class="farge-matte">Matte</h3>
 					<div class="gruppe-abc">
 						<div>
 							<h4 class="farge-matte">A: 207</h4>
@@ -198,16 +209,30 @@
 							<h5>Geir</h5>
 						</div>
 					</div>
-				</div>
-				<div class="boksRamme tekst xSPA sB programfag4">
+					<p></p>
+					<button id="lukk" onClick="popUp.close()">X</button>
+					<h6>09:55<br />10.40</h6>
+				</dialog>
+				<!-- Dialogvindu Matte slutt-->
+				<button onClick="programfagDialog.showModal()" class="boksRamme tekst xSPA sB programfag4">
 					<div class="fagtittel">
 						<div class="svgIkon maskeProgramfag"></div>
 						<h3 class="farge-programfag">Programfag</h3>
 						<h6>10:40<br />11.25</h6>
 					</div>
+				</button>
+				<!-- Dialogvindu Programfag start-->
+				<dialog onClick="programfagDialog.close()" id="programfagDialog" class="boksRamme tekst sP06 sB">
+					<div class="svgIkon maskeProgramfag"></div>
+					<h3 class="farge-programfag">Programfag</h3>
 					<h4 class="farge-programfag">207 / 211</h4>
 					<h5>Marius, Stian og Haidar</h5>
-				</div>
+					<p></p>
+					<button id="lukk" onClick="popUp.close()">X</button>
+					<h6>10:40<br />11.25</h6>
+					<p>Lag et bildegalleri</p>
+				</dialog>
+				<!-- Dialogvindu Programfag slutt-->
 				<div class="boksRamme tekst xSPA sB programfag5">
 					<div class="fagtittel">
 						<div class="svgIkon maskeProgramfag"></div>
@@ -216,16 +241,14 @@
 					</div>
 					<h4 class="farge-programfag">207 / 211</h4>
 					<h5>Jon, Stian og Haidar</h5>
-					<p>WYSIWYG vs oppmerkingsspråk</p>
-					<br />
-					<p>Lag en oppskrift</p>
+					<p>Lag et bildegalleri</p>
 				</div>
 			</div>
 			<!-- Torsdags-økter -->
 			<div class="tor" id="dag4">
 				<div class="torsdag">
 					<h2>Torsdag</h2>
-					<h4>5. september</h4>
+					<h4>12. september</h4>
 				</div>
 				<div class="boksRamme tekst xSPA sB naturfag">
 					<div class="fagtittel">
@@ -252,9 +275,7 @@
 					</div>
 					<h4 class="farge-programfag">207 / 211</h4>
 					<h5>Jon, Stian og Marius</h5>
-					<p>Flytdiagram i FigJam</p>
-					<br />
-					<p>Nettsidequiz</p>
+					<p>Valg av fonter og farger</p>
 				</div>
 				<div class="boksRamme tekst xSPA sB programfag7">
 					<div class="fagtittel">
@@ -270,7 +291,7 @@
 			<div class="fre" id="dag5">
 				<div class="fredag">
 					<h2>Fredag</h2>
-					<h4>6. september</h4>
+					<h4>13. september</h4>
 				</div>
 				<div class="boksRamme tekst xSPA sB kroppsoving">
 					<div class="fagtittel">
@@ -280,7 +301,7 @@
 					</div>
 					<h4 class="farge-kroppsoving">Ute</h4>
 					<h5>Laila Kristin og Ajdin</h5>
-					<p>Oppmøte ved inngang C. Tema: Fotosafari</p>
+					<p>Oppmøte ved inngang C. Tema: Skolegårdsorientering</p>
 				</div>
 				<div class="boksRamme tekst xSPA sB programfag8">
 					<div class="fagtittel">
@@ -290,7 +311,7 @@
 					</div>
 					<h4 class="farge-programfag">207 / 211</h4>
 					<h5>Haidar, Stian og Marius</h5>
-					<p>Nettsidequiz</p>
+					<p>intro til grid-layout</p>
 				</div>
 				<div class="boksRamme tekst xSPA sB programfag9">
 					<div class="fagtittel">
@@ -301,8 +322,8 @@
 					<div>
 						<h4 class="farge-programfag">207 / 211</h4>
 						<h5>Jon, Haidar og Marius</h5>
-						<p><b>Checkpoint:</b> Webutvikling Lvl 1</p>
 					</div>
+					<p><b>Checkpoint:</b> Webutvikling Lvl 2</p>
 				</div>
 			</div>
 		</main>

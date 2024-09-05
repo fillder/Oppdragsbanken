@@ -139,9 +139,11 @@
 }
 .matte2 {
 	grid-area: m2;
+	margin-block-end: -3px;
 }
 .programfag4 {
 	grid-area: p4;
+	margin-block-start: -4px;
 }
 .programfag5 {
 	grid-area: p5;
