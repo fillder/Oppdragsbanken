@@ -1,0 +1,78 @@
+.man {
+	flex: 1;
+	display: grid;
+	gap: 0.5rem;
+	grid:
+		".." 1fr
+		/1fr;
+}
+.tir {
+	flex: 1;
+	display: grid;
+	gap: 0.5rem;
+	grid:
+		".." 1fr
+		/1fr;
+}
+.ons {
+	flex: 1;
+	display: grid;
+	gap: 0.5rem;
+	grid:
+		"ip" 1fr
+		/1fr;
+}
+.tor {
+	flex: 1;
+	display: grid;
+	gap: 0.5rem;
+	grid:
+		".." 1fr
+		/1fr;
+}
+.fre {
+	flex: 1;
+	display: grid;
+	gap: 0.5rem;
+	grid:
+		".." 1fr
+		/1fr;
+}
+body {
+	background-color: var(--clr-bakgrunn);
+}
+main {
+	height: 100%;
+	box-shadow: none;
+	display: flex;
+	align-items: center;
+}
+
+.ikkePublisert {
+	grid-area: ip;
+	padding-inline: 2rem;
+	padding-block: 1rem;
+	margin-block-start: -10rem;
+	width: max-content;
+	height: fit-content;
+	text-wrap: pretty;
+	@media screen and (max-width: 768px) {
+		width: 340px;
+	}
+}
+.ukeNav {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	padding-block: 1rem;
+}
+
+.vinterferie {
+	grid-area: vi;
+	display: flex;
+	flex-direction: column;
+	place-content: center;
+}
+.vinterferie h3 {
+	color: var(--clr-spessartin);
+}

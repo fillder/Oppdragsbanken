@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="dark light" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto+Slab:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/css/im_stilark.css" />
+		<link rel="stylesheet" href="/css/im_dag-natt.css" />
+		<link rel="stylesheet" href="/css/im_svg-masker.css" />
+		<link rel="stylesheet" href="/css/tp_design.css" />
+		<link rel="stylesheet" href="/css/tp_oppsett-ikke-publisert.css" />
+		<link rel="stylesheet" href="/css/tp_dialog.css" />
+		<link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
+		<link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
+		<link rel="apple-touch-icon" href="/images/ico/skolelogo.svg" />
+		<script type="module" src="/js/im_dag-natt.js"></script>
+		<title>Timeplan uke 7</title>
+	</head>
+
+	<body>
+		<!-- Tittel og uketall -->
+		<nav>
+			<a class="navKnapp" target="_self" rel="noreferrer noopener" href="/index.html" title="Hjem" alt="Naviger til startsiden">
+				<div class="navIkon maskeIndexOutline"></div>
+			</a>
+			<div class="logo">
+				<a href="https://f21.im/timeplan" target="_self" class="ukeNav" alt="Tilbake til gjeldende timeplan" title="Tilbake til gjeldende timeplan">
+					<div class="pil maskeTilbakeOutline"></div>
+				</a>
+				<h1><span>TIMEPLAN - </span>UKE 7</h1>
+			</div>
+			<button id="dark-mode-toggle" class="dag-natt2" aria-label="dark mode toggle">
+				<svg class="svg-anim" viewBox="0 70 100 100">
+					<line class="sun" x1="83.14" y1="153.14" x2="69" y2="139" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+					<line class="sun" x1="3" y1="120" x2="23" y2="120" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+					<line class="sun" x1="16.86" y1="153.14" x2="31" y2="139" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+					<line class="sun" x1="50" y1="167" x2="50" y2="147" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+					<line class="sun" x1="16.86" y1="86.86" x2="31" y2="101" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+					<line class="sun" x1="97" y1="120" x2="77" y2="120" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+					<line class="sun" x1="83.25" y1="86.86" x2="69.11" y2="101" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+					<line class="sun" x1="50" y1="73" x2="50" y2="93" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+					<circle class="sun" cx="50" cy="120" r="20" />
+					<circle class="moon" cx="135" cy="40" r="40" />
+				</svg>
+			</button>
+		</nav>
+		<main>
+			<!-- Mandags-økter -->
+			<div class="man" id="dag1"></div>
+			<div class="tir" id="dag2"></div>
+			<div class="ons" id="dag3">
+				<div class="boksRamme tekst xSPA sB ikkePublisert">
+					<h2>Timeplan ikke publisert</h2>
+					<p>Denne timeplanen er ikke publisert enda. Timeplanen publiseres på slutten uka før.</p>
+					<a href="https://f21.im/timeplan" target="_self" class="ukeNav" alt="Tilbake til gjeldende timeplan" title="Tilbake til gjeldende timeplan">
+						<div class="pil maskeTilbakeOutline"></div>
+						<h3>Gå til gjeldende timeplan</h3>
+					</a>
+				</div>
+			</div>
+			<div class="tor" id="dag4"></div>
+			<div class="fre" id="dag5"></div>
+		</main>
+		<footer>
+			<p class="footerContent"></p>
+		</footer>
+	</body>
+</html>
