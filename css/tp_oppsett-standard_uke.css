@@ -126,8 +126,16 @@
 .engelsk2 {
 	grid-area: e2;
 }
+.engelsk2Alt {
+	grid-area: e2;
+	margin-block-start: -3.5rem;
+}
 .programfag3 {
 	grid-area: p3;
+}
+.programfag3Alt {
+	grid-area: p3;
+	margin-block-end: 3rem;
 }
 
 /* onsdag */
