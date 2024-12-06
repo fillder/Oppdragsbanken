@@ -48,8 +48,8 @@
     "p5" 1fr
     "p5" 1fr
     "p5" 1fr
-    ".." 1fr
-    ".." 1fr
+    "lo" 1fr
+    "lo" 1fr
     /1fr;
 }
 .tor {
@@ -155,6 +155,10 @@
 }
 .programfag5 {
   grid-area: p5;
+}
+.lounge {
+  grid-area: lo;
+  border-style: double;
 }
 
 /* torsdag */
