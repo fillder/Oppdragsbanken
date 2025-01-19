@@ -1,0 +1,226 @@
+.man {
+	flex: 1;
+	display: grid;
+	gap: 0.5rem;
+	grid:
+		"d1" 0.4fr
+		".." 1fr
+		"p1" 1fr
+		"p1" 1fr
+		"p1" 1fr
+		"l1" 0.1fr
+		"p2" 1fr
+		"p2" 1fr
+		"e1" 1fr
+		"e1" 1fr
+		".." 1fr
+		/1fr;
+}
+.tir {
+	flex: 1;
+	display: grid;
+	gap: 0.5rem;
+	grid:
+		"d2" 0.4fr
+		".." 1fr
+		"fr" 1fr
+		"m1" 1fr
+		"m1" 1fr
+		"l2" 0.1fr
+		"p3" 1fr
+		"p3" 1fr
+		"e2" 1fr
+		"e2" 1fr
+		"e2" 1fr
+		/1fr;
+}
+.ons {
+	flex: 1;
+	display: grid;
+	gap: 0.5rem;
+	grid:
+		"d3" 0.4fr
+		".." 1fr
+		".." 1fr
+		"m2" 1fr
+		"p4" 1fr
+		"l3" 0.1fr
+		"p5" 1fr
+		"p5" 1fr
+		"p5" 1fr
+		"n1" 1fr
+		"n1" 1fr
+		/1fr;
+}
+.tor {
+	flex: 1;
+	display: grid;
+	gap: 0.5rem;
+	grid:
+		"d4" 0.4fr
+		"n2" 1fr
+		"n2" 1fr
+		"p6" 1fr
+		"p6" 1fr
+		"l4" 0.1fr
+		"p7" 1fr
+		"p7" 1fr
+		"p7" 1fr
+		".." 1fr
+		".." 1fr
+		/1fr;
+}
+.fre {
+	flex: 1;
+	display: grid;
+	gap: 0.5rem;
+	grid:
+		"d5" 0.4fr
+		"gy" 1fr
+		"gy" 1fr
+		"p8" 1fr
+		"p8" 1fr
+		"l5" 0.1fr
+		"p9" 1fr
+		"p9" 1fr
+		"lo" 1fr
+		"lo" 1fr
+		".." 1fr
+		/1fr;
+}
+/* Mandag */
+
+.man p,
+.man ul,
+.tir p,
+.tir ul,
+.ons p,
+.ons ul,
+.tor p,
+.tor ul,
+.fre p,
+.fre ul {
+	text-align: start;
+}
+
+.mandag {
+	grid-area: d1;
+}
+.programfag1 {
+	grid-area: p1;
+}
+.programfag2 {
+	grid-area: p2;
+}
+.engelsk1 {
+	grid-area: e1;
+}
+
+/* tirsdag */
+.tirsdag {
+	grid-area: d2;
+}
+.matte1 {
+	grid-area: m1;
+}
+.engelsk2 {
+	grid-area: e2;
+}
+.engelsk2Alt {
+	grid-area: e2;
+	margin-block-start: -3.5rem;
+}
+.programfag3 {
+	grid-area: p3;
+}
+.programfag3Alt {
+	grid-area: p3;
+	margin-block-end: 3rem;
+}
+
+/* onsdag */
+.onsdag {
+	grid-area: d3;
+}
+.forum {
+	grid-area: fr;
+}
+.matte2 {
+	grid-area: m2;
+	margin-block-end: -4px;
+}
+.programfag4 {
+	grid-area: p4;
+	margin-block-start: -4px;
+}
+.programfag5 {
+	grid-area: p5;
+	margin-block-end: -4px;
+}
+.lounge {
+	grid-area: lo;
+	border-style: double;
+}
+.naturfag1 {
+	grid-area: n1;
+	margin-block-start: -4px;
+}
+
+/* torsdag */
+.torsdag {
+	grid-area: d4;
+}
+.naturfag2 {
+	grid-area: n2;
+}
+.programfag6 {
+	grid-area: p6;
+}
+.programfag7 {
+	grid-area: p7;
+}
+
+/* fredag */
+.fredag {
+	grid-area: d5;
+}
+.kroppsoving {
+	grid-area: gy;
+}
+.programfag8 {
+	grid-area: p8;
+}
+.programfag9 {
+	grid-area: p9;
+}
+
+/* annet */
+.tur1 {
+	grid-area: t1;
+}
+.tur2 {
+	grid-area: t2;
+}
+.lunsj1 {
+	grid-area: l1;
+	margin-inline: auto;
+}
+.lunsj2 {
+	grid-area: l2;
+	margin-inline: auto;
+}
+.lunsj3 {
+	grid-area: l3;
+	margin-inline: auto;
+}
+.lunsj4 {
+	grid-area: l4;
+	margin-inline: auto;
+}
+.lunsj5 {
+	grid-area: l5;
+	margin-inline: auto;
+}
+.skjult {
+	visibility: hidden;
+}
