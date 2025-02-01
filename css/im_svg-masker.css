@@ -1,504 +1,509 @@
 /*______ Navigasjon ______*/
 .maskeOppdragsbank {
-   -webkit-mask: url(/images/svg/im_oppdragsbanken.svg) no-repeat center;
-   mask: url(/images/svg/im_oppdragsbanken.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/im_oppdragsbanken.svg) no-repeat center;
+	mask: url(/images/svg/im_oppdragsbanken.svg) no-repeat center;
 }
 .maskeTimeplan {
-   -webkit-mask: url(/images/svg/im_timeplanen.svg) no-repeat center;
-   mask: url(/images/svg/im_timeplanen.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/im_timeplanen.svg) no-repeat center;
+	mask: url(/images/svg/im_timeplanen.svg) no-repeat center;
 }
 .maskeRessursbank {
-   -webkit-mask: url(/images/svg/im_ressursbanken.svg) no-repeat center;
-   mask: url(/images/svg/im_ressursbanken.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/im_ressursbanken.svg) no-repeat center;
+	mask: url(/images/svg/im_ressursbanken.svg) no-repeat center;
 }
 .maskeTilbakeOutline {
-   -webkit-mask: url(/images/svg/tp_pil-tilbake_outline.svg) no-repeat center;
-   mask: url(/images/svg/tp_pil-tilbake_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/tp_pil-tilbake_outline.svg) no-repeat center;
+	mask: url(/images/svg/tp_pil-tilbake_outline.svg) no-repeat center;
 }
 .maskeTilbakeOutline:hover:not(.utilgjengelig, .pil-tilbake),
 .maskeTilbakeOutline:focus-visible:not(.utilgjengelig, .pil-tilbake) {
-   -webkit-mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
-   mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
+	mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
 }
 .tilbakeKnapp:hover .maskeTilbakeOutline,
 .tilbakeKnapp:focus-visible .maskeTilbakeOutline {
-   -webkit-mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
-   mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
+	mask: url(/images/svg/tp_pil-tilbake_fill.svg) no-repeat center;
 }
 .maskeNesteOutline {
-   -webkit-mask: url(/images/svg/tp_pil-neste_outline.svg) no-repeat center;
-   mask: url(/images/svg/tp_pil-neste_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/tp_pil-neste_outline.svg) no-repeat center;
+	mask: url(/images/svg/tp_pil-neste_outline.svg) no-repeat center;
 }
 .maskeNesteOutline:hover:not(.utilgjengelig, .pil-neste),
 .maskeNesteOutline:focus-visible:not(.utilgjengelig, .pil-neste) {
-   -webkit-mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
-   mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
+	mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
 }
 .tilbakeKnapp:hover .maskeNesteOutline,
 .tilbakeKnapp:focus-visible .maskeNesteOutline {
-   -webkit-mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
-   mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
+	mask: url(/images/svg/tp_pil-neste_fill.svg) no-repeat center;
 }
 .maskeGrafisk {
-   background-color: var(--clr-rubin);
-   -webkit-mask: url(/images/svg/ob_1_2d-grafikk.svg) no-repeat center;
-   mask: url(/images/svg/ob_1_2d-grafikk.svg) no-repeat center;
+	background-color: var(--clr-rubin);
+	-webkit-mask: url(/images/svg/ob_1_2d-grafikk.svg) no-repeat center;
+	mask: url(/images/svg/ob_1_2d-grafikk.svg) no-repeat center;
 }
 .maskeTreD {
-   background-color: var(--clr-spessartin);
-   -webkit-mask: url(/images/svg/ob_2_3d-grafikk.svg) no-repeat center;
-   mask: url(/images/svg/ob_2_3d-grafikk.svg) no-repeat center;
+	background-color: var(--clr-spessartin);
+	-webkit-mask: url(/images/svg/ob_2_3d-grafikk.svg) no-repeat center;
+	mask: url(/images/svg/ob_2_3d-grafikk.svg) no-repeat center;
 }
 .maskeFoto {
-   background-color: var(--clr-citrin);
-   -webkit-mask: url(/images/svg/ob_3_foto.svg) no-repeat center;
-   mask: url(/images/svg/ob_3_foto.svg) no-repeat center;
+	background-color: var(--clr-citrin);
+	-webkit-mask: url(/images/svg/ob_3_foto.svg) no-repeat center;
+	mask: url(/images/svg/ob_3_foto.svg) no-repeat center;
 }
 .maskeFilm {
-   background-color: var(--clr-smaragd);
-   -webkit-mask: url(/images/svg/ob_4_film.svg) no-repeat center;
-   mask: url(/images/svg/ob_4_film.svg) no-repeat center;
+	background-color: var(--clr-smaragd);
+	-webkit-mask: url(/images/svg/ob_4_film.svg) no-repeat center;
+	mask: url(/images/svg/ob_4_film.svg) no-repeat center;
 }
 .maskeAnim {
-   background-color: var(--clr-amazonitt);
-   -webkit-mask: url(/images/svg/ob_5_animasjon.svg) no-repeat center;
-   mask: url(/images/svg/ob_5_animasjon.svg) no-repeat center;
+	background-color: var(--clr-amazonitt);
+	-webkit-mask: url(/images/svg/ob_5_animasjon.svg) no-repeat center;
+	mask: url(/images/svg/ob_5_animasjon.svg) no-repeat center;
 }
 .maskeLyd {
-   background-color: var(--clr-akvamarin);
-   -webkit-mask: url(/images/svg/ob_6_lyddesign.svg) no-repeat center;
-   mask: url(/images/svg/ob_6_lyddesign.svg) no-repeat center;
+	background-color: var(--clr-akvamarin);
+	-webkit-mask: url(/images/svg/ob_6_lyddesign.svg) no-repeat center;
+	mask: url(/images/svg/ob_6_lyddesign.svg) no-repeat center;
 }
 .maskeDrift {
-   background-color: var(--clr-safir);
-   -webkit-mask: url(/images/svg/ob_7_drift.svg) no-repeat center;
-   mask: url(/images/svg/ob_7_drift.svg) no-repeat center;
+	background-color: var(--clr-safir);
+	-webkit-mask: url(/images/svg/ob_7_drift.svg) no-repeat center;
+	mask: url(/images/svg/ob_7_drift.svg) no-repeat center;
 }
 .maskeProgrammering {
-   background-color: var(--clr-ametyst);
-   -webkit-mask: url(/images/svg/ob_8_programmering.svg) no-repeat center;
-   mask: url(/images/svg/ob_8_programmering.svg) no-repeat center;
+	background-color: var(--clr-ametyst);
+	-webkit-mask: url(/images/svg/ob_8_programmering.svg) no-repeat center;
+	mask: url(/images/svg/ob_8_programmering.svg) no-repeat center;
 }
 .maskeWeb {
-   background-color: var(--clr-kunzitt);
-   -webkit-mask: url(/images/svg/ob_9_web.svg) no-repeat center;
-   mask: url(/images/svg/ob_9_web.svg) no-repeat center;
+	background-color: var(--clr-kunzitt);
+	-webkit-mask: url(/images/svg/ob_9_web.svg) no-repeat center;
+	mask: url(/images/svg/ob_9_web.svg) no-repeat center;
 }
 .maskeKi {
-   background-color: var(--clr-thulitt);
-   -webkit-mask: url(/images/svg/ob_10_ai.svg) no-repeat center;
-   mask: url(/images/svg/ob_10_ai.svg) no-repeat center;
+	background-color: var(--clr-thulitt);
+	-webkit-mask: url(/images/svg/ob_10_ai.svg) no-repeat center;
+	mask: url(/images/svg/ob_10_ai.svg) no-repeat center;
 }
 
 .maskeTidTimer {
-   -webkit-mask: url(/images/svg/ob_tid-timer.svg) no-repeat center;
-   mask: url(/images/svg/ob_tid-timer.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_tid-timer.svg) no-repeat center;
+	mask: url(/images/svg/ob_tid-timer.svg) no-repeat center;
 }
 .maskeTidUker {
-   -webkit-mask: url(/images/svg/ob_tid-uker.svg) no-repeat center;
-   mask: url(/images/svg/ob_tid-uker.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_tid-uker.svg) no-repeat center;
+	mask: url(/images/svg/ob_tid-uker.svg) no-repeat center;
 }
 .maskeKryss {
-   -webkit-mask: url(/images/svg/ob_kryss.svg) no-repeat center;
-   mask: url(/images/svg/ob_kryss.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_kryss.svg) no-repeat center;
+	mask: url(/images/svg/ob_kryss.svg) no-repeat center;
 }
 .maskeDialog {
-   -webkit-mask: url(/images/svg/rb_ikon-dialog.svg) no-repeat center;
-   mask: url(/images/svg/rb_ikon-dialog.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/rb_ikon-dialog.svg) no-repeat center;
+	mask: url(/images/svg/rb_ikon-dialog.svg) no-repeat center;
 }
 .maskeEksamen {
-   -webkit-mask: url(/images/svg/rb_ikon-eksamen.svg) no-repeat center;
-   mask: url(/images/svg/rb_ikon-eksamen.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/rb_ikon-eksamen.svg) no-repeat center;
+	mask: url(/images/svg/rb_ikon-eksamen.svg) no-repeat center;
 }
 .maskeLk20 {
-   -webkit-mask: url(/images/svg/rb_ikon-lk20.svg) no-repeat center;
-   mask: url(/images/svg/rb_ikon-lk20.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/rb_ikon-lk20.svg) no-repeat center;
+	mask: url(/images/svg/rb_ikon-lk20.svg) no-repeat center;
 }
 .maskeTverrfaglig {
-   -webkit-mask: url(/images/svg/rb_ikon-tverrfaglig.svg) no-repeat center;
-   mask: url(/images/svg/rb_ikon-tverrfaglig.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/rb_ikon-tverrfaglig.svg) no-repeat center;
+	mask: url(/images/svg/rb_ikon-tverrfaglig.svg) no-repeat center;
 }
 .maskeRbYFF {
-   -webkit-mask: url(/images/svg/rb_ikon-yff.svg) no-repeat center;
-   mask: url(/images/svg/rb_ikon-yff.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/rb_ikon-yff.svg) no-repeat center;
+	mask: url(/images/svg/rb_ikon-yff.svg) no-repeat center;
 }
 .maskeIT {
-   -webkit-mask: url(/images/svg/rb_ikon-it.svg) no-repeat center;
-   mask: url(/images/svg/rb_ikon-it.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/rb_ikon-it.svg) no-repeat center;
+	mask: url(/images/svg/rb_ikon-it.svg) no-repeat center;
 }
 .maskeMP {
-   -webkit-mask: url(/images/svg/rb_ikon-mp.svg) no-repeat center;
-   mask: url(/images/svg/rb_ikon-mp.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/rb_ikon-mp.svg) no-repeat center;
+	mask: url(/images/svg/rb_ikon-mp.svg) no-repeat center;
 }
 .maskeVurdering {
-   -webkit-mask: url(/images/svg/rb_ikon-vurdering.svg) no-repeat center;
-   mask: url(/images/svg/rb_ikon-vurdering.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/rb_ikon-vurdering.svg) no-repeat center;
+	mask: url(/images/svg/rb_ikon-vurdering.svg) no-repeat center;
 }
 .maskeWorkshop {
-   background-color: var(--clr-ametyst);
-   -webkit-mask: url(/images/svg/tp_fagikon-workshop.svg) no-repeat center;
-   mask: url(/images/svg/tp_fagikon-workshop.svg) no-repeat center;
+	background-color: var(--clr-ametyst);
+	-webkit-mask: url(/images/svg/tp_fagikon-workshop.svg) no-repeat center;
+	mask: url(/images/svg/tp_fagikon-workshop.svg) no-repeat center;
 }
 .maskeProgramfag {
-   background-color: var(--clr-safir);
-   -webkit-mask: url(/images/svg/tp_fagikon-programfag.svg) no-repeat center;
-   mask: url(/images/svg/tp_fagikon-programfag.svg) no-repeat center;
+	background-color: var(--clr-safir);
+	-webkit-mask: url(/images/svg/tp_fagikon-programfag.svg) no-repeat center;
+	mask: url(/images/svg/tp_fagikon-programfag.svg) no-repeat center;
 }
 .maskeEngelsk {
-   background-color: var(--clr-spessartin);
-   -webkit-mask: url(/images/svg/tp_fagikon-engelsk.svg) no-repeat center;
-   mask: url(/images/svg/tp_fagikon-engelsk.svg) no-repeat center;
+	background-color: var(--clr-spessartin);
+	-webkit-mask: url(/images/svg/tp_fagikon-engelsk.svg) no-repeat center;
+	mask: url(/images/svg/tp_fagikon-engelsk.svg) no-repeat center;
 }
 .maskeMatte {
-   background-color: var(--clr-citrin);
-   -webkit-mask: url(/images/svg/tp_fagikon-matte.svg) no-repeat center;
-   mask: url(/images/svg/tp_fagikon-matte.svg) no-repeat center;
+	background-color: var(--clr-citrin);
+	-webkit-mask: url(/images/svg/tp_fagikon-matte.svg) no-repeat center;
+	mask: url(/images/svg/tp_fagikon-matte.svg) no-repeat center;
 }
 .maskeYFF {
-   background-color: var(--clr-akvamarin);
-   -webkit-mask: url(/images/svg/tp_fagikon-yff.svg) no-repeat center;
-   mask: url(/images/svg/tp_fagikon-yff.svg) no-repeat center;
+	background-color: var(--clr-akvamarin);
+	-webkit-mask: url(/images/svg/tp_fagikon-yff.svg) no-repeat center;
+	mask: url(/images/svg/tp_fagikon-yff.svg) no-repeat center;
 }
 .maskeNaturfag {
-   background-color: var(--clr-smaragd);
-   -webkit-mask: url(/images/svg/tp_fagikon-naturfag.svg) no-repeat center;
-   mask: url(/images/svg/tp_fagikon-naturfag.svg) no-repeat center;
+	background-color: var(--clr-smaragd);
+	-webkit-mask: url(/images/svg/tp_fagikon-naturfag.svg) no-repeat center;
+	mask: url(/images/svg/tp_fagikon-naturfag.svg) no-repeat center;
 }
 .maskeMidttimen {
-   background-color: var(--clr-kunzitt);
-   -webkit-mask: url(/images/svg/tp_fagikon-midttimen.svg) no-repeat center;
-   mask: url(/images/svg/tp_fagikon-midttimen.svg) no-repeat center;
+	background-color: var(--clr-kunzitt);
+	-webkit-mask: url(/images/svg/tp_fagikon-midttimen.svg) no-repeat center;
+	mask: url(/images/svg/tp_fagikon-midttimen.svg) no-repeat center;
 }
 .maskeMidttimenSommer {
-   background-color: var(--clr-kunzitt);
-   -webkit-mask: url(/images/svg/tp_fagikon-midttimen2.svg) no-repeat center;
-   mask: url(/images/svg/tp_fagikon-midttimen2.svg) no-repeat center;
+	background-color: var(--clr-kunzitt);
+	-webkit-mask: url(/images/svg/tp_fagikon-midttimen2.svg) no-repeat center;
+	mask: url(/images/svg/tp_fagikon-midttimen2.svg) no-repeat center;
 }
 .maskeForum {
-   background-color: var(--clr-thulitt);
-   -webkit-mask: url(/images/svg/tp_fagikon-forum.svg) no-repeat center;
-   mask: url(/images/svg/tp_fagikon-forum.svg) no-repeat center;
+	background-color: var(--clr-thulitt);
+	-webkit-mask: url(/images/svg/tp_fagikon-forum.svg) no-repeat center;
+	mask: url(/images/svg/tp_fagikon-forum.svg) no-repeat center;
 }
 .maskeKroppsoving {
-   background-color: var(--clr-amazonitt);
-   -webkit-mask: url(/images/svg/tp_fagikon-kroppsoving.svg) no-repeat center;
-   mask: url(/images/svg/tp_fagikon-kroppsoving.svg) no-repeat center;
+	background-color: var(--clr-amazonitt);
+	-webkit-mask: url(/images/svg/tp_fagikon-kroppsoving.svg) no-repeat center;
+	mask: url(/images/svg/tp_fagikon-kroppsoving.svg) no-repeat center;
 }
 .maskeForrigeDag {
-   -webkit-mask: url(/images/svg/tp_pilForrigeDag.svg) no-repeat center;
-   mask: url(/images/svg/tp_pilForrigeDag.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/tp_pilForrigeDag.svg) no-repeat center;
+	mask: url(/images/svg/tp_pilForrigeDag.svg) no-repeat center;
 }
 .maskeNesteDag {
-   -webkit-mask: url(/images/svg/tp_pilNesteDag.svg) no-repeat center;
-   mask: url(/images/svg/tp_pilNesteDag.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/tp_pilNesteDag.svg) no-repeat center;
+	mask: url(/images/svg/tp_pilNesteDag.svg) no-repeat center;
 }
 .maskePortfolioOutline {
-   -webkit-mask: url(/images/svg/ob_portfolio_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_portfolio_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_portfolio_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_portfolio_outline.svg) no-repeat center;
 }
 
 .maskeLoggOutline {
-   -webkit-mask: url(/images/svg/ob_visuell-logg_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_visuell-logg_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_visuell-logg_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_visuell-logg_outline.svg) no-repeat center;
 }
 
 .maskeSuksessOutline {
-   -webkit-mask: url(/images/svg/ob_sukksess_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_sukksess_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_sukksess_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_sukksess_outline.svg) no-repeat center;
 }
 
 .maskeKarriereOutline {
-   -webkit-mask: url(/images/svg/ob_karrieresti_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_karrieresti_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_karrieresti_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_karrieresti_outline.svg) no-repeat center;
 }
 
 .maskeHjerteOutline {
-   -webkit-mask: url(/images/svg/ob_heart_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_heart_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_heart_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_heart_outline.svg) no-repeat center;
 }
 
 .maskePrintOutline {
-   -webkit-mask: url(/images/svg/ob_print_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_print_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_print_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_print_outline.svg) no-repeat center;
 }
 
 .maskeGrafiskOutline {
-   -webkit-mask: url(/images/svg/ob_grafisk-outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_grafisk-outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_grafisk-outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_grafisk-outline.svg) no-repeat center;
 }
 
 .maskeTreDOutline {
-   -webkit-mask: url(/images/svg/ob_tred-outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_tred-outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_tred-outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_tred-outline.svg) no-repeat center;
 }
 
 .maskeFotoOutline {
-   -webkit-mask: url(/images/svg/ob_foto-outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_foto-outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_foto-outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_foto-outline.svg) no-repeat center;
 }
 
 .maskeFilmOutline {
-   -webkit-mask: url(/images/svg/ob_film-outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_film-outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_film-outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_film-outline.svg) no-repeat center;
 }
 
 .maskeLydOutline {
-   -webkit-mask: url(/images/svg/ob_lyd-outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_lyd-outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_lyd-outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_lyd-outline.svg) no-repeat center;
 }
 
 .maskeDriftOutline {
-   -webkit-mask: url(/images/svg/ob_drift-outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_drift-outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_drift-outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_drift-outline.svg) no-repeat center;
 }
 
 .maskeUtviklingOutline {
-   -webkit-mask: url(/images/svg/ob_utvikling-outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_utvikling-outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_utvikling-outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_utvikling-outline.svg) no-repeat center;
 }
 
 .maskeWebOutline {
-   -webkit-mask: url(/images/svg/ob_web-outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_web-outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_web-outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_web-outline.svg) no-repeat center;
 }
 .maskeAiOutline {
-   -webkit-mask: url(/images/svg/ob_ai-outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_ai-outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_ai-outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_ai-outline.svg) no-repeat center;
 }
 .maskeModulInfo {
-   -webkit-mask: url(/images/svg/ob_info_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_info_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_info_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_info_outline.svg) no-repeat center;
 }
 .maskeModulPin {
-   -webkit-mask: url(/images/svg/ob_pin_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_pin_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_pin_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_pin_outline.svg) no-repeat center;
 }
 .maskeModulNett {
-   -webkit-mask: url(/images/svg/ob_nettressurs_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_nettressurs_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_nettressurs_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_nettressurs_outline.svg) no-repeat center;
 }
 .maskeUkerOutline {
-   -webkit-mask: url(/images/svg/ob_uker_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_uker_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_uker_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_uker_outline.svg) no-repeat center;
 }
 .maskeOppdragsbankFill {
-   -webkit-mask: url(/images/svg/ob_oppdragsbank_fill.svg) no-repeat center;
-   mask: url(/images/svg/ob_oppdragsbank_fill.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_oppdragsbank_fill.svg) no-repeat center;
+	mask: url(/images/svg/ob_oppdragsbank_fill.svg) no-repeat center;
 }
 .maskeOppdragsbankOutline {
-   -webkit-mask: url(/images/svg/ob_oppdragsbank_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_oppdragsbank_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_oppdragsbank_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_oppdragsbank_outline.svg) no-repeat center;
 }
 .maskeRessursbankFill {
-   -webkit-mask: url(/images/svg/ob_eksamen_fill.svg) no-repeat center;
-   mask: url(/images/svg/ob_eksamen_fill.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_eksamen_fill.svg) no-repeat center;
+	mask: url(/images/svg/ob_eksamen_fill.svg) no-repeat center;
 }
 .maskeRessursbankOutline {
-   -webkit-mask: url(/images/svg/ob_eksamen_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_eksamen_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_eksamen_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_eksamen_outline.svg) no-repeat center;
 }
 .maskeF21Outline {
-   -webkit-mask: url(/images/svg/tp_f21_outline.svg) no-repeat center;
-   mask: url(/images/svg/tp_f21_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/tp_f21_outline.svg) no-repeat center;
+	mask: url(/images/svg/tp_f21_outline.svg) no-repeat center;
 }
 .maskeIndexFill {
-   -webkit-mask: url(/images/svg/im_home_fill.svg) no-repeat center;
-   mask: url(/images/svg/im_home_fill.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/im_home_fill.svg) no-repeat center;
+	mask: url(/images/svg/im_home_fill.svg) no-repeat center;
 }
 .maskeIndexOutline {
-   -webkit-mask: url(/images/svg/im_home_outline.svg) no-repeat center;
-   mask: url(/images/svg/im_home_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/im_home_outline.svg) no-repeat center;
+	mask: url(/images/svg/im_home_outline.svg) no-repeat center;
 }
 .maskeMenyFill {
-   -webkit-mask: url(/images/svg/im_meny_fill.svg) no-repeat center;
-   mask: url(/images/svg/im_meny_fill.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/im_meny_fill.svg) no-repeat center;
+	mask: url(/images/svg/im_meny_fill.svg) no-repeat center;
 }
 .maskeMenyOutline {
-   -webkit-mask: url(/images/svg/im_meny_outline.svg) no-repeat center;
-   mask: url(/images/svg/im_meny_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/im_meny_outline.svg) no-repeat center;
+	mask: url(/images/svg/im_meny_outline.svg) no-repeat center;
 }
 .maskeMenyPil {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/im_hovedmeny-pil.svg) no-repeat center;
-   mask: url(/images/svg/im_hovedmeny-pil.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/im_hovedmeny-pil.svg) no-repeat center;
+	mask: url(/images/svg/im_hovedmeny-pil.svg) no-repeat center;
 }
 
 /* ___________ Oppdragikoner ___________ */
 .maskeOppdragIntern {
-   -webkit-mask: url(/images/svg/ob_ikon-oppdrag.svg) no-repeat center;
-   mask: url(/images/svg/ob_ikon-oppdrag.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_ikon-oppdrag.svg) no-repeat center;
+	mask: url(/images/svg/ob_ikon-oppdrag.svg) no-repeat center;
 }
 .maskeOppdragEkstern {
-   -webkit-mask: url(/images/svg/ob_ikon-ekstern.svg) no-repeat center;
-   mask: url(/images/svg/ob_ikon-ekstern.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_ikon-ekstern.svg) no-repeat center;
+	mask: url(/images/svg/ob_ikon-ekstern.svg) no-repeat center;
 }
 .maskeAnimasjon {
-   -webkit-mask: url(/images/svg/ob_animasjon.svg) no-repeat center;
-   mask: url(/images/svg/ob_animasjon.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_animasjon.svg) no-repeat center;
+	mask: url(/images/svg/ob_animasjon.svg) no-repeat center;
 }
 .maskeOppdragNedlasting {
-   -webkit-mask: url(/images/svg/ob_download_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_download_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_download_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_download_outline.svg) no-repeat center;
 }
 .maskeOppdragNettsted {
-   -webkit-mask: url(/images/svg/ob_ekstern_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_ekstern_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_ekstern_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_ekstern_outline.svg) no-repeat center;
 }
 .maskeOppdragRessurs {
-   -webkit-mask: url(/images/svg/ob_ressurs_outline.svg) no-repeat center;
-   mask: url(/images/svg/ob_ressurs_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_ressurs_outline.svg) no-repeat center;
+	mask: url(/images/svg/ob_ressurs_outline.svg) no-repeat center;
 }
 .maskeVideo {
-   -webkit-mask: url(/images/svg/ob_ikon-video.svg) no-repeat center;
-   mask: url(/images/svg/ob_ikon-video.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_ikon-video.svg) no-repeat center;
+	mask: url(/images/svg/ob_ikon-video.svg) no-repeat center;
 }
 .maskeFagverket {
-   -webkit-mask: url(/images/svg/im_fagverket_outline.svg) no-repeat center;
-   mask: url(/images/svg/im_fagverket_outline.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/im_fagverket_outline.svg) no-repeat center;
+	mask: url(/images/svg/im_fagverket_outline.svg) no-repeat center;
 }
 /* ___________ Tidikoner ___________ */
 .maskeTid1 {
-   -webkit-mask: url(/images/svg/ob_tid1.svg) no-repeat center;
-   mask: url(/images/svg/ob_tid1.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_tid1.svg) no-repeat center;
+	mask: url(/images/svg/ob_tid1.svg) no-repeat center;
 }
 .maskeTid1-3 {
-   -webkit-mask: url(/images/svg/ob_tid1-3.svg) no-repeat center;
-   mask: url(/images/svg/ob_tid1-3.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_tid1-3.svg) no-repeat center;
+	mask: url(/images/svg/ob_tid1-3.svg) no-repeat center;
 }
 .maskeTid3-6 {
-   -webkit-mask: url(/images/svg/ob_tid3-6.svg) no-repeat center;
-   mask: url(/images/svg/ob_tid3-6.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_tid3-6.svg) no-repeat center;
+	mask: url(/images/svg/ob_tid3-6.svg) no-repeat center;
 }
 .maskeTid6-9 {
-   -webkit-mask: url(/images/svg/ob_tid6-9.svg) no-repeat center;
-   mask: url(/images/svg/ob_tid6-9.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_tid6-9.svg) no-repeat center;
+	mask: url(/images/svg/ob_tid6-9.svg) no-repeat center;
 }
 .maskeTid9-12 {
-   -webkit-mask: url(/images/svg/ob_tid9-12.svg) no-repeat center;
-   mask: url(/images/svg/ob_tid9-12.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_tid9-12.svg) no-repeat center;
+	mask: url(/images/svg/ob_tid9-12.svg) no-repeat center;
 }
 .maskeTid12-15 {
-   -webkit-mask: url(/images/svg/ob_tid12-15.svg) no-repeat center;
-   mask: url(/images/svg/ob_tid12-15.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_tid12-15.svg) no-repeat center;
+	mask: url(/images/svg/ob_tid12-15.svg) no-repeat center;
 }
 .maskeTid15 {
-   -webkit-mask: url(/images/svg/ob_tid15.svg) no-repeat center;
-   mask: url(/images/svg/ob_tid15.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_tid15.svg) no-repeat center;
+	mask: url(/images/svg/ob_tid15.svg) no-repeat center;
 }
 /* ___________ Spice-ikoner ___________ */
 .maskeSpice0 {
-   -webkit-mask: url(/images/svg/ob_spice0.svg) no-repeat center;
-   mask: url(/images/svg/ob_spice0.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_spice0.svg) no-repeat center;
+	mask: url(/images/svg/ob_spice0.svg) no-repeat center;
 }
 .maskeSpice1 {
-   -webkit-mask: url(/images/svg/ob_spice1.svg) no-repeat center;
-   mask: url(/images/svg/ob_spice1.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_spice1.svg) no-repeat center;
+	mask: url(/images/svg/ob_spice1.svg) no-repeat center;
 }
 .maskeSpice2 {
-   -webkit-mask: url(/images/svg/ob_spice2.svg) no-repeat center;
-   mask: url(/images/svg/ob_spice2.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_spice2.svg) no-repeat center;
+	mask: url(/images/svg/ob_spice2.svg) no-repeat center;
 }
 .maskeSpice3 {
-   -webkit-mask: url(/images/svg/ob_spice3.svg) no-repeat center;
-   mask: url(/images/svg/ob_spice3.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_spice3.svg) no-repeat center;
+	mask: url(/images/svg/ob_spice3.svg) no-repeat center;
 }
 .maskeSpice4 {
-   -webkit-mask: url(/images/svg/ob_spice4.svg) no-repeat center;
-   mask: url(/images/svg/ob_spice4.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_spice4.svg) no-repeat center;
+	mask: url(/images/svg/ob_spice4.svg) no-repeat center;
 }
 .maskeSpice5 {
-   -webkit-mask: url(/images/svg/ob_spice5.svg) no-repeat center;
-   mask: url(/images/svg/ob_spice5.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_spice5.svg) no-repeat center;
+	mask: url(/images/svg/ob_spice5.svg) no-repeat center;
 }
 .maskeSpiceGrad {
-   -webkit-mask: url(/images/svg/ob_spice-grad.svg) no-repeat center;
-   mask: url(/images/svg/ob_spice-grad.svg) no-repeat center;
+	-webkit-mask: url(/images/svg/ob_spice-grad.svg) no-repeat center;
+	mask: url(/images/svg/ob_spice-grad.svg) no-repeat center;
 }
 /* ___________ Krav til oppdrag-ikoner ___________ */
 .maskeKreverKonto {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_krever-konto.svg) no-repeat center;
-   mask: url(/images/svg/ob_krever-konto.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/ob_krever-konto.svg) no-repeat center;
+	mask: url(/images/svg/ob_krever-konto.svg) no-repeat center;
 }
 .maskeKreverUtstyr {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_krever-utstyr.svg) no-repeat center;
-   mask: url(/images/svg/ob_krever-utstyr.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/ob_krever-utstyr.svg) no-repeat center;
+	mask: url(/images/svg/ob_krever-utstyr.svg) no-repeat center;
 }
 .maskeKreverNedlastning {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_krever-nedlastning.svg) no-repeat center;
-   mask: url(/images/svg/ob_krever-nedlastning.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/ob_krever-nedlastning.svg) no-repeat center;
+	mask: url(/images/svg/ob_krever-nedlastning.svg) no-repeat center;
 }
 .maskeCreativeCommons {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_creative-commons.svg) no-repeat center;
-   mask: url(/images/svg/ob_creative-commons.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/ob_creative-commons.svg) no-repeat center;
+	mask: url(/images/svg/ob_creative-commons.svg) no-repeat center;
 }
 .maskeFaglitteratur {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_ikon-faglitteratur.svg) no-repeat center;
-   mask: url(/images/svg/ob_ikon-faglitteratur.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/ob_ikon-faglitteratur.svg) no-repeat center;
+	mask: url(/images/svg/ob_ikon-faglitteratur.svg) no-repeat center;
 }
 .maskeProgramvare {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_ikon-programvare.svg) no-repeat center;
-   mask: url(/images/svg/ob_ikon-programvare.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/ob_ikon-programvare.svg) no-repeat center;
+	mask: url(/images/svg/ob_ikon-programvare.svg) no-repeat center;
 }
 .maskeInteraktivt {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_ikon-interaktiv.svg) no-repeat center;
-   mask: url(/images/svg/ob_ikon-interaktiv.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/ob_ikon-interaktiv.svg) no-repeat center;
+	mask: url(/images/svg/ob_ikon-interaktiv.svg) no-repeat center;
 }
 .maskeReferanse {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_ikon-referanse.svg) no-repeat center;
-   mask: url(/images/svg/ob_ikon-referanse.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/ob_ikon-referanse.svg) no-repeat center;
+	mask: url(/images/svg/ob_ikon-referanse.svg) no-repeat center;
 }
 .maskeRessurser {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_ikon-ressurser.svg) no-repeat center;
-   mask: url(/images/svg/ob_ikon-ressurser.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/ob_ikon-ressurser.svg) no-repeat center;
+	mask: url(/images/svg/ob_ikon-ressurser.svg) no-repeat center;
 }
 .maskeSertifisering {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_ikon-sertifisering.svg) no-repeat center;
-   mask: url(/images/svg/ob_ikon-sertifisering.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/ob_ikon-sertifisering.svg) no-repeat center;
+	mask: url(/images/svg/ob_ikon-sertifisering.svg) no-repeat center;
 }
 .maskeSpill {
-   background-color: var(--clr-tekst);
-   -webkit-mask: url(/images/svg/ob_ikon-spill.svg) no-repeat center;
-   mask: url(/images/svg/ob_ikon-spill.svg) no-repeat center;
+	background-color: var(--clr-tekst);
+	-webkit-mask: url(/images/svg/ob_ikon-spill.svg) no-repeat center;
+	mask: url(/images/svg/ob_ikon-spill.svg) no-repeat center;
+}
+.maskePilForum {
+	background-color: var(--clr-ramme);
+	-webkit-mask: url(/images/svg/pilForum-01.svg) no-repeat center;
+	mask: url(/images/svg/pilForum-01.svg) no-repeat center;
 }
 @media screen and (max-width: 992px) {
-   /* ___________ Spice-ikoner ___________ */
-   .maskeSpice0 {
-      -webkit-mask: url(/images/svg/ob_spice0-mob.svg) no-repeat center;
-      mask: url(/images/svg/ob_spice0-mob.svg) no-repeat center;
-   }
-   .maskeSpice1 {
-      -webkit-mask: url(/images/svg/ob_spice1-mob.svg) no-repeat center;
-      mask: url(/images/svg/ob_spice1-mob.svg) no-repeat center;
-   }
-   .maskeSpice2 {
-      -webkit-mask: url(/images/svg/ob_spice2-mob.svg) no-repeat center;
-      mask: url(/images/svg/ob_spice2-mob.svg) no-repeat center;
-   }
-   .maskeSpice3 {
-      -webkit-mask: url(/images/svg/ob_spice3-mob.svg) no-repeat center;
-      mask: url(/images/svg/ob_spice3-mob.svg) no-repeat center;
-   }
-   .maskeSpice4 {
-      -webkit-mask: url(/images/svg/ob_spice4-mob.svg) no-repeat center;
-      mask: url(/images/svg/ob_spice4-mob.svg) no-repeat center;
-   }
-   .maskeSpice5 {
-      -webkit-mask: url(/images/svg/ob_spice5-mob.svg) no-repeat center;
-      mask: url(/images/svg/ob_spice5-mob.svg) no-repeat center;
-   }
+	/* ___________ Spice-ikoner ___________ */
+	.maskeSpice0 {
+		-webkit-mask: url(/images/svg/ob_spice0-mob.svg) no-repeat center;
+		mask: url(/images/svg/ob_spice0-mob.svg) no-repeat center;
+	}
+	.maskeSpice1 {
+		-webkit-mask: url(/images/svg/ob_spice1-mob.svg) no-repeat center;
+		mask: url(/images/svg/ob_spice1-mob.svg) no-repeat center;
+	}
+	.maskeSpice2 {
+		-webkit-mask: url(/images/svg/ob_spice2-mob.svg) no-repeat center;
+		mask: url(/images/svg/ob_spice2-mob.svg) no-repeat center;
+	}
+	.maskeSpice3 {
+		-webkit-mask: url(/images/svg/ob_spice3-mob.svg) no-repeat center;
+		mask: url(/images/svg/ob_spice3-mob.svg) no-repeat center;
+	}
+	.maskeSpice4 {
+		-webkit-mask: url(/images/svg/ob_spice4-mob.svg) no-repeat center;
+		mask: url(/images/svg/ob_spice4-mob.svg) no-repeat center;
+	}
+	.maskeSpice5 {
+		-webkit-mask: url(/images/svg/ob_spice5-mob.svg) no-repeat center;
+		mask: url(/images/svg/ob_spice5-mob.svg) no-repeat center;
+	}
 }
 @media screen and (max-width: 600px) {
-   .kravIkon {
-      display: none;
-   }
+	.kravIkon {
+		display: none;
+	}
 }
