@@ -15,7 +15,8 @@
 		<link rel="stylesheet" href="/css/im_dag-natt.css" />
 		<link rel="stylesheet" href="/css/im_svg-masker.css" />
 		<link rel="stylesheet" href="/css/tp_design.css" />
-		<link rel="stylesheet" href="/css/tp_oppsett-ikke-publisert.css" />
+		<link rel="stylesheet" href="/css/tp_oppsett-standard_uke_v2.css" />
+		<link rel="stylesheet" href="/css/tp_mobil-lite.css" />
 		<link rel="stylesheet" href="/css/tp_dialog.css" />
 		<link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
 		<link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
@@ -23,7 +24,6 @@
 		<script type="module" src="/js/im_dag-natt.js"></script>
 		<title>Timeplan uke 9</title>
 	</head>
-
 	<body>
 		<!-- Tittel og uketall -->
 		<nav>
@@ -31,10 +31,13 @@
 				<div class="navIkon maskeIndexOutline"></div>
 			</a>
 			<div class="logo">
-				<a href="https://f21.im/timeplan" target="_self" class="ukeNav" alt="Tilbake til gjeldende timeplan" title="Tilbake til gjeldende timeplan">
+				<a href="/timeplan/uke_7.html" target="_self" class="ukeNav" alt="Timeplan uke 7" title="Timeplan uke 7">
 					<div class="pil maskeTilbakeOutline"></div>
 				</a>
 				<h1><span>TIMEPLAN - </span>UKE 9</h1>
+				<!-- <a href="/timeplan/uke_10.html" target="_self" class="ukeNav" alt="Timeplan uke 6" title="Timeplan uke 10">
+					<div class="pil maskeNesteOutline"></div>
+				</a> -->
 			</div>
 			<button id="dark-mode-toggle" class="dag-natt2" aria-label="dark mode toggle">
 				<svg class="svg-anim" viewBox="0 70 100 100">
@@ -53,20 +56,301 @@
 		</nav>
 		<main>
 			<!-- Mandags-økter -->
-			<div class="man" id="dag1"></div>
-			<div class="tir" id="dag2"></div>
-			<div class="ons" id="dag3">
-				<div class="boksRamme tekst xSPA sB ikkePublisert">
-					<h2>Timeplan ikke publisert</h2>
-					<p>Denne timeplanen er ikke publisert enda. Timeplanen publiseres på slutten uka før.</p>
-					<a href="https://f21.im/timeplan" target="_self" class="ukeNav" alt="Tilbake til gjeldende timeplan" title="Tilbake til gjeldende timeplan">
-						<div class="pil maskeTilbakeOutline"></div>
-						<h3>Gå til gjeldende timeplan</h3>
-					</a>
+			<div class="man" id="dag1">
+				<div class="mandag">
+					<h2>Mandag</h2>
+					<h4>24. februar</h4>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag1">
+					<div class="fagtittel">
+						<div class="svgIkon maskeProgramfag"></div>
+						<h3 class="farge-programfag">Programfag</h3>
+						<h6>09:00<br />11.25</h6>
+					</div>
+					<h4 class="farge-programfag">207 / 211</h4>
+					<h5>Jon, Stian og Joakim</h5>
+					<p>Oppstart periode 13: Interaktive nettsider</p>
+					<br />
+					<p>Quizlet: Hva husker du?</p>
+				</div>
+				<div class="lunsj1">
+					<h5>F21-Liga: 3STC vs. 3STD</h5>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag2">
+					<div class="fagtittel">
+						<div class="svgIkon maskeProgramfag"></div>
+						<h3 class="farge-programfag">Programfag</h3>
+						<h6>12:10<br />13.40</h6>
+					</div>
+					<h4 class="farge-programfag">207 / 211</h4>
+					<h5>Jon, Stian og Marius</h5>
+					<p>Modul: Idéuvikling</p>
+				</div>
+				<div class="boksRamme tekst sP06 sB engelsk1">
+					<div class="fagtittel">
+						<div class="svgIkon maskeEngelsk"></div>
+						<h3 class="farge-engelsk">Engelsk</h3>
+						<h6>13:50<br />15:20</h6>
+					</div>
+					<div class="gruppe-xy">
+						<div>
+							<h4 class="farge-engelsk">IMX: 207</h4>
+							<h5>John</h5>
+						</div>
+						<div>
+							<h4 class="farge-engelsk">IMY: 301</h4>
+							<h5>Ingrid</h5>
+						</div>
+					</div>
+					<p>Preparataion oral assessment individually + speed-dating</p>
 				</div>
 			</div>
-			<div class="tor" id="dag4"></div>
-			<div class="fre" id="dag5"></div>
+			<!-- Tirsdags-økter -->
+			<div class="tir" id="dag2">
+				<div class="tirsdag">
+					<h2>Tirsdag</h2>
+					<h4>25. februar</h4>
+				</div>
+				<button id="forumKnapp" onClick="forumDialog.showModal()" class="boksRamme tekst sP06 sB forum">
+					<div class="fagtittel">
+						<div class="svgIkon maskeForum"></div>
+						<h3 class="farge-forum">Forum</h3>
+						<h6>09:00<br />09:45</h6>
+					</div>
+				</button>
+				<!-- Dialogvindu Forum start-->
+				<dialog onClick="forumDialog.close()" id="forumDialog" class="boksRamme tekst sP06 sB">
+					<div class="svgIkon maskeForum"></div>
+					<h3 class="farge-forum">Forum</h3>
+					<h4 class="farge-forum">207</h4>
+					<h5>Marius og Stian</h5>
+					<p></p>
+					<button id="lukk" onClick="popUp.close()">X</button>
+					<h6>09:00 - 09:45</h6>
+				</dialog>
+				<!-- Dialogvindu Forum slutt-->
+				<div class="boksRamme tekst sP06 sB matte1">
+					<div class="fagtittel">
+						<div class="svgIkon maskeMatte"></div>
+						<h3 class="farge-matte">Matte</h3>
+						<h6>09:55<br />11.25</h6>
+					</div>
+					<div class="gruppe-abc">
+						<div>
+							<h4 class="farge-matte">A: 207</h4>
+							<h5>Lars Tore</h5>
+						</div>
+						<div>
+							<h4 class="farge-matte">B: 211</h4>
+							<h5>Andreas</h5>
+						</div>
+						<div>
+							<h4 class="farge-matte">C: 316</h4>
+							<h5>Geir</h5>
+						</div>
+					</div>
+					<p>Vurdering i økonomi</p>
+				</div>
+				<div class="lunsj2">
+					<h5>F21-Liga: 2STD vs. 8D</h5>
+				</div>
+				<!-- Stian har oddetallsuker, Joakim har partallsuker-->
+				<div class="boksRamme tekst xSPA sB programfag3">
+					<div class="fagtittel">
+						<div class="svgIkon maskeProgramfag"></div>
+						<h3 class="farge-programfag">Programfag</h3>
+						<h6>12:10<br />13.40</h6>
+					</div>
+					<h4 class="farge-programfag">207 / 211</h4>
+					<h5>Jon, Marius og Stian</h5>
+					<p>Modul: Manipulering av HTML</p>
+				</div>
+				<div class="boksRamme tekst sP06 sB engelsk2">
+					<div class="fagtittel">
+						<div class="svgIkon maskeEngelsk"></div>
+						<h3 class="farge-engelsk">Engelsk</h3>
+						<h6>13:50<br />16:15</h6>
+					</div>
+					<div class="gruppe-xy">
+						<div>
+							<h4 class="farge-engelsk">IMX: 207</h4>
+							<h5>John</h5>
+						</div>
+						<div>
+							<h4 class="farge-engelsk">IMY: 301</h4>
+							<h5>Ingrid</h5>
+						</div>
+					</div>
+					<p>Oral Assessment</p>
+				</div>
+			</div>
+			<!-- Onsdags-økter -->
+			<div class="ons" id="dag3">
+				<div class="onsdag">
+					<h2>Onsdag</h2>
+					<h4>26. februar</h4>
+				</div>
+				<button onClick="matteDialog.showModal()" class="boksRamme tekst sP06 sB matte2">
+					<div class="fagtittel">
+						<div class="svgIkon maskeMatte"></div>
+						<h3 class="farge-matte">Matte</h3>
+						<h6>09:55<br />10.40</h6>
+					</div>
+				</button>
+				<!-- Dialogvindu Matte start-->
+				<dialog onClick="matteDialog.close()" id="matteDialog" class="boksRamme tekst sP06 sB">
+					<div class="svgIkon maskeMatte"></div>
+					<h3 class="farge-matte">Matte</h3>
+					<div class="gruppe-abc">
+						<div>
+							<h4 class="farge-matte">A: 207</h4>
+							<h5>Lars Tore</h5>
+						</div>
+						<div>
+							<h4 class="farge-matte">B: 211</h4>
+							<h5>Andreas</h5>
+						</div>
+						<div>
+							<h4 class="farge-matte">C: 316</h4>
+							<h5>Geir</h5>
+						</div>
+					</div>
+					<p>Gjennomsnitt, typetall og median</p>
+					<button id="lukk" onClick="popUp.close()">X</button>
+					<h6>09:55<br />10.40</h6>
+				</dialog>
+				<!-- Dialogvindu Matte slutt-->
+				<button onClick="programfagDialog.showModal()" class="boksRamme tekst xSPA sB programfag4">
+					<div class="fagtittel">
+						<div class="svgIkon maskeProgramfag"></div>
+						<h3 class="farge-programfag">Programfag</h3>
+						<h6>10:40<br />11.25</h6>
+					</div>
+				</button>
+				<!-- Dialogvindu Programfag start-->
+				<dialog onClick="programfagDialog.close()" id="programfagDialog" class="boksRamme tekst sP06 sB">
+					<div class="svgIkon maskeProgramfag"></div>
+					<h3 class="farge-programfag">Programfag</h3>
+					<h4 class="farge-programfag">207 / 211</h4>
+					<h5>Joakim og Stian</h5>
+					<p>Funksjonelle knapper</p>
+					<button id="lukk" onClick="popUp.close()">X</button>
+					<h6>10:40<br />11.25</h6>
+				</dialog>
+				<div class="lunsj3">
+					<h5>F21-Liga: 1STC vs. 8C</h5>
+				</div>
+				<!-- Dialogvindu Programfag slutt-->
+				<div class="boksRamme tekst xSPA sB programfag5">
+					<div class="fagtittel">
+						<div class="svgIkon maskeProgramfag"></div>
+						<h3 class="farge-programfag">Programfag</h3>
+						<h6>12:10<br />14.35</h6>
+					</div>
+					<h4 class="farge-programfag">207 / 211</h4>
+					<h5>Jon, Joakim og Stian</h5>
+					<p>Modul: Funksjonelle knapper</p>
+				</div>
+				<div class="boksRamme tekst xSPA sB naturfag1">
+					<div class="fagtittel">
+						<div class="svgIkon maskeNaturfag"></div>
+						<h3 class="farge-naturfag">Naturfag Y</h3>
+						<h6>14:35<br />16:15</h6>
+					</div>
+					<h4 class="farge-naturfag">IMY: 207</h4>
+					<h5>Sheima</h5>
+					<p>Oppgavestart: Lage film om trådløs kommunikasjon</p>
+				</div>
+			</div>
+			<!-- Torsdags-økter -->
+			<div class="tor" id="dag4">
+				<div class="torsdag">
+					<h2>Torsdag</h2>
+					<h4>27. februar</h4>
+				</div>
+				<div class="boksRamme tekst xSPA sB naturfag2">
+					<div class="fagtittel">
+						<div class="svgIkon maskeNaturfag"></div>
+						<h3 class="farge-naturfag">Naturfag X</h3>
+						<h6>08:15<br />09:45</h6>
+					</div>
+					<h4 class="farge-naturfag">IMX: 207</h4>
+					<h5>Laila Kristin</h5>
+					<p>Oppgavestart: Lage film om trådløs kommunikasjon</p>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag6">
+					<div class="fagtittel">
+						<div class="svgIkon maskeProgramfag"></div>
+						<h3 class="farge-programfag">Programfag</h3>
+						<h6>09:55<br />11.25</h6>
+					</div>
+					<h4 class="farge-programfag">207 / 211</h4>
+					<h5>Jon, Marius og Stian</h5>
+					<p>Modul: Logiske tester</p>
+				</div>
+				<div class="lunsj4">
+					<h5>F21-Liga: 10C vs. 9B</h5>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag7">
+					<div class="fagtittel">
+						<div class="svgIkon maskeProgramfag"></div>
+						<h3 class="farge-programfag">Programfag</h3>
+						<h6>12:10<br />14.35</h6>
+					</div>
+					<h4 class="farge-programfag">207 / 211</h4>
+					<h5>Jon, Marius og Stian</h5>
+					<p>Øve på modul og Jobbing med prosjektoppgave</p>
+				</div>
+			</div>
+			<!-- Fredags-økter -->
+			<div class="fre" id="dag5">
+				<div class="fredag">
+					<h2>Fredag</h2>
+					<h4>28. februar</h4>
+				</div>
+				<div class="boksRamme tekst xSPA sB kroppsoving">
+					<div class="fagtittel">
+						<div class="svgIkon maskeKroppsoving"></div>
+						<h3 class="farge-kroppsoving">Kroppsøving</h3>
+						<h6>08:15<br />09:45</h6>
+					</div>
+					<h4 class="farge-kroppsoving">Gymsalen</h4>
+					<h5>Laila Kristin (X) og Ajdin (Y)</h5>
+					<!-- <p>Egentrening - Økt 2 (hjemmelekse: refleksjon)</p> -->
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag8">
+					<div class="fagtittel">
+						<div class="svgIkon maskeProgramfag"></div>
+						<h3 class="farge-programfag">Programfag</h3>
+						<h6>09:55<br />11:25</h6>
+					</div>
+					<h4 class="farge-programfag">207 / 211</h4>
+					<h5>Stian, Marius og Joakim</h5>
+					<p>Modul: Manipulere CSS</p>
+				</div>
+				<!-- <div class="lunsj5">
+					<h5>F21-Liga: 9C vs. 8C</h5>
+				</div> -->
+				<div class="boksRamme tekst xSPA sB programfag9">
+					<div class="fagtittel">
+						<div class="svgIkon maskeProgramfag"></div>
+						<h3 class="farge-programfag">Programfag</h3>
+						<h6>12:10<br />13:40</h6>
+					</div>
+					<h4 class="farge-programfag">207 / 211</h4>
+					<h5>Stian, Marius og Joakim</h5>
+					<p>Øve på modul og Jobbing med prosjektoppgave</p>
+				</div>
+				<div class="boksRamme tekst xSPA sB lounge">
+					<div class="fagtittel">
+						<div class="svgIkon maskeMidttimen"></div>
+						<h3 class="farge-midttimen">Lounge</h3>
+						<h6>14:45<br />16.15</h6>
+					</div>
+					<h4 class="farge-midttimen">207</h4>
+					<p>Sosialt med spill etter skoletid</p>
+				</div>
+			</div>
 		</main>
 		<footer>
 			<p class="footerContent"></p>
