@@ -15,7 +15,8 @@
 		<link rel="stylesheet" href="/css/im_dag-natt.css" />
 		<link rel="stylesheet" href="/css/im_svg-masker.css" />
 		<link rel="stylesheet" href="/css/tp_design.css" />
-		<link rel="stylesheet" href="/css/tp_oppsett-ikke-publisert.css" />
+		<link rel="stylesheet" href="/css/tp_oppsett-praksis.css" />
+		<link rel="stylesheet" href="/css/tp_mobil-lite.css" />
 		<link rel="stylesheet" href="/css/tp_dialog.css" />
 		<link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
 		<link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
@@ -23,7 +24,11 @@
 		<script type="module" src="/js/im_dag-natt.js"></script>
 		<title>Timeplan uke 13</title>
 	</head>
-
+	<style>
+		.hidden {
+			visibility: hidden;
+		}
+	</style>
 	<body>
 		<!-- Tittel og uketall -->
 		<nav>
@@ -31,10 +36,13 @@
 				<div class="navIkon maskeIndexOutline"></div>
 			</a>
 			<div class="logo">
-				<a href="https://f21.im/timeplan" target="_self" class="ukeNav" alt="Tilbake til gjeldende timeplan" title="Tilbake til gjeldende timeplan">
+				<a href="/timeplan/uke_12.html" target="_self" class="ukeNav" alt="Timeplan uke 12" title="Timeplan uke 12">
 					<div class="pil maskeTilbakeOutline"></div>
 				</a>
 				<h1><span>TIMEPLAN - </span>UKE 13</h1>
+				<!-- <a href="/timeplan/uke_14.html" target="_self" class="ukeNav" alt="Timeplan uke 14" title="Timeplan uke 14">
+					<div class="pil maskeNesteOutline"></div>
+				</a> -->
 			</div>
 			<button id="dark-mode-toggle" class="dag-natt2" aria-label="dark mode toggle">
 				<svg class="svg-anim" viewBox="0 70 100 100">
@@ -53,20 +61,150 @@
 		</nav>
 		<main>
 			<!-- Mandags-økter -->
-			<div class="man" id="dag1"></div>
-			<div class="tir" id="dag2"></div>
-			<div class="ons" id="dag3">
-				<div class="boksRamme tekst xSPA sB ikkePublisert">
-					<h2>Timeplan ikke publisert</h2>
-					<p>Denne timeplanen er ikke publisert enda. Timeplanen publiseres på slutten uka før.</p>
-					<a href="https://f21.im/timeplan" target="_self" class="ukeNav" alt="Tilbake til gjeldende timeplan" title="Tilbake til gjeldende timeplan">
-						<div class="pil maskeTilbakeOutline"></div>
-						<h3>Gå til gjeldende timeplan</h3>
-					</a>
+			<div class="man" id="dag1">
+				<div class="mandag">
+					<h2>Mandag</h2>
+					<h4>24. mars</h4>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag1">
+					<div class="fagtittel">
+						<div class="svgIkon maskeYFF"></div>
+						<h3 class="farge-yff">Praksis</h3>
+						<h6>09:00<br />11.25</h6>
+					</div>
+					<h4 class="farge-yff">207 / 211</h4>
+					<h5>Jon og Stian</h5>
+					<p>Praksis på skolen følger denne planen.</p>
+					<br />
+					<p>Praksis i bedrift følger egen ukeplan for oppmøtetid og varighet etter avtale med kontaktperson.</p>
+					<br />
+					<p>Alle skal presentere hva de har gjort og lært i praksis mandag uke 14</p>
+				</div>
+				<div class="lunsj1">
+					<h5>️⚽ F21-Ligafinale!🏆</h5>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag2">
+					<div class="fagtittel">
+						<div class="svgIkon maskeYFF"></div>
+						<h3 class="farge-yff">Praksis</h3>
+						<h6>12:10<br />15.00</h6>
+					</div>
+					<h4 class="farge-yff">207 / 211</h4>
+					<h5>Jon og Stian</h5>
 				</div>
 			</div>
-			<div class="tor" id="dag4"></div>
-			<div class="fre" id="dag5"></div>
+			<!-- Tirsdags-økter -->
+			<div class="tir" id="dag2">
+				<div class="tirsdag">
+					<h2>Tirsdag</h2>
+					<h4>25. mars</h4>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag3">
+					<div class="fagtittel">
+						<div class="svgIkon maskeYFF"></div>
+						<h3 class="farge-yff">Praksis</h3>
+						<h6>09:00<br />11.25</h6>
+					</div>
+					<h4 class="farge-yff">207 / 211</h4>
+					<h5>Stian</h5>
+				</div>
+				<div class="lunsj2">
+					<h5 class="hidden">F21-Liga:</h5>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag4">
+					<div class="fagtittel">
+						<div class="svgIkon maskeYFF"></div>
+						<h3 class="farge-yff">Praksis</h3>
+						<h6>12:10<br />15.00</h6>
+					</div>
+					<h4 class="farge-yff">207 / 211</h4>
+					<h5>Stian</h5>
+				</div>
+			</div>
+			<!-- Onsdags-økter -->
+			<div class="ons" id="dag3">
+				<div class="onsdag">
+					<h2>Onsdag</h2>
+					<h4>26. mars</h4>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag5">
+					<div class="fagtittel">
+						<div class="svgIkon maskeYFF"></div>
+						<h3 class="farge-yff">Praksis</h3>
+						<h6>09:55<br />11.25</h6>
+					</div>
+					<h4 class="farge-yff">207 / 211</h4>
+					<h5>Jon og Marius</h5>
+				</div>
+				<div class="lunsj3">
+					<h5 class="hidden">F21-Liga:</h5>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag6">
+					<div class="fagtittel">
+						<div class="svgIkon maskeYFF"></div>
+						<h3 class="farge-yff">Praksis</h3>
+						<h6>12:10<br />15.00</h6>
+					</div>
+					<h4 class="farge-yff">207 / 211</h4>
+					<h5>Jon og Marius</h5>
+				</div>
+			</div>
+			<!-- Torsdags-økter -->
+			<div class="tor" id="dag4">
+				<div class="torsdag">
+					<h2>Torsdag</h2>
+					<h4>27. mars</h4>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag7">
+					<div class="fagtittel">
+						<div class="svgIkon maskeYFF"></div>
+						<h3 class="farge-yff">Praksis</h3>
+						<h6>09:00<br />11.25</h6>
+					</div>
+					<h4 class="farge-yff">207 / 211</h4>
+					<h5>Jon og Marius</h5>
+				</div>
+				<div class="lunsj4">
+					<h5 class="hidden">F21-Liga:</h5>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag8">
+					<div class="fagtittel">
+						<div class="svgIkon maskeYFF"></div>
+						<h3 class="farge-yff">Praksis</h3>
+						<h6>12:10<br />14.45</h6>
+					</div>
+					<h4 class="farge-yff">207 / 211</h4>
+					<h5>Jon og Marius</h5>
+				</div>
+			</div>
+			<!-- Fredags-økter -->
+			<div class="fre" id="dag5">
+				<div class="fredag">
+					<h2>Fredag</h2>
+					<h4>28. mars</h4>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag9">
+					<div class="fagtittel">
+						<div class="svgIkon maskeYFF"></div>
+						<h3 class="farge-yff">Praksis</h3>
+						<h6>09:00<br />11.25</h6>
+					</div>
+					<h4 class="farge-yff">207 / 211</h4>
+					<h5>Marius og Stian</h5>
+				</div>
+				<div class="lunsj5">
+					<h5 class="hidden">F21-Liga:</h5>
+				</div>
+				<div class="boksRamme tekst xSPA sB programfag10">
+					<div class="fagtittel">
+						<div class="svgIkon maskeYFF"></div>
+						<h3 class="farge-yff">Praksis</h3>
+						<h6>12:10<br />15.00</h6>
+					</div>
+					<h4 class="farge-yff">207 / 211</h4>
+					<h5>Marius og Stian</h5>
+				</div>
+			</div>
 		</main>
 		<footer>
 			<p class="footerContent"></p>
