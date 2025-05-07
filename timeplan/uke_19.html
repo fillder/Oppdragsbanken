@@ -49,6 +49,31 @@
         "n1" 1fr
         /1fr;
     }
+    .tor {
+      flex: 1;
+      display: grid;
+      gap: 0.5rem;
+      grid:
+        "d4 d4" 0.4fr
+        "n2 .." 1fr
+        "n2 tr" 1fr
+        "p6 p6" 1fr
+        "p6 p6" 1fr
+        "l4 l4" 0.1fr
+        "p7 p7" 1fr
+        "p7 p7" 1fr
+        "p7 p7" 1fr
+        ".. .." 1fr
+        ".. .." 1fr
+        /0.5fr 0.5fr;
+    }
+    .eksamensTrekk {
+      grid-area: tr;
+      max-width: 150px;
+    }
+    .naturfag2 {
+      max-width: 150px;
+    }
     .matte2 {
       grid-area: m2;
       margin-block-end: 0px;
@@ -272,12 +297,20 @@
         <div class="boksRamme tekst xSPA sB naturfag2">
           <div class="fagtittel">
             <div class="svgIkon maskeNaturfag"></div>
-            <h3 class="farge-naturfag">Naturfag X</h3>
             <h6>08:15<br />09:45</h6>
           </div>
+          <h3 class="farge-naturfag">Naturfag</h3>
           <h4 class="farge-naturfag">IMX: 207</h4>
           <h5>Laila Kristin</h5>
           <p>Akustikk</p>
+        </div>
+        <div class="boksRamme tekst xSPA sB eksamensTrekk">
+          <div class="fagtittel">
+            <div class="svgIkon maskeForum"></div>
+            <h3 class="farge-naturfag"></h3>
+            <h6>09:00</h6>
+          </div>
+          <p>Skriftlig eksamenstrekk publiseres VIS</p>
         </div>
         <div class="boksRamme tekst xSPA sB programfag6">
           <div class="fagtittel">
@@ -290,7 +323,7 @@
           <p>Jobbing med sluttprosjektet</p>
         </div>
         <div class="lunsj4">
-          <h5 class="">Trekk skriftlig publiseres</h5>
+          <h5 class="hidden"></h5>
         </div>
         <div class="boksRamme tekst xSPA sB programfag7">
           <div class="fagtittel">
@@ -301,6 +334,8 @@
           <h4 class="farge-programfag">207 / 211</h4>
           <h5>Jon, Marius og Stian</h5>
           <p>Jobbing med sluttprosjektet</p>
+          <br />
+          <p>De som kommer opp i skriftlig møter i auditoriet kl. 12.10 for å få informasjon om eksamen.</p>
         </div>
       </div>
       <!-- Fredags-økter -->
