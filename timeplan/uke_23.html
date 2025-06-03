@@ -49,24 +49,6 @@
         ".." 1fr
         /1fr;
     }
-    .ons {
-      flex: 1;
-      display: grid;
-      gap: 0.5rem;
-      grid:
-        "d3" 0.4fr
-        ".." 1fr
-        ".." 1fr
-        "p4" 1fr
-        "p4" 1fr
-        "l3" 0.1fr
-        "p5" 1fr
-        "p5" 1fr
-        "p5" 1fr
-        "n1" 1fr
-        "n1" 1fr
-        /1fr;
-    }
     .tir {
       flex: 1;
       display: grid;
@@ -241,46 +223,24 @@
           <h2>Onsdag</h2>
           <h4>4. juni</h4>
         </div>
-        <!-- <button onClick="matteDialog.showModal()" class="boksRamme tekst sP06 sB matte2">
-          <div class="fagtittel">
-            <div class="svgIkon maskeMatte"></div>
-            <h3 class="farge-matte">Matte</h3>
-            <h6>09:55<br />10.40</h6>
-          </div>
-        </button> -->
-        <!-- Dialogvindu Matte start-->
-        <!-- <dialog onClick="matteDialog.close()" id="matteDialog" class="boksRamme tekst sP06 sB">
-          <div class="svgIkon maskeMatte"></div>
-          <h3 class="farge-matte">Matte</h3>
-          <div class="gruppe-abc">
-            <div>
-              <h4 class="farge-matte">A: 207</h4>
-              <h5>Lars Tore</h5>
-            </div>
-            <div>
-              <h4 class="farge-matte">B: 211</h4>
-              <h5>Andreas</h5>
-            </div>
-            <div>
-              <h4 class="farge-matte">C: 316</h4>
-              <h5>Geir</h5>
-            </div>
-          </div>
-          <p></p>
-          <button id="lukk" onClick="popUp.close()">X</button>
-          <h6>09:55<br />10.40</h6>
-        </dialog> -->
-        <div class="boksRamme tekst xSPA sB programfag4">
+        <button onClick="programfagDialog.showModal()" class="boksRamme tekst xSPA sB programfag4">
           <div class="fagtittel">
             <div class="svgIkon maskeProgramfag"></div>
             <h3 class="farge-programfag">Programfag</h3>
-            <h6>09:55<br />11.25</h6>
+            <h6>10:40<br />11.25</h6>
           </div>
+        </button>
+        <!-- Dialogvindu Programfag start-->
+        <dialog onClick="programfagDialog.close()" id="programfagDialog" class="boksRamme tekst sP06 sB">
+          <div class="svgIkon maskeProgramfag"></div>
+          <h3 class="farge-programfag">Programfag</h3>
           <h4 class="farge-programfag">207 / 211</h4>
-          <h5>Jon, Marius og Stian</h5>
-          <p>Fyrstikken og Portfolio/CV</p>
-        </div>
-
+          <h5>Jon, Joakim og Marius</h5>
+          <p>Portfolio-inspirasjon</p>
+          <button id="lukk" onClick="popUp.close()">X</button>
+          <h6>10:40<br />11.25</h6>
+        </dialog>
+        <!-- Dialogvindu Programfag slutt-->
         <div class="boksRamme tekst xSPA sB programfag5">
           <div class="fagtittel">
             <div class="svgIkon maskeProgramfag"></div>
