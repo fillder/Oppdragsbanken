@@ -1,92 +1,92 @@
 .man {
-	flex: 1;
-	display: grid;
-	gap: 0.5rem;
-	grid:
-		"d1" 0.4fr
-		"vk" 1fr
-		"vk" 1fr
-		"vk" 1fr
-		"vk" 1fr
-		".." 0.1fr
-		"p1" 1fr
-		"p1" 1fr
-		".." 1fr
-		".." 1fr
-		".." 1fr
-		/1fr;
+  flex: 1;
+  display: grid;
+  gap: 0.5rem;
+  grid:
+    "d1" 0.4fr
+    "vk" 1fr
+    "vk" 1fr
+    "vk" 1fr
+    "vk" 1fr
+    ".." 0.1fr
+    "p1" 1fr
+    "p1" 1fr
+    ".." 1fr
+    ".." 1fr
+    ".." 1fr
+    /1fr;
 }
 .tir {
-	flex: 1;
-	display: grid;
-	gap: 0.5rem;
-	grid:
-		"d2" 0.4fr
-		".." 1fr
-		"ig" 1fr
-		"ig" 1fr
-		"ig" 1fr
-		".." 0.1fr
-		"m1" 1fr
-		"m1" 1fr
-		".." 1fr
-		".." 1fr
-		".." 1fr
-		/1fr;
+  flex: 1;
+  display: grid;
+  gap: 0.5rem;
+  grid:
+    "d2" 0.4fr
+    ".." 1fr
+    "t1" 1fr
+    "t1" 1fr
+    "t1" 1fr
+    ".." 0.1fr
+    "t2" 1fr
+    "t2" 1fr
+    ".." 1fr
+    ".." 1fr
+    ".." 1fr
+    /1fr;
 }
 .ons {
-	flex: 1;
-	display: grid;
-	gap: 0.5rem;
-	grid:
-		"d3" 0.4fr
-		".." 1fr
-		".." 1fr
-		"m2" 1fr
-		"m2" 1fr
-		".." 0.1fr
-		"e2" 1fr
-		"e2" 1fr
-		".." 1fr
-		".." 1fr
-		".." 1fr
-		/1fr;
+  flex: 1;
+  display: grid;
+  gap: 0.5rem;
+  grid:
+    "d3" 0.4fr
+    ".." 1fr
+    ".." 1fr
+    "p1" 1fr
+    "p1" 1fr
+    ".." 0.1fr
+    "p2" 1fr
+    "p2" 1fr
+    ".." 1fr
+    ".." 1fr
+    ".." 1fr
+    /1fr;
 }
 .tor {
-	flex: 1;
-	display: grid;
-	gap: 0.5rem;
-	grid:
-		"d4" 0.4fr
-		"nt" 1fr
-		"nt" 1fr
-		"p2" 1fr
-		"p2" 1fr
-		".." 0.1fr
-		"p3" 1fr
-		"p3" 1fr
-		"p3" 1fr
-		".." 1fr
-		".." 1fr
-		/1fr;
+  flex: 1;
+  display: grid;
+  gap: 0.5rem;
+  grid:
+    "d4" 0.4fr
+    "p3" 1fr
+    "p3" 1fr
+    "p3" 1fr
+    "p3" 1fr
+    ".." 0.1fr
+    "p4" 1fr
+    "p4" 1fr
+    "p4" 1fr
+    ".." 1fr
+    ".." 1fr
+    /1fr;
 }
 .fre {
-	flex: 1;
-	display: grid;
-	gap: 0.5rem;
-	grid:
-		"d5" 0.4fr
-		"gy" 1fr
-		"gy" 1fr
-		"p4" 1fr
-		"p4" 1fr
-		".." 0.1fr
-		"p5" 1fr
-		"p5" 1fr
-		".." 1fr
-		".." 1fr
-		".." 1fr
-		/1fr;
+  flex: 1;
+  display: grid;
+  gap: 0.5rem;
+  grid:
+    "d5" 0.4fr
+    "p5" 1fr
+    "p5" 1fr
+    "kr" 1fr
+    "kr" 1fr
+    ".." 0.1fr
+    "mt" 1fr
+    "en" 1fr
+    "en" 1fr
+    ".." 1fr
+    ".." 1fr
+    /1fr;
 }
 
 .man p,
@@ -99,112 +99,115 @@
 .tor ul,
 .fre p,
 .fre ul {
-	text-align: start;
+  text-align: start;
 }
 
 /* Mandag */
 
 .mandag {
-	grid-area: d1;
+  grid-area: d1;
 }
 
 .velkommen {
-	grid-area: vk;
-	margin-top: 3rem;
+  grid-area: vk;
+  margin-top: 3rem;
 }
 
 .programfag1 {
-	grid-area: p1;
-	margin-bottom: 2rem;
+  grid-area: p1;
 }
 
 /* tirsdag */
 .tirsdag {
-	grid-area: d2;
+  grid-area: d2;
 }
 
 .ig {
-	grid-area: ig;
+  grid-area: ig;
 }
 
 .matte1 {
-	grid-area: m1;
-	margin-bottom: -3rem;
+  grid-area: m1;
 }
 
 .programfag2 {
-	grid-area: p2;
+  grid-area: p2;
 }
 
 /* onsdag */
 .onsdag {
-	grid-area: d3;
+  grid-area: d3;
 }
 
-.matte2 {
-	grid-area: m2;
+.matte {
+  grid-area: mt;
 }
 
-.engelsk2 {
-	grid-area: e2;
-	margin-bottom: -3rem;
+.engelsk {
+  grid-area: en;
 }
 
 .programfag3 {
-	grid-area: p3;
+  grid-area: p3;
 }
 
 .f21-liga {
-	grid-area: li;
+  grid-area: li;
 }
 
 /* torsdag */
 .torsdag {
-	grid-area: d4;
+  grid-area: d4;
 }
 
 .yff1 {
-	grid-area: y1;
+  grid-area: y1;
 }
 
 .yff3 {
-	grid-area: y3;
+  grid-area: y3;
 }
 .midttimen {
-	grid-area: mt;
+  grid-area: mt;
 }
 
 .yff2 {
-	grid-area: y2;
+  grid-area: y2;
 }
 
 /* fredag */
 .fredag {
-	grid-area: d5;
+  grid-area: d5;
 }
 
 .programfag4 {
-	grid-area: p4;
+  grid-area: p4;
+  margin-bottom: 3rem;
 }
 
 .programfag5 {
-	grid-area: p5;
-	margin-bottom: -3rem;
+  grid-area: p5;
 }
 
 .naturfag {
-	grid-area: nt;
+  grid-area: nt;
 }
 
 .kroppsoving {
-	grid-area: gy;
+  grid-area: kr;
 }
 .vinterferie {
-	grid-area: vi;
-	display: flex;
-	flex-direction: column;
-	place-content: center;
+  grid-area: vi;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
 }
 .vinterferie h3 {
-	color: var(--clr-spessartin);
+  color: var(--clr-spessartin);
+}
+.tur1 {
+  grid-area: t1;
+}
+.tur2 {
+  grid-area: t2;
 }

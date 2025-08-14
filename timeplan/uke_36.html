@@ -1,313 +1,78 @@
 <!DOCTYPE html>
 <html lang="no">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="color-scheme" content="dark light" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto+Slab:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="/css/im_stilark.css" />
-		<link rel="stylesheet" href="/css/im_dag-natt.css" />
-		<link rel="stylesheet" href="/css/im_svg-masker.css" />
-		<link rel="stylesheet" href="/css/tp_design.css" />
-		<link rel="stylesheet" href="/css/tp_oppsett-standard_uke.css" />
-		<link rel="stylesheet" href="/css/tp_mobil-lite.css" />
-		<link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
-		<link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
-		<link rel="apple-touch-icon" href="/images/ico/skolelogo.svg" />
-		<script type="module" src="/js/im_dag-natt.js"></script>
-		<title>Timeplan uke 36</title>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto+Slab:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/im_stilark.css" />
+    <link rel="stylesheet" href="/css/im_dag-natt.css" />
+    <link rel="stylesheet" href="/css/im_svg-masker.css" />
+    <link rel="stylesheet" href="/css/tp_design.css" />
+    <link rel="stylesheet" href="/css/tp_oppsett-ikke-publisert.css" />
+    <link rel="stylesheet" href="/css/tp_dialog.css" />
+    <link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
+    <link rel="apple-touch-icon" href="/images/ico/skolelogo.svg" />
+    <script type="module" src="/js/im_dag-natt.js"></script>
+    <title>Timeplan uke 36</title>
+  </head>
 
-	<body>
-		<!-- Tittel og uketall -->
-		<nav>
-			<a class="navKnapp" target="_self" rel="noreferrer noopener" href="/index.html" title="Hjem" alt="Naviger til startsiden">
-				<div class="navIkon maskeIndexOutline"></div>
-			</a>
-			<div class="logo">
-				<a href="/timeplan/uke_35.html" target="_self" class="ukeNav" alt="Timeplan uke 35" title="Timeplan uke 35">
-					<div class="pil maskeTilbakeOutline"></div>
-				</a>
-				<h1><span>TIMEPLAN - </span>UKE 36</h1>
-				<a href="/timeplan/uke_37.html" target="_self" class="ukeNav" alt="Timeplan uke 37" title="Timeplan uke 37">
+  <body>
+    <!-- Tittel og uketall -->
+    <nav>
+      <a class="navKnapp" target="_self" rel="noreferrer noopener" href="/index.html" title="Hjem" alt="Naviger til startsiden">
+        <div class="navIkon maskeIndexOutline"></div>
+      </a>
+      <div class="logo">
+        <a href="https://f21.im/timeplan" target="_self" class="ukeNav" alt="Tilbake til gjeldende timeplan" title="Tilbake til gjeldende timeplan">
+          <div class="pil maskeTilbakeOutline"></div>
+        </a>
+        <h1><span>TIMEPLAN - </span>UKE 36</h1>
+        <!-- <a href="/timeplan/uke_36.html" target="_self" class="ukeNav" alt="Timeplan uke 36" title="Timeplan uke 36">
 					<div class="pil maskeNesteOutline"></div>
-				</a>
-			</div>
-			<button id="dark-mode-toggle" class="dag-natt2" aria-label="dark mode toggle">
-				<svg class="svg-anim" viewBox="0 70 100 100">
-					<line class="sun" x1="83.14" y1="153.14" x2="69" y2="139" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
-					<line class="sun" x1="3" y1="120" x2="23" y2="120" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
-					<line class="sun" x1="16.86" y1="153.14" x2="31" y2="139" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
-					<line class="sun" x1="50" y1="167" x2="50" y2="147" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
-					<line class="sun" x1="16.86" y1="86.86" x2="31" y2="101" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
-					<line class="sun" x1="97" y1="120" x2="77" y2="120" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
-					<line class="sun" x1="83.25" y1="86.86" x2="69.11" y2="101" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
-					<line class="sun" x1="50" y1="73" x2="50" y2="93" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
-					<circle class="sun" cx="50" cy="120" r="20" />
-					<circle class="moon" cx="135" cy="40" r="40" />
-				</svg>
-			</button>
-		</nav>
-		<main>
-			<!-- Mandags-økter -->
-			<div class="man" id="dag1">
-				<div class="mandag">
-					<h2>Mandag</h2>
-					<h4>2. september</h4>
-				</div>
-				<div class="boksRamme tekst xSPA sB programfag1">
-					<div class="fagtittel">
-						<div class="svgIkon maskeProgramfag"></div>
-						<h3 class="farge-programfag">Programfag</h3>
-						<h6>09:00<br />11.25</h6>
-					</div>
-					<h4 class="farge-programfag">207 / 211</h4>
-					<h5>Jon, Stian og Marius</h5>
-					<p>Vi ferdigstiller avatarene som vi begynte på forrige uke</p>
-					<img class="timepPlanBilde sBoksRamme xSB" src="/timeplan/deg-selv-i-vektro_utklipp2.webp" alt="" />
-					<br />
-					<p><b>Kickout:</b> Periode 1</p>
-				</div>
-				<div class="boksRamme tekst xSPA sB programfag2">
-					<div class="fagtittel">
-						<div class="svgIkon maskeProgramfag"></div>
-						<h3 class="farge-programfag">Programfag</h3>
-						<h6>12:10<br />13.40</h6>
-					</div>
-					<h4 class="farge-programfag">207 / 211</h4>
-					<h5>Jon, Stian og Marius</h5>
-					<p><b>Kickoff:</b> periode 2 - Webutvikling og design</p>
-					<br />
-					<p>Oppsett av VSCode og viktige begreper for perioden</p>
-				</div>
-				<div class="boksRamme tekst sP06 sB engelsk1">
-					<div class="fagtittel">
-						<div class="svgIkon maskeEngelsk"></div>
-						<h3 class="farge-engelsk">Engelsk</h3>
-						<h6>13:50<br />15:20</h6>
-					</div>
-					<div class="gruppe-xy">
-						<div>
-							<h4 class="farge-engelsk">IMX: 207</h4>
-							<h5>Ingrid Kleven</h5>
-						</div>
-						<div>
-							<h4 class="farge-engelsk">IMY: 211</h4>
-							<h5>Stine Cecilie</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Tirsdags-økter -->
-			<div class="tir" id="dag2">
-				<div class="tirsdag">
-					<h2>Tirsdag</h2>
-					<h4>3. september</h4>
-				</div>
-				<div class="boksRamme tekst sP06 sB forum">
-					<div class="fagtittel">
-						<div class="svgIkon maskeForum"></div>
-						<h3 class="farge-forum">Forum</h3>
-						<h6>09:00<br />09:45</h6>
-					</div>
-					<div>
-						<h4 class="farge-forum">207 / 211</h4>
-						<h5>Jon og Stian</h5>
-					</div>
-				</div>
-				<div class="boksRamme tekst sP06 sB matte1">
-					<div class="fagtittel">
-						<div class="svgIkon maskeMatte"></div>
-						<h3 class="farge-matte">Matte</h3>
-						<h6>09:55<br />11.25</h6>
-					</div>
-					<div class="gruppe-abc">
-						<div>
-							<h4 class="farge-matte">A: 207</h4>
-							<h5>Lars Tore</h5>
-						</div>
-						<div>
-							<h4 class="farge-matte">B: 211</h4>
-							<h5>Andreas</h5>
-						</div>
-						<div>
-							<h4 class="farge-matte">C: 316</h4>
-							<h5>Geir</h5>
-						</div>
-					</div>
-				</div>
-				<div class="boksRamme tekst xSPA sB programfag3">
-					<div class="fagtittel">
-						<div class="svgIkon maskeProgramfag"></div>
-						<h3 class="farge-programfag">Programfag</h3>
-						<h6>12:10<br />13.40</h6>
-					</div>
-					<h4 class="farge-programfag">207 / 211</h4>
-					<h5>Jon, Haidar og Marius</h5>
-					<p>Versjonskontroll med GitHub</p>
-					<br />
-					<p>Din første nettside</p>
-				</div>
-				<div class="boksRamme tekst sP06 sB engelsk2">
-					<div class="fagtittel">
-						<div class="svgIkon maskeEngelsk"></div>
-						<h3 class="farge-engelsk">Engelsk</h3>
-						<h6>13:50<br />16:15</h6>
-					</div>
-					<div class="gruppe-xy">
-						<div>
-							<h4 class="farge-engelsk">IMX: 207</h4>
-							<h5>Ingrid Kleven</h5>
-						</div>
-						<div>
-							<h4 class="farge-engelsk">IMY: 211</h4>
-							<h5>Stine Cecilie</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Onsdags-økter -->
-			<div class="ons" id="dag3">
-				<div class="onsdag">
-					<h2>Onsdag</h2>
-					<h4>4. september</h4>
-				</div>
-				<div class="boksRamme tekst sP06 sB matte2">
-					<div class="fagtittel">
-						<div class="svgIkon maskeMatte"></div>
-						<h3 class="farge-matte">Matte</h3>
-						<h6>09:55<br />10.40</h6>
-					</div>
-					<div class="gruppe-abc">
-						<div>
-							<h4 class="farge-matte">A: 207</h4>
-							<h5>Lars Tore</h5>
-						</div>
-						<div>
-							<h4 class="farge-matte">B: 211</h4>
-							<h5>Andreas</h5>
-						</div>
-						<div>
-							<h4 class="farge-matte">C: 316</h4>
-							<h5>Geir</h5>
-						</div>
-					</div>
-				</div>
-				<div class="boksRamme tekst xSPA sB programfag4">
-					<div class="fagtittel">
-						<div class="svgIkon maskeProgramfag"></div>
-						<h3 class="farge-programfag">Programfag</h3>
-						<h6>10:40<br />11.25</h6>
-					</div>
-					<h4 class="farge-programfag">207 / 211</h4>
-					<h5>Marius, Stian og Haidar</h5>
-				</div>
-				<div class="boksRamme tekst xSPA sB programfag5">
-					<div class="fagtittel">
-						<div class="svgIkon maskeProgramfag"></div>
-						<h3 class="farge-programfag">Programfag</h3>
-						<h6>12:10<br />14.35</h6>
-					</div>
-					<h4 class="farge-programfag">207 / 211</h4>
-					<h5>Jon, Stian og Haidar</h5>
-					<p>WYSIWYG vs oppmerkingsspråk</p>
-					<br />
-					<p>Lag en oppskrift</p>
-				</div>
-			</div>
-			<!-- Torsdags-økter -->
-			<div class="tor" id="dag4">
-				<div class="torsdag">
-					<h2>Torsdag</h2>
-					<h4>5. september</h4>
-				</div>
-				<div class="boksRamme tekst xSPA sB naturfag">
-					<div class="fagtittel">
-						<div class="svgIkon maskeNaturfag"></div>
-						<h3 class="farge-naturfag">Naturfag</h3>
-						<h6>08:15<br />09:45</h6>
-					</div>
-					<div class="gruppe-xy">
-						<div>
-							<h4 class="farge-naturfag">IMX: 207</h4>
-							<h5>Laila Kristin</h5>
-						</div>
-						<div>
-							<h4 class="farge-naturfag">IMY: 211</h4>
-							<h5>Mari</h5>
-						</div>
-					</div>
-				</div>
-				<div class="boksRamme tekst xSPA sB programfag6">
-					<div class="fagtittel">
-						<div class="svgIkon maskeProgramfag"></div>
-						<h3 class="farge-programfag">Programfag</h3>
-						<h6>09:55<br />11.25</h6>
-					</div>
-					<h4 class="farge-programfag">207 / 211</h4>
-					<h5>Jon, Stian og Marius</h5>
-					<p>Flytdiagram i FigJam</p>
-					<br />
-					<p>Nettsidequiz</p>
-				</div>
-				<div class="boksRamme tekst xSPA sB programfag7">
-					<div class="fagtittel">
-						<div class="svgIkon maskeProgramfag"></div>
-						<h3 class="farge-programfag">Programfag</h3>
-						<h6>12:10<br />14.35</h6>
-					</div>
-					<h4 class="farge-programfag">207 / 211</h4>
-					<h5>Jon, Stian og Marius</h5>
-				</div>
-			</div>
-			<!-- Fredags-økter -->
-			<div class="fre" id="dag5">
-				<div class="fredag">
-					<h2>Fredag</h2>
-					<h4>6. september</h4>
-				</div>
-				<div class="boksRamme tekst xSPA sB kroppsoving">
-					<div class="fagtittel">
-						<div class="svgIkon maskeKroppsoving"></div>
-						<h3 class="farge-kroppsoving">Kroppsøving</h3>
-						<h6>08:15<br />09:45</h6>
-					</div>
-					<h4 class="farge-kroppsoving">Ute</h4>
-					<h5>Laila Kristin og Ajdin</h5>
-					<p>Oppmøte ved inngang C. Tema: Fotosafari</p>
-				</div>
-				<div class="boksRamme tekst xSPA sB programfag8">
-					<div class="fagtittel">
-						<div class="svgIkon maskeProgramfag"></div>
-						<h3 class="farge-programfag">Programfag</h3>
-						<h6>09:55<br />11:25</h6>
-					</div>
-					<h4 class="farge-programfag">207 / 211</h4>
-					<h5>Stian, Haidar og Marius</h5>
-					<p>Nettsidequiz</p>
-				</div>
-				<div class="boksRamme tekst xSPA sB programfag9">
-					<div class="fagtittel">
-						<div class="svgIkon maskeProgramfag"></div>
-						<h3 class="farge-programfag">Programfag</h3>
-						<h6>12:10<br />13:40</h6>
-					</div>
-					<div>
-						<h4 class="farge-programfag">207 / 211</h4>
-						<h5>Stian, Haidar og Marius</h5>
-						<p><b>Checkpoint:</b> Webutvikling Lvl 1</p>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer>
-			<p class="footerContent"></p>
-		</footer>
-	</body>
+				</a> -->
+      </div>
+      <button id="dark-mode-toggle" class="dag-natt2" aria-label="dark mode toggle">
+        <svg class="svg-anim" viewBox="0 70 100 100">
+          <line class="sun" x1="83.14" y1="153.14" x2="69" y2="139" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+          <line class="sun" x1="3" y1="120" x2="23" y2="120" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+          <line class="sun" x1="16.86" y1="153.14" x2="31" y2="139" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+          <line class="sun" x1="50" y1="167" x2="50" y2="147" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+          <line class="sun" x1="16.86" y1="86.86" x2="31" y2="101" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+          <line class="sun" x1="97" y1="120" x2="77" y2="120" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+          <line class="sun" x1="83.25" y1="86.86" x2="69.11" y2="101" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+          <line class="sun" x1="50" y1="73" x2="50" y2="93" stroke-width="6" stroke-dasharray="20" stroke-dashoffset="0" />
+          <circle class="sun" cx="50" cy="120" r="20" />
+          <circle class="moon" cx="135" cy="40" r="40" />
+        </svg>
+      </button>
+    </nav>
+    <main>
+      <!-- Mandags-økter -->
+      <div class="man" id="dag1"></div>
+      <div class="tir" id="dag2"></div>
+      <div class="ons" id="dag3">
+        <div class="boksRamme tekst xSPA sB ikkePublisert">
+          <h2>Uke 36</h2>
+          <p>Denne timeplanen er ikke publisert enda.</p>
+          <a href="https://f21.im/timeplan" target="_self" class="ukeNav" alt="Tilbake til gjeldende timeplan" title="Tilbake til gjeldende timeplan">
+            <div class="pil maskeTilbakeOutline"></div>
+            <h3>Gå til gjeldende timeplan</h3>
+          </a>
+        </div>
+      </div>
+      <div class="tor" id="dag4"></div>
+      <div class="fre" id="dag5"></div>
+    </main>
+    <footer>
+      <p class="footerContent"></p>
+    </footer>
+  </body>
 </html>
