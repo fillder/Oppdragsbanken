@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+}
+:root {
+  --clr-main: #d3d3d3;
+  --clr-tekst: #3e4247;
+  --clr-ixDBoks: #f5f6f5;
+  --clr-ramme: #b9bec2;
+  --clr-tabellBoks: #d4d4d8;
+  --clr-tekstBoks: #dfdfdf;
+  --clr-bakgrunn: #b6b6b6;
+
+  --clr-safir: #367fff; /*programfag*/
+  --clr-akvamarin: #1892ba; /*yff*/
+  --clr-amazonitt: #228468; /*kroppsøving*/
+  --clr-smaragd: #518238; /*naturfag*/
+  --clr-citrin: #a18603; /*matte*/
+  --clr-spessartin: #d1690f; /*engelsk*/
+  --clr-rubin: #d24040; /*firdager*/
+  --clr-thulitt: #b44f99; /*forum*/
+  --clr-kunzitt: #9a5daf; /*aktiviteter sommer*/
+  --clr-ametyst: #7258bb; /*aktiviteter vinter*/
+}
+.darkmode {
+  --clr-main: #14151f;
+  --clr-tekst: #a8a8a8;
+  --clr-ramme: #57637a;
+  --clr-ixDBoks: #0b0c13;
+  --clr-tabellBoks: #1a1c29;
+  --clr-tekstBoks: #262738;
+  --clr-bakgrunn: #07070b;
+
+  --clr-safir: #1fa6e2; /*programfag*/
+  --clr-akvamarin: #33c9c4; /*yff*/
+  --clr-amazonitt: #35b06f; /*kroppsøving*/
+  --clr-smaragd: #839e53; /*naturfag*/
+  --clr-citrin: #e6ce2f; /*matte*/
+  --clr-spessartin: #e68d2f; /*engelsk*/
+  --clr-rubin: #ec4f28; /*fridager*/
+  --clr-thulitt: #c973af; /*forum */
+  --clr-kunzitt: #b18bf4; /*aktiviteter sommer*/
+  --clr-ametyst: #7b77ff; /*aktiviteter vinter*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--clr-tekst);
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Slab", serif;
+}
+h5,
+em,
+p {
+  font-family: "Roboto", sans-serif;
+}
+h6 {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+h4,
+h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+h6 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+i {
+  font-style: italic;
+}
+b {
+  font-weight: 500;
+}
+
+/* GAMMELT - MÅ LØSE DUPLIKAT */
+button {
+  background-color: transparent;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+}
+
+a,
+a:link,
+a:visited {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-tekst);
+}

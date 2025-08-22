@@ -1,61 +1,71 @@
+/* dialog {  position: absolute;
+  inset: 0 0 10rem 0;
+  margin: auto;
+  max-width: 500px;
+} */
+
 button {
-	display: grid;
-	align-items: start;
+  display: grid;
+  align-items: start;
 }
 dialog {
-	position: absolute;
-	margin: auto;
-	width: 500px;
-	height: 300px;
-	padding: 1rem;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-	z-index: 110;
+  position: absolute;
+  margin: auto;
+  width: 500px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 110;
+}
+.dialog-innhold .fagbeholder {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  width: 100%;
 }
 dialog::backdrop {
-	background-color: Black;
-	opacity: 0.4;
+  background-color: Black;
+  opacity: 0.4;
 }
-dialog button {
-	padding-inline: 1rem;
-	padding-block: 0.5rem;
-	margin-block: 0.5rem;
-}
-#lukk {
-	position: absolute;
-	bottom: 0.5rem;
-	right: 1rem;
-	padding-inline: 0.5rem;
-	padding-block: 0rem;
-}
+/* dialog button {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  margin-block: 0.5rem;
+} */
+/* #lukk {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  padding-inline: 0.5rem;
+  padding-block: 0rem;
+} */
 dialog h1 {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 dialog h2 {
-	font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 dialog h3 {
-	font-size: 1.4rem;
-	text-align: center;
-	margin-block-end: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-block-end: 1rem;
 }
 dialog h4 {
-	font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 dialog h5 {
-	font-size: 1.1rem;
-	margin-block-end: 1rem;
+  font-size: 1.1rem;
+  margin-block-end: 1rem;
 }
 dialog h6 {
-	position: absolute;
-	left: 1rem;
-	bottom: 1rem;
-	font-size: 1rem;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-size: 1rem;
 }
 dialog p {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 dialog .svgIkon {
-	position: absolute;
-	left: 1rem;
-	top: 1rem;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
 }

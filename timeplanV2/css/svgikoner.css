@@ -1,0 +1,49 @@
+.svgIkon {
+  width: 50px;
+  height: 25px;
+  background-color: var(--ikon-farge);
+  -webkit-mask: var(--ikon-url) no-repeat center / contain;
+  mask: var(--ikon-url) no-repeat center / contain;
+  transform: scaleX(-1); /* bare masken flippes */
+}
+
+.programfagIkon {
+  --ikon-farge: var(--clr-safir);
+  --ikon-url: url(../svg/fagikon-programfag.svg);
+}
+.yffIkon {
+  --ikon-farge: var(--clr-akvamarin);
+  --ikon-url: url(../svg/fagikon-yff.svg);
+}
+.kroppsoevingIkon {
+  --ikon-farge: var(--clr-amazonitt);
+  --ikon-url: url(../svg/fagikon-kroppsoeving.svg);
+}
+.naturfagIkon {
+  --ikon-farge: var(--clr-smaragd);
+  --ikon-url: url(../svg/fagikon-naturfag.svg);
+}
+.matteIkon {
+  --ikon-farge: var(--clr-citrin);
+  --ikon-url: url(../svg/fagikon-matte.svg);
+}
+.engelskIkon {
+  --ikon-farge: var(--clr-spessartin);
+  --ikon-url: url(../svg/fagikon-engelsk.svg);
+}
+.fridagIkon {
+  --ikon-farge: var(--clr-rubin);
+  --ikon-url: url(../svg/fagikon-fridag.svg);
+}
+.forumIkon {
+  --ikon-farge: var(--clr-thulitt);
+  --ikon-url: url(../svg/fagikon-forum.svg);
+}
+.eventSommerIkon {
+  --ikon-farge: var(--clr-kunzitt);
+  --ikon-url: url(../svg/fagikon-sommer.svg);
+}
+.eventVinterIkon {
+  --ikon-farge: var(--clr-ametyst);
+  --ikon-url: url(../svg/fagikon-vinter.svg);
+}

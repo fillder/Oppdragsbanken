@@ -1,0 +1,31 @@
+.enkel p,
+.dobbel p,
+.trippel p,
+.frippel p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.enkel p {
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+}
+.dobbel p {
+  line-clamp: 5;
+  -webkit-line-clamp: 5;
+}
+.trippel p {
+  line-clamp: 10;
+  -webkit-line-clamp: 10;
+}
+.frippel p {
+  line-clamp: 15;
+  -webkit-line-clamp: 15;
+}
+article:has(p) {
+  cursor: pointer;
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  /* her kan du legge til blur, animasjon, osv. */
+}
