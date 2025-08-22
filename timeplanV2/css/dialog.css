@@ -1,0 +1,101 @@
+/* dialog {  position: absolute;
+  inset: 0 0 10rem 0;
+  margin: auto;
+  max-width: 500px;
+} */
+
+button {
+  display: grid;
+  align-items: start;
+}
+dialog {
+  position: absolute;
+  margin: auto;
+  width: 500px;
+  border-top-right-radius: clamp(0.2rem, 0.4rem, 0.6vw);
+  border-top-left-radius: clamp(0.8rem, 1.2rem, 1.2vw);
+  border-bottom-left-radius: clamp(0.2rem, 0.4rem, 0.6vw);
+  border-bottom-right-radius: clamp(0.8rem, 1.2rem, 1.2vw);
+  border-color: var(--clr-ramme);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 110;
+}
+dialog .fagbeholder {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  width: 100%;
+  padding-inline-end: 1rem;
+  align-items: center;
+}
+dialog::backdrop {
+  background-color: Black;
+  opacity: 0.4;
+}
+/* dialog button {
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    margin-block: 0.5rem;
+  } */
+#lukk {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding-inline: 0.5rem;
+  padding-block: 0rem;
+}
+dialog h1 {
+  font-size: 2rem;
+}
+dialog h2 {
+  font-size: 1.6rem;
+}
+dialog h3 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+dialog h4 {
+  font-size: 1.2rem;
+}
+dialog h5 {
+  font-size: 1.1rem;
+  margin-block-end: 1rem;
+}
+dialog h6 {
+  width: min-content;
+  font-size: 1rem;
+}
+dialog p {
+  font-size: 1rem;
+  margin-block-end: 2rem;
+}
+dialog .svgIkon {
+  width: 70px;
+  height: 70px;
+}
+dialog:has(.programdagIkon) h3,
+dialog:has(.programdagIkon) h4 {
+  color: var(--clr-safir);
+}
+dialog:has(.forumfagIkon) h3,
+dialog:has(.forumfagIkon) h4 {
+  color: var(--clr-thulitt);
+}
+dialog:has(.naturfagIkon) h3,
+dialog:has(.naturfagIkon) h4 {
+  color: var(--clr-smaragd);
+}
+dialog:has(.matteIkon) h3,
+dialog:has(.matteIkon) h4 {
+  color: var(--clr-citrin);
+}
+dialog:has(.engelskIkon) h3,
+dialog:has(.engelskIkon) h4 {
+  color: var(--clr-spessartin);
+}
+dialog:has(.kroppsoevingIkon) h3,
+dialog:has(.kroppsoevingIkon) h4 {
+  color: var(--clr-amazonitt);
+}
+dialog p {
+  padding-inline: 1rem;
+}

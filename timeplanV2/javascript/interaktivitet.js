@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const closeForm = document.createElement("form");
     closeForm.method = "dialog";
-    closeForm.innerHTML = "<button>Lukk</button>";
+    closeForm.innerHTML = "<button id='lukk'>Lukk</button>";
     dialog.appendChild(closeForm);
 
     document.body.appendChild(dialog);
@@ -34,8 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Lukk ved klikk på bakteppet
     dialog.addEventListener("click", (e) => {
+      const padding = 16;
       const rect = dialog.querySelector(".dialog-innhold").getBoundingClientRect();
-      const inDialog = e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom;
+      const inDialog =
+        e.clientX >= rect.left - padding && e.clientX <= rect.right + padding && e.clientY >= rect.top - padding && e.clientY <= rect.bottom + padding;
 
       if (!inDialog) dialog.close();
     });

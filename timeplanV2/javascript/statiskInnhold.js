@@ -54,15 +54,16 @@ function byggTittel(fagKey) {
 
 function byggKlokke(startTid, sluttTid) {
   const h6 = document.createElement("h6");
-  h6.textContent = startTid && sluttTid ? `${startTid}-${sluttTid}` : "";
+  h6.textContent = startTid && sluttTid ? `${startTid} ${sluttTid}` : "";
   return h6;
 }
 
 function byggFagbeholder({ fagKey, startTid, sluttTid }) {
   const fagbeholder = document.createElement("div");
   fagbeholder.className = "fagbeholder";
-  fagbeholder.appendChild(byggTittel(fagKey));
   fagbeholder.appendChild(byggIkon(fagKey));
+  fagbeholder.appendChild(byggTittel(fagKey));
+
   fagbeholder.appendChild(byggKlokke(startTid, sluttTid));
   return fagbeholder;
 }

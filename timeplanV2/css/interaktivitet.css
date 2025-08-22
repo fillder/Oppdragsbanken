@@ -6,9 +6,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.enkel p {
-  line-clamp: 1;
-  -webkit-line-clamp: 1;
+.enkel:has(h4) p {
+  display: none;
 }
 .dobbel p {
   line-clamp: 5;
