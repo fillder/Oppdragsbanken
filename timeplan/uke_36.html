@@ -1,43 +1,28 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto+Slab:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/im_stilark.css" />
-    <link rel="stylesheet" href="/css/im_dag-natt.css" />
-    <link rel="stylesheet" href="/css/im_svg-masker.css" />
-    <link rel="stylesheet" href="/css/tp_design.css" />
-    <link rel="stylesheet" href="/css/tp_oppsett-ikke-publisert.css" />
-    <link rel="stylesheet" href="/css/tp_dialog.css" />
-    <link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
-    <link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
-    <link rel="apple-touch-icon" href="/images/ico/skolelogo.svg" />
-    <script type="module" src="/js/im_dag-natt.js"></script>
+    <link rel="stylesheet" href="../timeplanV2/css/global.css" />
+    <link rel="stylesheet" href="../timeplanV2/css/style.css" />
+    <link rel="stylesheet" href="../timeplanV2/css/svgikoner.css" />
+    <link rel="stylesheet" href="../timeplanV2/css/interaktivitet.css" />
+    <link rel="stylesheet" href="../timeplanV2/css/nav.css" />
+    <link rel="stylesheet" href="../timeplanV2/css/dialog.css" />
+    <!-- MIDLERTIDIG -->
+    <link rel="stylesheet" href="../css/im_svg-masker.css" />
+    <link rel="stylesheet" href="../css/im_dag-natt.css" />
     <title>Timeplan uke 36</title>
   </head>
-
   <body>
-    <!-- Tittel og uketall -->
     <nav>
       <a class="navKnapp" target="_self" rel="noreferrer noopener" href="/index.html" title="Hjem" alt="Naviger til startsiden">
         <div class="navIkon maskeIndexOutline"></div>
       </a>
+      <ul class="breadcrumbsMenu" id="breadcrumbs"></ul>
       <div class="logo">
-        <a href="https://f21.im/timeplan" target="_self" class="ukeNav" alt="Tilbake til gjeldende timeplan" title="Tilbake til gjeldende timeplan">
-          <div class="pil maskeTilbakeOutline"></div>
-        </a>
+        <a class="pil maskeTilbakeOutline" href="/timeplan/uke_35.html" target="_self" class="ukeNav" alt="Timeplan uke 35" title="Timeplan uke 35"></a>
         <h1><span>TIMEPLAN - </span>UKE 36</h1>
-        <!-- <a href="/timeplan/uke_36.html" target="_self" class="ukeNav" alt="Timeplan uke 36" title="Timeplan uke 36">
-					<div class="pil maskeNesteOutline"></div>
-				</a> -->
       </div>
       <button id="dark-mode-toggle" class="dag-natt2" aria-label="dark mode toggle">
         <svg class="svg-anim" viewBox="0 70 100 100">
@@ -54,25 +39,73 @@
         </svg>
       </button>
     </nav>
-    <main>
-      <!-- Mandags-økter -->
-      <div class="man" id="dag1"></div>
-      <div class="tir" id="dag2"></div>
-      <div class="ons" id="dag3">
-        <div class="boksRamme tekst xSPA sB ikkePublisert">
-          <h2>Uke 36</h2>
-          <p>Denne timeplanen er ikke publisert enda.</p>
-          <a href="https://f21.im/timeplan" target="_self" class="ukeNav" alt="Tilbake til gjeldende timeplan" title="Tilbake til gjeldende timeplan">
-            <div class="pil maskeTilbakeOutline"></div>
-            <h3>Gå til gjeldende timeplan</h3>
-          </a>
-        </div>
+    <header id="dager">
+      <div class="mandag">
+        <h2>Mandag</h2>
+        <h4>1. september</h4>
       </div>
-      <div class="tor" id="dag4"></div>
-      <div class="fre" id="dag5"></div>
+      <div class="tirsdag">
+        <h2>Tirsdag</h2>
+        <h4>2. september</h4>
+      </div>
+      <div class="onsdag">
+        <h2>Onsdag</h2>
+        <h4>3. september</h4>
+      </div>
+      <div class="torsdag">
+        <h2>Torsdag</h2>
+        <h4>4. september</h4>
+      </div>
+      <div class="fredag">
+        <h2>Fredag</h2>
+        <h4>5. september</h4>
+      </div>
+    </header>
+    <main id="timeplan">
+      <!-- MANDAG -->
+      <section id="mandag">
+        <article class="undervisning programfag trippel klasse oppstart0900">
+          <p>Kick-out periode 2 med fremvising av produkter og refleksjon</p>
+          <br />
+          <p>Kick-off periode 3: Webutvikling 1.0</p>
+        </article>
+        <article class="undervisning programfag dobbel klasse MariusIMA">
+          <p>Installere VSCode og Github</p>
+        </article>
+        <article class="undervisning programfag dobbel klasse MariusIMA">
+          <p>Oppgave: Min første nettside</p>
+        </article>
+      </section>
+      <!-- TIRSDAG -->
+      <section id="tirsdag">
+        <article class="undervisning forum enkel gruppe oppstart0900"><p>Valg og påvirkning del 2</p></article>
+        <article class="undervisning matte dobbel klasse"><p>Osloprøven</p></article>
+        <article class="undervisning naturfag dobbel gruppe"><p></p></article>
+        <article class="undervisning engelsk trippel gruppe"><p>Vocational english project</p></article>
+      </section>
+      <!-- ONSDAG -->
+      <section id="onsdag">
+        <article class="undervisning programfag dobbel klasse oppstart0955 MariusIMC"><p>Øve på grunnleggende HTML</p></article>
+        <article class="undervisning programfag dobbel klasse MariusIMA"><p>Intro til CSS</p></article>
+        <article class="undervisning programfag dobbel klasse MariusIMB"><p>Øve på grunnleggende CSS</p></article>
+      </section>
+      <!-- TORSDAG -->
+      <section id="torsdag">
+        <article class="undervisning programfag dobbel klasse oppstart0815 MariusIMA"><p>Starte med prosjektoppgaven</p></article>
+        <article class="undervisning programfag dobbel klasse MariusIMB"><p>Lage trådskisse og prototype</p></article>
+        <article class="undervisning programfag trippel klasse"><p>Lære å kode layout</p></article>
+      </section>
+      <!-- FREDAG -->
+      <section id="fredag">
+        <article class="undervisning programfag dobbel klasse oppstart0815 MariusIMC"><p>Lære å jobbe med CSS-reset</p></article>
+        <article class="undervisning kroppsoeving dobbel gruppe"><p>Fotosafari</p></article>
+        <article class="undervisning matte enkel klasse"></article>
+        <article class="undervisning engelsk dobbel gruppe"><p>Vocational english project</p></article>
+      </section>
     </main>
-    <footer>
-      <p class="footerContent"></p>
-    </footer>
+    <script src="../timeplanV2/javascript/statiskInnhold.js"></script>
+    <script src="../timeplanV2/javascript/interaktivitet.js"></script>
+    <!-- MIDLERTIDIG -->
+    <script src="../js/im_dag-natt.js"></script>
   </body>
 </html>
