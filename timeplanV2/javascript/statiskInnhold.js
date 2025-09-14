@@ -146,7 +146,7 @@ function byggGrupper() {
   const laerereGruppe = {
     engelsk: { IMX: "Mari", IMY: "Kjetil" },
     forum: { IMX: "Stian", IMY: "Jon" },
-    kroppsoeving: { IMX: "Ajdin", IMY: "Laila Kristin" },
+    kroppsoeving: { IMXK: "Ajdin", IMYK: "Laila Kristin" },
     naturfag: { IMX: "Thomas", IMY: "Sivert" },
   };
 
@@ -237,6 +237,8 @@ const romData = {
   IMC: "C: 119",
   IMY: "Y: 119",
   IMX: "X: 112",
+  IMYK: "Y: Sal 1",
+  IMXK: "X: Sal 2",
 };
 
 function leggTilRom() {
