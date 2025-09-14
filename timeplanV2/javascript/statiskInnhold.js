@@ -1,6 +1,6 @@
 // Konstanter (delte)
 const startPosisjon = { oppstart0815: 1, oppstart0900: 2, oppstart0955: 3 };
-const blokkVarighet = { enkel: 1, dobbel: 2, trippel: 3, frippel: 4 };
+const blokkVarighet = { enkel: 1, dobbel: 2, trippel: 3, frippel: 4, fulldag: 9 };
 
 const starttider = [
   { startRad: 1, tid: "08:15" },
@@ -34,7 +34,7 @@ const fagNavn = {
   naturfag: "Naturfag",
   tur: "Skoletur",
   programfag: "Programfag",
-  standard: "fridag",
+  standard: "Fridag",
 };
 
 // --- Byggefunksjoner (små, fokuserte) ---
@@ -63,8 +63,8 @@ function byggFagbeholder({ fagKey, startTid, sluttTid }) {
   fagbeholder.className = "fagbeholder";
   fagbeholder.appendChild(byggIkon(fagKey));
   fagbeholder.appendChild(byggTittel(fagKey));
-
   fagbeholder.appendChild(byggKlokke(startTid, sluttTid));
+
   return fagbeholder;
 }
 
@@ -145,6 +145,7 @@ function byggGrupper() {
   // Lærere for fag med grupper (IMX/Y)
   const laerereGruppe = {
     engelsk: { IMX: "Mari", IMY: "Kjetil" },
+    forum: { IMX: "Stian", IMY: "Jon" },
     kroppsoeving: { IMX: "Ajdin", IMY: "Laila Kristin" },
     naturfag: { IMX: "Thomas", IMY: "Sivert" },
   };
@@ -161,7 +162,7 @@ function byggGrupper() {
       const div = document.createElement("div");
       div.className = klasse;
       const h4 = document.createElement("h4");
-      h4.textContent = `1${klasse}`;
+      h4.textContent = `${klasse}`;
       const h5 = document.createElement("h5");
       h5.textContent = element.classList.contains(`Marius${klasse}`) ? "Marius" : laerereKlasse[fagNavn][klasse];
       div.append(h4, h5);
@@ -184,7 +185,7 @@ function byggGrupper() {
       const h4 = document.createElement("h4");
       h4.textContent = gruppe;
       const h5 = document.createElement("h5");
-      h5.textContent = laerereGruppe[fagNavn][gruppe];
+      h5.textContent = element.classList.contains(`Marius${gruppe}`) ? "Marius" : laerereGruppe[fagNavn][gruppe];
       div.append(h4, h5);
       gruppeGrid.prepend(div);
     });
@@ -192,8 +193,85 @@ function byggGrupper() {
   });
 }
 
+function sjekkFridag() {
+  const fagbeholdere = document.querySelectorAll(".fagbeholder");
+
+  fagbeholdere.forEach((beholder) => {
+    const h3 = beholder.querySelector("h3");
+    const h6 = beholder.querySelector("h6");
+    const div = beholder.querySelector("div");
+
+    if (h3.textContent === "Fridag") {
+      h6.style.display = "none";
+      div.style.display = "none";
+      h3.style.marginInline = "auto";
+      h3.classList.add("fri");
+
+      beholder.style.display = "flex";
+      beholder.style.marginInlineEnd = "0";
+      beholder.style.height = "45px";
+    }
+  });
+}
+function leggTilRom() {
+  const klasseGrid = document.querySelectorAll(".klasseGrid");
+
+  klasseGrid.forEach((Grid) => {
+    const divs = Grid.querySelectorAll("div"); // Hent alle div-er inni .klasseGrid
+
+    divs.forEach((div) => {
+      if (div.classList.contains("IMA")) {
+        // Fjern punktum – classList bruker bare klassens navn
+        const h4 = div.querySelector("h4"); // Hent h4 inni denne div-en
+        if (h4) {
+          h4.textContent = "A: 112"; // Endre teksten
+        }
+      }
+    });
+  });
+}
+
+const romData = {
+  IMA: "A: 112",
+  IMB: "B: 123",
+  IMC: "C: 119",
+  IMY: "Y: 119",
+  IMX: "X: 112",
+};
+
+function leggTilRom() {
+  const klasseGrid = document.querySelectorAll(".klasseGrid");
+  const gruppeGrid = document.querySelectorAll(".gruppeGrid");
+
+  klasseGrid.forEach((Grid) => {
+    const divs = Grid.querySelectorAll("div");
+
+    divs.forEach((div) => {
+      const klasse = div.className;
+      const h4 = div.querySelector("h4");
+
+      if (romData[klasse] && h4) {
+        h4.textContent = romData[klasse];
+      }
+    });
+  });
+  gruppeGrid.forEach((Grid) => {
+    const divs = Grid.querySelectorAll("div");
+
+    divs.forEach((div) => {
+      const gruppe = div.className;
+      const h4 = div.querySelector("h4");
+
+      if (romData[gruppe] && h4) {
+        h4.textContent = romData[gruppe];
+      }
+    });
+  });
+}
 // Konsturer timeplanen og elevinndelinger etter at DOM-elementene har lastet inn
 document.addEventListener("DOMContentLoaded", () => {
   byggGrupper();
   byggTimeplan();
+  sjekkFridag();
+  leggTilRom();
 });

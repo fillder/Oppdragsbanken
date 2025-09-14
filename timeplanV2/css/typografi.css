@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Roboto Flex", sans-serif;
+  src: url("../fonts/RobotoFlex-VariableFont.ttf");
+  font-optical-sizing: auto;
+  font-weight: (300, 400, 500, 600, 700);
+  font-style: normal;
+  font-variation-settings: "slnt" 0 /* Stant, default: 0 (-10 to 0)*/, "wdth" 100 /* width, default: 100 (25 - 151) */,
+    "GRAD" 0 /* Grade, default: 0 (-200 to 150) */, "XOPQ" 88 /* Thick Stroke (stem), default: 88 (27 to 175)*/,
+    "XTRA" 400 /* Counter Width (bar length), default: 400 (323 to 603) */, "YOPQ" 116 /* Thin Stroke (bar/hairline), default: 116 (25 to 135)*/,
+    "YTAS" 750 /* Ascender Height, default: 750 (649 - 854)*/, "YTDE" -250 /* Descender Depth, default: 0 (-305 to -98) */,
+    "YTFI" 600 /*  Figure Height (numbers), default: 600 (560 to 788) */, "YTLC" 500 /* Lowercase Height, default: 500 (416 to 570)*/,
+    "YTUC" 725 /*  Uppercase Height, default: 725 (528 - 760) */;
+}
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  src: url("../fonts/RobotoMono-VariableFont.ttf");
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Condensed", sans-serif;
+  src: url("../fonts/RobotoCondensed-VariableFont.ttf");
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Slab", serif;
+  src: url("../fonts/RobotoSlab-VariableFont.ttf");
+  font-optical-sizing: auto;
+  font-weight: (300, 500, 700);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../fonts/RobotoItalic-VariableFont.ttf");
+  font-optical-sizing: auto;
+  font-weight: (300, 400, 500, 600, 700);
+  font-style: italic;
+  font-variation-settings: "wdth" 100;
+}
+@font-face {
+  font-family: "Roboto Serif", serif;
+  src: url("../fonts/RobotoSerif-Italic-VariableFont.ttf");
+  font-optical-sizing: auto;
+  font-weight: (300, 400, 500, 600, 700);
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "GRAD" 0;
+}
+html {
+  font-size: 62.5%;
+}
+/* ---// FONT FAMILY //--- */
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
+}
+h3,
+h4,
+h5,
+nav,
+p,
+b,
+a,
+li {
+  font-family: "Roboto Flex", sans-serif;
+}
+h6,
+code {
+  font-family: "Roboto Mono", monospace;
+}
+i {
+  font-family: "Roboto", sans-serif;
+}
+footer p {
+  font-family: "Roboto Serif", serif;
+}
+/* ---// FONT SIZE + WEIGTH //--- */
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+em,
+i,
+li {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+strong,
+b {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+/* ---// FONT FARGER //--- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i,
+b,
+em,
+strong,
+nav,
+footer ul {
+  color: var(--clr-tekst);
+}
+ul {
+  margin-inline-start: 2rem;
+}
+li {
+  margin-inline-end: 1rem;
+}
+dialog ul {
+  margin-inline-start: 2rem;
+  margin-block-end: 2rem;
+  margin-block-start: -2rem;
+}

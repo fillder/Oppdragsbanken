@@ -29,8 +29,8 @@ dialog::backdrop {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+  font-size: 1.6rem;
   padding-inline: 0.5rem;
-  padding-block: 0rem;
 }
 dialog h1 {
   font-size: 2rem;
@@ -39,34 +39,37 @@ dialog h2 {
   font-size: 1.6rem;
 }
 dialog h3 {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   text-align: center;
 }
 dialog h4 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 dialog h5 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-block-end: 1rem;
 }
 dialog h6 {
   width: min-content;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 dialog p {
-  font-size: 1rem;
+  font-size: 1.4rem;
+  margin-block-end: 0.5rem;
+}
+dialog p:last-of-type {
   margin-block-end: 2rem;
 }
 dialog .svgIkon {
   width: 70px;
   height: 70px;
 }
-dialog:has(.programdagIkon) h3,
-dialog:has(.programdagIkon) h4 {
+dialog:has(.programfagIkon) h3,
+dialog:has(.programfagIkon) h4 {
   color: var(--clr-safir);
 }
-dialog:has(.forumfagIkon) h3,
-dialog:has(.forumfagIkon) h4 {
+dialog:has(.forumIkon) h3,
+dialog:has(.forumIkon) h4 {
   color: var(--clr-thulitt);
 }
 dialog:has(.naturfagIkon) h3,
@@ -84,6 +87,15 @@ dialog:has(.engelskIkon) h4 {
 dialog:has(.kroppsoevingIkon) h3,
 dialog:has(.kroppsoevingIkon) h4 {
   color: var(--clr-amazonitt);
+}
+dialog:has(.turIkon) h3,
+dialog:has(.turIkon) h4 {
+  color: var(--clr-ametyst);
+}
+dialog .fagbeholder:has(.fri) h3 {
+  color: var(--clr-rubin);
+  margin-block-start: 3rem;
+  height: 50px;
 }
 dialog p {
   padding-inline: 1rem;

@@ -48,3 +48,7 @@
   --ikon-farge: var(--clr-ametyst);
   --ikon-url: url(../svg/fagikon-vinter.svg);
 }
+.turIkon {
+  --ikon-farge: var(--clr-ametyst);
+  --ikon-url: url(../svg/fagikon-tur.svg);
+}

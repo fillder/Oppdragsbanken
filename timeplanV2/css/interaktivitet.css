@@ -1,7 +1,8 @@
 .enkel p,
 .dobbel p,
 .trippel p,
-.frippel p {
+.frippel p,
+.fulldag p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -20,6 +21,10 @@
 .frippel p {
   line-clamp: 15;
   -webkit-line-clamp: 15;
+}
+.fulldag p {
+  line-clamp: none;
+  -webkit-line-clamp: none;
 }
 article:has(p) {
   cursor: pointer;

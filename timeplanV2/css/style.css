@@ -51,6 +51,9 @@ header {
 .firer {
   grid-row-end: span 4;
 }
+.fulldag {
+  grid-row-end: span 9;
+}
 .oppstart0815 {
   grid-row-start: 1;
 }
@@ -90,7 +93,6 @@ header {
   grid-template-columns: auto 1fr min-content;
   text-align: center;
   align-items: center;
-  margin-bottom: 0.3rem;
   margin-inline-end: 0.5rem;
 }
 /* FARGER */
@@ -118,12 +120,23 @@ header {
 .kroppsoeving h4 {
   color: var(--clr-amazonitt);
 }
+.fri h3,
+.fri h4 {
+  color: var(--clr-rubin);
+}
+.tur h3,
+.tur h4 {
+  color: var(--clr-ametyst);
+}
+section:has(.fri) {
+  opacity: 0.5;
+}
 /* UTSEENDE */
 article {
-  border-top-right-radius: clamp(0.2rem, 0.4rem, 0.6vw);
-  border-top-left-radius: clamp(0.8rem, 1.2rem, 1.2vw);
-  border-bottom-left-radius: clamp(0.2rem, 0.4rem, 0.6vw);
-  border-bottom-right-radius: clamp(0.8rem, 1.2rem, 1.2vw);
+  border-top-right-radius: 0.4rem;
+  border-top-left-radius: 2.2rem;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 1.2rem;
   border-color: var(--clr-ramme);
   background-color: var(--clr-tekstBoks);
   border-width: 1px 1px 2px 2px;
@@ -131,7 +144,7 @@ article {
 }
 
 article p:first-of-type {
-  margin-block-start: 0.5rem;
+  margin-block-start: 1rem;
 }
 article p {
   padding-inline: 1rem;
