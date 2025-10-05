@@ -35,6 +35,8 @@ const fagNavn = {
   tur: "Skoletur",
   programfag: "Programfag",
   standard: "Fridag",
+  yff: "YFF",
+  workshops: "Workshops",
 };
 
 // --- Byggefunksjoner (små, fokuserte) ---
@@ -139,6 +141,7 @@ function byggGrupper() {
   // Lærere for fag med klasser (IMA/B/C)
   const laerereKlasse = {
     programfag: { IMA: "Eirik", IMB: "Stian", IMC: "Jon" },
+    yff: { IMA: "Eirik", IMB: "Stian", IMC: "Jon" },
     matte: { IMA: "Sivert", IMB: "Lars Tore", IMC: "Mikkel" },
   };
 

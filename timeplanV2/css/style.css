@@ -124,6 +124,14 @@ header {
 .fri h4 {
   color: var(--clr-rubin);
 }
+.yff h3,
+.yff h4 {
+  color: var(--clr-akvamarin);
+}
+.workshops h3,
+.workshops h4 {
+  color: var(--clr-kunzitt);
+}
 .tur h3,
 .tur h4 {
   color: var(--clr-ametyst);

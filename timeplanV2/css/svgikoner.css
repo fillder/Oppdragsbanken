@@ -40,13 +40,9 @@
   --ikon-farge: var(--clr-thulitt);
   --ikon-url: url(../svg/fagikon-forum.svg);
 }
-.eventSommerIkon {
+.workshopsIkon {
   --ikon-farge: var(--clr-kunzitt);
-  --ikon-url: url(../svg/fagikon-sommer.svg);
-}
-.eventVinterIkon {
-  --ikon-farge: var(--clr-ametyst);
-  --ikon-url: url(../svg/fagikon-vinter.svg);
+  --ikon-url: url(../svg/fagikon-workshops.svg);
 }
 .turIkon {
   --ikon-farge: var(--clr-ametyst);
