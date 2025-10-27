@@ -40,6 +40,10 @@
   --ikon-farge: var(--clr-thulitt);
   --ikon-url: url(../svg/fagikon-forum.svg);
 }
+.odIkon {
+  --ikon-farge: var(--clr-tekst);
+  --ikon-url: url(../svg/fagikon-od.svg);
+}
 .workshopsIkon {
   --ikon-farge: var(--clr-kunzitt);
   --ikon-url: url(../svg/fagikon-workshops.svg);

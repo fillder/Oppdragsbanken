@@ -33,6 +33,7 @@ const fagNavn = {
   engelsk: "Engelsk",
   naturfag: "Naturfag",
   tur: "Skoletur",
+  od: "OD-dagen",
   programfag: "Programfag",
   standard: "Fridag",
   yff: "YFF",
