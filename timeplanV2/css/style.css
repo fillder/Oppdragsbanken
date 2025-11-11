@@ -79,6 +79,11 @@ header {
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
 }
+.trinnFlex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 .IMA,
 .IMB,
 .IMC,

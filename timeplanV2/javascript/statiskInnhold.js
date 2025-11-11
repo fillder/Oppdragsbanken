@@ -139,6 +139,10 @@ function byggTimeplan() {
 }
 
 function byggGrupper() {
+  const laerereTrinn = {
+    programfag: { IMAUD: "Eirik, Stian og Jon" },
+  };
+
   // Lærere for fag med klasser (IMA/B/C)
   const laerereKlasse = {
     programfag: { IMA: "Eirik", IMB: "Stian", IMC: "Jon" },
@@ -154,6 +158,34 @@ function byggGrupper() {
     naturfag: { IMX: "Thomas", IMY: "Sivert" },
   };
 
+  // Bygg .trinn-elementer
+  document.querySelectorAll(".trinn").forEach((element) => {
+    const fagNavn = Object.keys(laerereTrinn).find((fag) => element.classList.contains(fag));
+
+    // hopp over hvis ukjent fag
+    if (!fagNavn) return;
+    const trinnFlex = document.createElement("div");
+    trinnFlex.className = "trinnFlex";
+    Object.keys(laerereTrinn[fagNavn]).forEach((trinn) => {
+      const div = document.createElement("div");
+      div.className = trinn;
+      const h4 = document.createElement("h4");
+      h4.textContent = `${trinn}`;
+      const h5 = document.createElement("h5");
+      if (element.classList.contains("MariusIMA")) {
+        h5.textContent = "Marius, Stian, og Jon";
+      } else if (element.classList.contains("MariusIMB")) {
+        h5.textContent = "Eirik, Marius, og Jon";
+      } else if (element.classList.contains("MariusIMC")) {
+        h5.textContent = "Eirik, Stian, og Marius";
+      } else {
+        h5.textContent = laerereTrinn[fagNavn][trinn];
+      }
+      div.append(h4, h5);
+      trinnFlex.prepend(div);
+    });
+    element.prepend(trinnFlex);
+  });
   // Bygg .klasse-elementer
   document.querySelectorAll(".klasse").forEach((element) => {
     const fagNavn = Object.keys(laerereKlasse).find((fag) => element.classList.contains(fag));
@@ -243,12 +275,26 @@ const romData = {
   IMX: "X: 112",
   IMYK: "Y: Sal 1",
   IMXK: "X: Sal 2",
+  IMAUD: "Auditoriet",
 };
 
 function leggTilRom() {
+  const trinnFlex = document.querySelectorAll(".trinnFlex");
   const klasseGrid = document.querySelectorAll(".klasseGrid");
   const gruppeGrid = document.querySelectorAll(".gruppeGrid");
 
+  trinnFlex.forEach((Flex) => {
+    const divs = Flex.querySelectorAll("div");
+
+    divs.forEach((div) => {
+      const trinn = div.className;
+      const h4 = div.querySelector("h4");
+
+      if (romData[trinn] && h4) {
+        h4.textContent = romData[trinn];
+      }
+    });
+  });
   klasseGrid.forEach((Grid) => {
     const divs = Grid.querySelectorAll("div");
 
