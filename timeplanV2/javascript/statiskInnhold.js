@@ -156,6 +156,7 @@ function byggGrupper() {
     forum: { IMX: "Stian", IMY: "Jon" },
     kroppsoeving: { IMXK: "Ajdin", IMYK: "Laila Kristin" },
     naturfag: { IMX: "Thomas", IMY: "Sivert" },
+    programfag: { IMX: "Stian", IMY: "Jon" },
   };
 
   // Bygg .trinn-elementer
