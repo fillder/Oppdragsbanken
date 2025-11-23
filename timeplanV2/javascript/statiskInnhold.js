@@ -201,7 +201,13 @@ function byggGrupper() {
       const h4 = document.createElement("h4");
       h4.textContent = `${klasse}`;
       const h5 = document.createElement("h5");
-      h5.textContent = element.classList.contains(`Marius${klasse}`) ? "Marius" : laerereKlasse[fagNavn][klasse];
+      if (element.classList.contains(`Marius${klasse}`)) {
+        h5.textContent = "Marius";
+      } else if (element.classList.contains(`Gabriel${klasse}`)) {
+        h5.textContent = "Gabriel";
+      } else {
+        h5.textContent = laerereKlasse[fagNavn][klasse];
+      }
       div.append(h4, h5);
       klasseGrid.prepend(div);
     });
