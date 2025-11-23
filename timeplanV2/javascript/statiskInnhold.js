@@ -141,6 +141,7 @@ function byggTimeplan() {
 function byggGrupper() {
   const laerereTrinn = {
     programfag: { IMAUD: "Eirik, Stian og Jon" },
+    forum: { IMAUD: "Marius og Jon" },
   };
 
   // Lærere for fag med klasser (IMA/B/C)
