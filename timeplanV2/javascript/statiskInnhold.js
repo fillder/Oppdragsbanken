@@ -276,7 +276,7 @@ function leggTilRom() {
 
 const romData = {
   IMA: "A: 112",
-  IMB: "B: 123",
+  IMB: "B: 113",
   IMC: "C: 119",
   IMY: "Y: 119",
   IMX: "X: 112",
