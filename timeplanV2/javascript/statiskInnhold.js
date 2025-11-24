@@ -180,6 +180,10 @@ function byggGrupper() {
         h5.textContent = "Eirik, Marius, og Jon";
       } else if (element.classList.contains("MariusIMC")) {
         h5.textContent = "Eirik, Stian, og Marius";
+      } else if (element.classList.contains("GabrielIMA")) {
+        h5.textContent = "Gabriel, Stian, og Jon";
+      } else if (element.classList.contains("GabrielIMC")) {
+        h5.textContent = "Eirik, Stian, og Gabriel";
       } else {
         h5.textContent = laerereTrinn[fagNavn][trinn];
       }
