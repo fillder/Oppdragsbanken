@@ -141,23 +141,23 @@ function byggTimeplan() {
 function byggGrupper() {
   const laerereTrinn = {
     programfag: { IMAUD: "Eirik, Stian og Jon" },
-    forum: { IMAUD: "Marius og Jon" },
+    forum: { IMAUD: "Stian og Jon" },
   };
 
   // Lærere for fag med klasser (IMA/B/C)
   const laerereKlasse = {
-    programfag: { IMA: "Eirik", IMB: "Stian", IMC: "Jon" },
-    yff: { IMA: "Eirik", IMB: "Stian", IMC: "Jon" },
-    matte: { IMA: "Sivert", IMB: "Lars Tore", IMC: "Mikkel" },
+    programfag: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
+    yff: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
+    matte: { IMC: "Mikkel", IMB: "Lars Tore", IMA: "Sivert" },
   };
 
   // Lærere for fag med grupper (IMX/Y)
   const laerereGruppe = {
-    engelsk: { IMX: "Mari", IMY: "Kjetil" },
-    forum: { IMX: "Stian", IMY: "Jon" },
-    kroppsoeving: { IMXK: "Ajdin", IMYK: "Laila Kristin" },
-    naturfag: { IMX: "Thomas", IMY: "Sivert" },
-    programfag: { IMX: "Stian", IMY: "Jon" },
+    engelsk: { IMY: "Kjetil", IMX: "Mari" },
+    forum: { IMY: "Jon", IMX: "Stian" },
+    kroppsoeving: { IMYK: "Laila Kristin", IMXK: "Ajdin" },
+    naturfag: { IMY: "Sivert", IMX: "Thomas" },
+    programfag: { IMY: "Jon", IMX: "Stian" },
   };
 
   // Bygg .trinn-elementer
@@ -184,6 +184,10 @@ function byggGrupper() {
         h5.textContent = "Gabriel, Stian, og Jon";
       } else if (element.classList.contains("GabrielIMC")) {
         h5.textContent = "Eirik, Stian, og Gabriel";
+      } else if (element.classList.contains("MariusIMX")) {
+        h5.textContent = "Marius og Stian";
+      } else if (element.classList.contains("MariusIMY")) {
+        h5.textContent = "Jon og Marius";
       } else {
         h5.textContent = laerereTrinn[fagNavn][trinn];
       }
