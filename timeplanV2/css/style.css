@@ -106,7 +106,11 @@ header {
   color: var(--clr-safir);
 }
 .programfagDA h3,
-.programfagDA h4 {
+.programfagDA h4,
+.programfagDB h3,
+.programfagDB h4,
+.programfagDC h3,
+.programfagDC h4 {
   color: var(--clr-safir);
 }
 .forum h3,
