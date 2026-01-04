@@ -149,9 +149,9 @@ header {
 .tur h4 {
   color: var(--clr-ametyst);
 }
-/* section:has(.fri) {
+section:has(.fri) {
   opacity: 0.5;
-} */
+}
 /* UTSEENDE */
 article {
   border-top-right-radius: 6px;
