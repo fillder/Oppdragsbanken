@@ -225,6 +225,10 @@ function byggGrupper() {
         h5.textContent = "Gabriel";
       } else if (element.classList.contains(`Eirik${klasse}`)) {
         h5.textContent = "Eirik";
+      } else if (element.classList.contains(`Stian${klasse}`)) {
+        h5.textContent = "Stian";
+      } else if (element.classList.contains(`Jon${klasse}`)) {
+        h5.textContent = "Jon";
       } else if (element.classList.contains(`Torbjørn${klasse}`)) {
         h5.textContent = "Torbjørn";
       } else {
