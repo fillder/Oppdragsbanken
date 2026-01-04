@@ -105,8 +105,8 @@ header {
 .programfag h4 {
   color: var(--clr-safir);
 }
-.programfagDrift h3,
-.programfagDrift h4 {
+.programfagDA h3,
+.programfagDA h4 {
   color: var(--clr-safir);
 }
 .forum h3,
@@ -145,9 +145,9 @@ header {
 .tur h4 {
   color: var(--clr-ametyst);
 }
-section:has(.fri) {
+/* section:has(.fri) {
   opacity: 0.5;
-}
+} */
 /* UTSEENDE */
 article {
   border-top-right-radius: 6px;

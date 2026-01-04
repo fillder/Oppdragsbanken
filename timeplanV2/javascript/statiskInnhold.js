@@ -148,7 +148,9 @@ function byggGrupper() {
   // Lærere for fag med klasser (IMA/B/C)
   const laerereKlasse = {
     programfag: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
-    programfagDrift: { IMC: "Jon", IMD: "Stian", IMA: "Eirik" },
+    programfagDA: { IMC: "Jon", IMB: "Eirik", IMDA: "Eirik" },
+    programfagDB: { IMC: "Jon", IMDB: "Stian", IMA: "Eirik" },
+    programfagDC: { IMDC: "Jon", IMB: "Stian", IMA: "Eirik" },
     yff: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
     matte: { IMC: "Mikkel", IMB: "Lars Tore", IMA: "Sivert" },
     engelsk: { IMC: "Sivert H", IMB: "Kjetil", IMA: "Mari G" },
@@ -219,6 +221,8 @@ function byggGrupper() {
         h5.textContent = "Marius";
       } else if (element.classList.contains(`Gabriel${klasse}`)) {
         h5.textContent = "Gabriel";
+      } else if (element.classList.contains(`Eirik${klasse}`)) {
+        h5.textContent = "Eirik";
       } else if (element.classList.contains(`Torbjørn${klasse}`)) {
         h5.textContent = "Torbjørn";
       } else {
@@ -293,7 +297,9 @@ function leggTilRom() {
 const romData = {
   IMA: "A: 112",
   IMB: "B: 113",
-  IMD: "B: G18",
+  IMDA: "A: G18",
+  IMDB: "B: G18",
+  IMDC: "C: G18",
   IMC: "C: 119",
   IMY: "Y: 119",
   IMX: "X: 112",
