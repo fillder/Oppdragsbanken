@@ -8,7 +8,8 @@
   mask: var(--ikon-url) no-repeat center / contain;
 }
 
-.programfagIkon {
+.programfagIkon,
+.programfagDriftIkon {
   --ikon-farge: var(--clr-safir);
   --ikon-url: url(../svg/fagikon-programfag.svg);
 }
