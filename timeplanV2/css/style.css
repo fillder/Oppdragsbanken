@@ -105,12 +105,12 @@ header {
 .programfag h4 {
   color: var(--clr-safir);
 }
-.programfagDA h3,
-.programfagDA h4,
-.programfagDB h3,
-.programfagDB h4,
-.programfagDC h3,
-.programfagDC h4 {
+.programfagda h3,
+.programfagda h4,
+.programfagdb h3,
+.programfagdb h4,
+.programfagdc h3,
+.programfagdc h4 {
   color: var(--clr-safir);
 }
 .forum h3,

@@ -9,9 +9,9 @@
 }
 
 .programfagIkon,
-.programfagDAIkon,
-.programfagDBIkon,
-.programfagDCIkon {
+.programfagdaIkon,
+.programfagdbIkon,
+.programfagdcIkon {
   --ikon-farge: var(--clr-safir);
   --ikon-url: url(../svg/fagikon-programfag.svg);
 }
