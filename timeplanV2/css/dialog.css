@@ -6,10 +6,10 @@ dialog {
   position: absolute;
   margin: auto;
   width: 500px;
-  border-top-right-radius: clamp(0.2rem, 0.4rem, 0.6vw);
-  border-top-left-radius: clamp(0.8rem, 1.2rem, 1.2vw);
-  border-bottom-left-radius: clamp(0.2rem, 0.4rem, 0.6vw);
-  border-bottom-right-radius: clamp(0.8rem, 1.2rem, 1.2vw);
+  border-top-right-radius: 6px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 12px;
   border-color: var(--clr-ramme);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   z-index: 110;

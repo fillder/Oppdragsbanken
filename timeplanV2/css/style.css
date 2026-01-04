@@ -105,6 +105,10 @@ header {
 .programfag h4 {
   color: var(--clr-safir);
 }
+.programfagDrift h3,
+.programfagDrift h4 {
+  color: var(--clr-safir);
+}
 .forum h3,
 .forum h4 {
   color: var(--clr-thulitt);
@@ -146,10 +150,10 @@ section:has(.fri) {
 }
 /* UTSEENDE */
 article {
-  border-top-right-radius: 0.4rem;
-  border-top-left-radius: 2.2rem;
-  border-bottom-left-radius: 0.4rem;
-  border-bottom-right-radius: 1.2rem;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 12px;
   border-color: var(--clr-ramme);
   background-color: var(--clr-tekstBoks);
   border-width: 1px 1px 2px 2px;

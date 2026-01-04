@@ -35,6 +35,7 @@ const fagNavn = {
   tur: "Skoletur",
   od: "OD-dagen",
   programfag: "Programfag",
+  programfagDrift: "Programfag",
   standard: "Fridag",
   yff: "YFF",
   workshops: "Workshops",
@@ -147,8 +148,10 @@ function byggGrupper() {
   // Lærere for fag med klasser (IMA/B/C)
   const laerereKlasse = {
     programfag: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
+    programfagDrift: { IMC: "Jon", IMD: "Stian", IMA: "Eirik" },
     yff: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
     matte: { IMC: "Mikkel", IMB: "Lars Tore", IMA: "Sivert" },
+    engelsk: { IMC: "Sivert H", IMB: "Kjetil", IMA: "Mari G" },
   };
 
   // Lærere for fag med grupper (IMX/Y)
@@ -214,6 +217,8 @@ function byggGrupper() {
         h5.textContent = "Marius";
       } else if (element.classList.contains(`Gabriel${klasse}`)) {
         h5.textContent = "Gabriel";
+      } else if (element.classList.contains(`Torbjørn${klasse}`)) {
+        h5.textContent = "Torbjørn";
       } else {
         h5.textContent = laerereKlasse[fagNavn][klasse];
       }
@@ -286,6 +291,7 @@ function leggTilRom() {
 const romData = {
   IMA: "A: 112",
   IMB: "B: 113",
+  IMD: "B: G18",
   IMC: "C: 119",
   IMY: "Y: 119",
   IMX: "X: 112",
