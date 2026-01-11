@@ -197,6 +197,8 @@ function byggGrupper() {
         h5.textContent = "Jon og Marius";
       } else if (element.classList.contains("MariusAlene")) {
         h5.textContent = "Marius";
+      } else if (element.classList.contains("JonAlene")) {
+        h5.textContent = "Jon";
       } else {
         h5.textContent = laerereTrinn[fagNavn][trinn];
       }
