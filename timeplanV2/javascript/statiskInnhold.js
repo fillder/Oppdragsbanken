@@ -144,6 +144,7 @@ function byggTimeplan() {
 function byggGrupper() {
   const laerereTrinn = {
     programfag: { IMAUD: "Eirik, Stian og Jon" },
+    programfaghjemme: { IMAUD: "Eirik, Stian og Jon" },
     forum: { IMAUD: "Stian og Jon" },
   };
 
@@ -308,12 +309,16 @@ const romData = {
   IMDA: "A: G18",
   IMDB: "B: G18",
   IMDC: "C: G18",
+  IMTA: "A: TV-studio",
+  IMTB: "B: TV-studio",
+  IMTC: "C: TV-studio",
   IMC: "C: 119",
   IMY: "Y: 119",
   IMX: "X: 112",
   IMYK: "Y: Sal 1",
   IMXK: "X: Sal 2",
   IMAUD: "Auditoriet",
+  IMHJ: "Hjemmeskole",
 };
 
 function leggTilRom() {

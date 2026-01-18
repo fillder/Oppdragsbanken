@@ -16,8 +16,20 @@
     <link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
     <link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
     <link rel="apple-touch-icon" href="/images/ico/skolelogo.svg" />
-    <title>Timeplan uke 3</title>
+    <title>Timeplan uke 4</title>
   </head>
+  <style>
+    #mandag,
+    #tirsdag,
+    #onsdag,
+    #torsdag,
+    #fredag {
+      grid-template-rows: 1fr 1fr 1fr 1fr 0.125fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .lunsj {
+      text-align: center;
+    }
+  </style>
   <body>
     <nav>
       <a class="navKnapp" target="_self" rel="noreferrer noopener" href="/index.html" title="Hjem" alt="Naviger til startsiden">
@@ -25,9 +37,9 @@
       </a>
       <ul class="breadcrumbsMenu" id="breadcrumbs"></ul>
       <div class="logo">
-        <a class="pil maskeTilbakeOutline" href="/timeplan/uke_02.html" target="_self" class="ukeNav" title="Timeplan uke 02"></a>
-        <h1><span>TIMEPLAN - </span>UKE 3</h1>
-        <a class="pil maskeNesteOutline" href="/timeplan/uke_04.html" target="_self" class="ukeNav" title="Timeplan uke 4"></a>
+        <a class="pil maskeTilbakeOutline" href="/timeplan/uke_03.html" target="_self" class="ukeNav" title="Timeplan uke 03"></a>
+        <h1><span>TIMEPLAN - </span>UKE 4</h1>
+        <!-- <a class="pil maskeNesteOutline" href="/timeplan/uke_04.html" target="_self" class="ukeNav" title="Timeplan uke 4"></a> -->
       </div>
       <button id="dark-mode-toggle" class="dag-natt2" aria-label="dark mode toggle">
         <svg class="svg-anim" viewBox="0 70 100 100">
@@ -47,49 +59,55 @@
     <header id="dager">
       <div class="mandag">
         <h2>Mandag</h2>
-        <h4>12. januar</h4>
+        <h4>19. januar</h4>
       </div>
       <div class="tirsdag">
         <h2>Tirsdag</h2>
-        <h4>13. januar</h4>
+        <h4>20. januar</h4>
       </div>
       <div class="onsdag">
         <h2>Onsdag</h2>
-        <h4>14. januar</h4>
+        <h4>21. januar</h4>
       </div>
       <div class="torsdag">
         <h2>Torsdag</h2>
-        <h4>15. januar</h4>
+        <h4>22. januar</h4>
       </div>
       <div class="fredag">
         <h2>Fredag</h2>
-        <h4>16. januar</h4>
+        <h4>23. januar</h4>
       </div>
     </header>
     <main id="timeplan">
       <!-- MANDAG -->
       <section id="mandag">
-        <article class="undervisning programfagda trippel klasse oppstart0900 MariusIMDA EirikIMB">
-          <p>Rulleringsperiode uke 2</p>
-          <p>- 1IMA: Nettverk på G18</p>
-          <p>- 1IMB: Visuell identitet</p>
-          <p>- 1IMC: Sanntidsproduksjon</p>
+        <article class="undervisning programfag enkel klasse oppstart0900"></article>
+        <article class="undervisning programfag dobbel trinn"><p>Besøk av Skeiv Ungdom</p></article>
+        <div class="lunsj"><p>F21-liga: 1STE - 10C</p></div>
+        <article class="undervisning programfag dobbel klasse">
+          <p>Rulleringsperiode uke 3</p>
+          <ul>
+            <li>1IMA: Visuell kommunikasjon</li>
+            <li>1IMB: Sanntidsproduksjon i klasserom</li>
+            <li>1IMC: Sanntidsproduksjon i TV-stuido</li>
+          </ul>
         </article>
-        <article class="undervisning programfagda dobbel klasse TorbjørnIMDA"><p>Se egen plan i OneNote</p></article>
-        <article class="undervisning programfagda dobbel klasse GabrielIMB MariusIMDA"><p></p></article>
+        <article class="undervisning programfag dobbel klasse MariusIMA"><p>Se egen plan i OneNote</p></article>
       </section>
       <!-- TIRSDAG -->
       <section id="tirsdag">
-        <article class="undervisning forum enkel trinn oppstart0900 JonAlene"><p>VFX med CorridorDigital</p></article>
+        <article class="undervisning forum enkel gruppe oppstart0900"><p></p></article>
         <article class="undervisning matte dobbel klasse"><p></p></article>
+        <div class="lunsj"><p></p></div>
         <article class="undervisning naturfag dobbel gruppe"><p></p></article>
-        <article class="undervisning programfagda dobbel klasse TorbjørnIMDA"><p>Se egen plan i OneNote</p></article>
+        <article class="undervisning programfag dobbel klasse MariusIMA TorbjørnIMB"><p>Se egen plan i OneNote</p></article>
       </section>
       <!-- ONSDAG -->
       <section id="onsdag">
-        <article class="undervisning programfagda dobbel klasse oppstart0955 MariusIMDA"><p>Se egen plan i OneNote</p></article>
-        <article class="undervisning programfagda dobbel klasse MariusIMB TorbjørnIMDA"><p></p></article>
-        <article class="undervisning programfagda dobbel klasse TorbjørnIMDA"><p></p></article>
+        <article class="undervisning programfag dobbel klasse oppstart0955"><p>Se egen plan i OneNote</p></article>
+        <div class="lunsj"><p></p></div>
+        <article class="undervisning programfag dobbel klasse MariusIMA"><p></p></article>
+        <article class="undervisning programfag dobbel klasse"><p></p></article>
       </section>
       <!-- TORSDAG -->
       <section id="torsdag">
@@ -97,15 +115,17 @@
           <p>Oppstart termin 2 og klasseinndeling</p>
         </article>
         <article class="undervisning programfag enkel klasse MariusIMA"><p>Se egen plan i OneNote</p></article>
-        <article class="undervisning programfagda trippel klasse MariusIMDA">
+        <div class="lunsj"><p>F21-liga: 2STE - 9A</p></div>
+        <article class="undervisning programfag enkel klasse MariusIMA"></article>
+        <article class="undervisning programfag dobbel klasse">
           <p>Jobbing hjemmefra, fra klasserommet eller filming på lokasjon. Alle lærere er opptatt med Opplev IM/MK</p>
         </article>
       </section>
       <!-- FREDAG -->
       <section id="fredag">
-        <article class="undervisning programfagda dobbel klasse oppstart0815 GabrielIMC TorbjørnIMDA"><p>Se egen plan i OneNote</p></article>
+        <article class="undervisning programfag dobbel klasse oppstart0815 TorbjørnIMB"><p>Se egen plan i OneNote</p></article>
         <article class="undervisning kroppsoeving dobbel gruppe"><p></p></article>
-
+        <div class="lunsj"><p></p></div>
         <article class="undervisning matte enkel klasse"><p></p></article>
         <article class="undervisning engelsk dobbel klasse"><p></p></article>
       </section>
