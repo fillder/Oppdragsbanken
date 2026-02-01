@@ -7,7 +7,10 @@
   -webkit-mask: var(--ikon-url) no-repeat center / contain;
   mask: var(--ikon-url) no-repeat center / contain;
 }
-
+.aapendagIkon {
+  --ikon-farge: var(--clr-ametyst);
+  --ikon-url: url(../svg/fagikon-event-vinter.svg);
+}
 .programfagIkon,
 .programfagdaIkon,
 .programfagdbIkon,

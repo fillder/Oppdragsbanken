@@ -101,6 +101,10 @@ header {
   margin-inline-end: 0.5rem;
 }
 /* FARGER */
+.aapendag h3,
+.aapendag h4 {
+  color: var(--clr-kunzitt);
+}
 .programfag h3,
 .programfag h4 {
   color: var(--clr-safir);
@@ -194,4 +198,7 @@ footer {
 .pilNeste[disabled] {
   opacity: 0.2;
   cursor: default;
+}
+li {
+  list-style: none;
 }

@@ -38,6 +38,7 @@ const fagNavn = {
   programfagda: "Programfag",
   programfagdb: "Programfag",
   programfagdc: "Programfag",
+  aapendag: "Åpen dag",
   standard: "Fridag",
   yff: "YFF",
   workshops: "Workshops",
@@ -70,7 +71,6 @@ function byggFagbeholder({ fagKey, startTid, sluttTid }) {
   fagbeholder.appendChild(byggIkon(fagKey));
   fagbeholder.appendChild(byggTittel(fagKey));
   fagbeholder.appendChild(byggKlokke(startTid, sluttTid));
-
   return fagbeholder;
 }
 
@@ -146,6 +146,7 @@ function byggGrupper() {
     programfag: { IMAUD: "Eirik, Stian og Jon" },
     programfaghjemme: { IMAUD: "Eirik, Stian og Jon" },
     forum: { IMAUD: "Stian og Jon" },
+    aapendag: { F21: "Alle IM-lærerne" },
   };
 
   // Lærere for fag med klasser (IMA/B/C)
@@ -318,6 +319,7 @@ const romData = {
   IMYK: "Y: Sal 1",
   IMXK: "X: Sal 2",
   IMAUD: "Auditoriet",
+  F21: "Hele skolen",
   IMHJ: "Hjemmeskole",
 };
 
