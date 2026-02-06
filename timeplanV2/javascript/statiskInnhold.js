@@ -144,6 +144,7 @@ function byggTimeplan() {
 function byggGrupper() {
   const laerereTrinn = {
     programfag: { IMAUD: "Eirik, Stian og Jon" },
+    programfagdb: { IMAUD: "Eirik, Torbjørn og Stian" },
     programfaghjemme: { IMAUD: "Eirik, Stian og Jon" },
     forum: { IMAUD: "Stian og Jon" },
     aapendag: { F21: "Alle IM-lærerne" },
