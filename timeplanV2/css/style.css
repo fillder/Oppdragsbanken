@@ -114,7 +114,9 @@ header {
 .programfagdb h3,
 .programfagdb h4,
 .programfagdc h3,
-.programfagdc h4 {
+.programfagdc h4,
+.programfag13 h3,
+.programfag13 h4 {
   color: var(--clr-safir);
 }
 .forum h3,

@@ -38,6 +38,7 @@ const fagNavn = {
   programfagda: "Programfag",
   programfagdb: "Programfag",
   programfagdc: "Programfag",
+  programfag13: "Programfag",
   aapendag: "Åpen dag",
   standard: "Fridag",
   yff: "YFF",
@@ -154,8 +155,9 @@ function byggGrupper() {
   const laerereKlasse = {
     programfag: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
     programfagda: { IMC: "Jon", IMB: "Eirik", IMDA: "Eirik" },
-    programfagdb: { IMC: "Jon", IMDB: "Stian", IMA: "Eirik" },
+    programfag13: { IMC: "Jon", IMDB: "Stian", IMA: "Eirik" },
     programfagdc: { IMDC: "Jon", IMB: "Stian", IMA: "Eirik" },
+    programfag13: { Gr13A: "Eirik", Gr13B: "Jon", Gr13C: "Stian" },
     yff: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
     matte: { IMC: "Mikkel", IMB: "Lars Tore", IMA: "Sivert" },
     engelsk: { IMC: "Sivert H", IMB: "Kjetil", IMA: "Mari G" },
@@ -322,6 +324,9 @@ const romData = {
   IMAUD: "Auditoriet",
   F21: "Hele skolen",
   IMHJ: "Hjemmeskole",
+  Gr13A: "13A: 112",
+  Gr13B: "13B: 113",
+  Gr13C: "13C: 119",
 };
 
 function leggTilRom() {
