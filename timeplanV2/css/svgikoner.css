@@ -14,7 +14,8 @@
 .programfagIkon,
 .programfagdaIkon,
 .programfagdbIkon,
-.programfagdcIkon {
+.programfagdcIkon,
+.programfag13Ikon {
   --ikon-farge: var(--clr-safir);
   --ikon-url: url(../svg/fagikon-programfag.svg);
 }
