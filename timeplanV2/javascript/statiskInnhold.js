@@ -155,7 +155,7 @@ function byggGrupper() {
   const laerereKlasse = {
     programfag: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
     programfagda: { IMC: "Jon", IMB: "Eirik", IMDA: "Eirik" },
-    programfag13: { IMC: "Jon", IMDB: "Stian", IMA: "Eirik" },
+    programfagdb: { IMC: "Jon", IMDB: "Stian", IMA: "Eirik" },
     programfagdc: { IMDC: "Jon", IMB: "Stian", IMA: "Eirik" },
     programfag13: { Gr13A: "Eirik", Gr13B: "Jon", Gr13C: "Stian" },
     yff: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
@@ -325,8 +325,8 @@ const romData = {
   F21: "Hele skolen",
   IMHJ: "Hjemmeskole",
   Gr13A: "13A: 112",
-  Gr13B: "13B: 113",
-  Gr13C: "13C: 119",
+  Gr13C: "13C: 113",
+  Gr13B: "13B: 119",
 };
 
 function leggTilRom() {
