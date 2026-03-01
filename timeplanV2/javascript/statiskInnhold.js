@@ -145,6 +145,7 @@ function byggTimeplan() {
 function byggGrupper() {
   const laerereTrinn = {
     programfag: { IMAUD: "Eirik, Stian og Jon" },
+    programfag13: { TUR: "Eirik, Stian og Jon" },
     programfagdb: { IMAUD: "Eirik, Torbjørn og Stian" },
     programfaghjemme: { IMAUD: "Eirik, Stian og Jon" },
     forum: { IMAUD: "Stian og Jon" },
@@ -166,7 +167,7 @@ function byggGrupper() {
   // Lærere for fag med grupper (IMX/Y)
   const laerereGruppe = {
     engelsk: { IMY: "Kjetil", IMX: "Mari" },
-    forum: { IMY: "Jon", IMX: "Stian" },
+    forum: { IMY: "Stian", IMX: "Jon" },
     kroppsoeving: { IMYK: "Laila Kristin", IMXK: "Ajdin" },
     naturfag: { IMY: "Sivert", IMX: "Thomas" },
     programfag: { IMY: "Jon", IMX: "Stian" },
@@ -327,6 +328,7 @@ const romData = {
   Gr13A: "13A: 112",
   Gr13C: "13C: 113",
   Gr13B: "13B: 119",
+  TUR: "Skoletur",
 };
 
 function leggTilRom() {
