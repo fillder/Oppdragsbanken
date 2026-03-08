@@ -68,6 +68,8 @@ dialog:has(.programfagIkon) h3,
 dialog:has(.programfagIkon) h4 {
   color: var(--clr-safir);
 }
+dialog:has(.programfagklIkon) h3,
+dialog:has(.programfagklIkon) h4,
 dialog:has(.programfagdaIkon) h3,
 dialog:has(.programfagdaIkon) h4,
 dialog:has(.programfagdbIkon) h3,
@@ -93,6 +95,12 @@ dialog:has(.matteIkon) h4 {
 dialog:has(.engelskIkon) h3,
 dialog:has(.engelskIkon) h4 {
   color: var(--clr-spessartin);
+}
+dialog:has(.yffIkon) h3,
+dialog:has(.yffkIkon) h4,
+dialog:has(.yff2Ikon) h3,
+dialog:has(.yff2kIkon) h4 {
+  color: var(--clr-akvamarin);
 }
 dialog:has(.kroppsoevingIkon) h3,
 dialog:has(.kroppsoevingIkon) h4 {

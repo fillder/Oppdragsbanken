@@ -39,9 +39,11 @@ const fagNavn = {
   programfagdb: "Programfag",
   programfagdc: "Programfag",
   programfag13: "Programfag",
+  programfagkl: "Klassen Time",
   aapendag: "Åpen dag",
   standard: "Fridag",
   yff: "YFF",
+  yff2: "YFF",
   workshops: "Workshops",
 };
 
@@ -145,6 +147,7 @@ function byggTimeplan() {
 function byggGrupper() {
   const laerereTrinn = {
     programfag: { IMAUD: "Eirik, Stian og Jon" },
+    yff2: { IMAUD2: "Eirik, Stian og Jon" },
     programfag13: { TUR: "Eirik, Stian og Jon" },
     programfagdb: { IMAUD: "Eirik, Torbjørn og Stian" },
     programfaghjemme: { IMAUD: "Eirik, Stian og Jon" },
@@ -155,6 +158,7 @@ function byggGrupper() {
   // Lærere for fag med klasser (IMA/B/C)
   const laerereKlasse = {
     programfag: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
+    programfagkl: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
     programfagda: { IMC: "Jon", IMB: "Eirik", IMDA: "Eirik" },
     programfagdb: { IMC: "Jon", IMDB: "Stian", IMA: "Eirik" },
     programfagdc: { IMDC: "Jon", IMB: "Stian", IMA: "Eirik" },
@@ -239,6 +243,8 @@ function byggGrupper() {
         h5.textContent = "Jon";
       } else if (element.classList.contains(`Torbjørn${klasse}`)) {
         h5.textContent = "Torbjørn";
+      } else if (element.classList.contains(`Endre${klasse}`)) {
+        h5.textContent = "Endre";
       } else {
         h5.textContent = laerereKlasse[fagNavn][klasse];
       }
@@ -323,6 +329,7 @@ const romData = {
   IMYK: "Y: Sal 1",
   IMXK: "X: Sal 2",
   IMAUD: "Auditoriet",
+  IMAUD2: "Auditoriet øvre del",
   F21: "Hele skolen",
   IMHJ: "Hjemmeskole",
   Gr13A: "13A: 112",

@@ -109,6 +109,7 @@ header {
 .programfag h4 {
   color: var(--clr-safir);
 }
+.programfagkl h4,
 .programfagda h3,
 .programfagda h4,
 .programfagdb h3,
@@ -118,6 +119,18 @@ header {
 .programfag13 h3,
 .programfag13 h4 {
   color: var(--clr-safir);
+}
+.programfag13 h4 {
+  color: var(--clr-safir);
+  @media screen and (max-width: 1200px) {
+    font-size: 1.6rem;
+  }
+}
+.programfagkl h3 {
+  color: var(--clr-safir);
+  @media screen and (max-width: 1200px) {
+    font-size: 1.8rem;
+  }
 }
 .forum h3,
 .forum h4 {
@@ -144,7 +157,9 @@ header {
   color: var(--clr-rubin);
 }
 .yff h3,
-.yff h4 {
+.yff h4,
+.yff2 h3,
+.yff2 h4 {
   color: var(--clr-akvamarin);
 }
 .workshops h3,

@@ -12,6 +12,7 @@
   --ikon-url: url(../svg/fagikon-event-vinter.svg);
 }
 .programfagIkon,
+.programfagklIkon,
 .programfagdaIkon,
 .programfagdbIkon,
 .programfagdcIkon,
@@ -19,7 +20,8 @@
   --ikon-farge: var(--clr-safir);
   --ikon-url: url(../svg/fagikon-programfag.svg);
 }
-.yffIkon {
+.yffIkon,
+.yff2Ikon {
   --ikon-farge: var(--clr-akvamarin);
   --ikon-url: url(../svg/fagikon-yff.svg);
 }
