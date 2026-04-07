@@ -204,7 +204,7 @@ function byggGrupper() {
       } else if (element.classList.contains("MariusIMX")) {
         h5.textContent = "Marius og Stian";
       } else if (element.classList.contains("IverIMC")) {
-        h5.textContent = "Marius, Thorbjørn og Iver";
+        h5.textContent = "Marius, Torbjørn og Iver";
       } else if (element.classList.contains("MariusIMY")) {
         h5.textContent = "Jon og Marius";
       } else if (element.classList.contains("MariusAlene")) {
