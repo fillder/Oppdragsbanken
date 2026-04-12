@@ -274,7 +274,13 @@ function byggGrupper() {
       const h4 = document.createElement("h4");
       h4.textContent = gruppe;
       const h5 = document.createElement("h5");
-      h5.textContent = element.classList.contains(`Marius${gruppe}`) ? "Marius" : laerereGruppe[fagNavn][gruppe];
+      if (element.classList.contains(`Marius${gruppe}`)) {
+        h5.textContent = "Marius";
+      } else if (element.classList.contains(`Iver${gruppe}`)) {
+        h5.textContent = "Iver";
+      } else {
+        h5.textContent = laerereGruppe[fagNavn][gruppe];
+      }
       div.append(h4, h5);
       gruppeGrid.prepend(div);
     });
