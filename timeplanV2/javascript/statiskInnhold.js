@@ -205,6 +205,8 @@ function byggGrupper() {
         h5.textContent = "Marius og Stian";
       } else if (element.classList.contains("IverIMC")) {
         h5.textContent = "Marius, Torbjørn og Iver";
+      } else if (element.classList.contains("TorbjørnIMC")) {
+        h5.textContent = "Eirik, Stian og Torbjørn";
       } else if (element.classList.contains("MariusIMY")) {
         h5.textContent = "Jon og Marius";
       } else if (element.classList.contains("MariusAlene")) {
@@ -251,6 +253,12 @@ function byggGrupper() {
         h5.textContent = "Endre";
       } else if (element.classList.contains(`Iver${klasse}`)) {
         h5.textContent = "Iver";
+      } else if (element.classList.contains(`Marthe${klasse}`)) {
+        h5.textContent = "Marthe";
+      } else if (element.classList.contains(`Alpha${klasse}`)) {
+        h5.textContent = "Alpha";
+      } else if (element.classList.contains(`Hassan${klasse}`)) {
+        h5.textContent = "Hassan";
       } else {
         h5.textContent = laerereKlasse[fagNavn][klasse];
       }
@@ -278,6 +286,8 @@ function byggGrupper() {
         h5.textContent = "Marius";
       } else if (element.classList.contains(`Iver${gruppe}`)) {
         h5.textContent = "Iver";
+      } else if (element.classList.contains(`Alpha${gruppe}`)) {
+        h5.textContent = "Alpha";
       } else {
         h5.textContent = laerereGruppe[fagNavn][gruppe];
       }
