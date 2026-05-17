@@ -288,6 +288,8 @@ function byggGrupper() {
         h5.textContent = "Iver";
       } else if (element.classList.contains(`Alpha${gruppe}`)) {
         h5.textContent = "Alpha";
+      } else if (element.classList.contains(`Hassan${gruppe}`)) {
+        h5.textContent = "Hassan";
       } else {
         h5.textContent = laerereGruppe[fagNavn][gruppe];
       }
