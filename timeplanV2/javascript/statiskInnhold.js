@@ -173,7 +173,7 @@ function byggGrupper() {
     engelsk: { IMY: "Kjetil", IMX: "Mari" },
     forum: { IMY: "Stian", IMX: "Jon" },
     kroppsoeving: { IMYK: "Laila Kristin", IMXK: "Ajdin" },
-    naturfag: { IMY: "Sivert", IMX: "Thomas" },
+    naturfag: { IMY: "Sivert", IMX: "Sheima" },
     programfag: { IMY: "Jon", IMX: "Stian" },
   };
 
