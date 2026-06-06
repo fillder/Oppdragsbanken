@@ -57,7 +57,8 @@
   --ikon-farge: var(--clr-kunzitt);
   --ikon-url: url(../svg/fagikon-workshops.svg);
 }
-.turIkon {
+.turIkon,
+.aktivitetIkon {
   --ikon-farge: var(--clr-ametyst);
-  --ikon-url: url(../svg/fagikon-tur.svg);
+  --ikon-url: url(../svg/fagikon-aktivitet.svg);
 }

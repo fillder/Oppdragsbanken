@@ -2,6 +2,7 @@
 .dobbel p,
 .trippel p,
 .frippel p,
+.turdag p,
 .fulldag p {
   display: -webkit-box;
   -webkit-box-orient: vertical;

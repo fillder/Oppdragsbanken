@@ -1,6 +1,6 @@
 // Konstanter (delte)
 const startPosisjon = { oppstart0815: 1, oppstart0900: 2, oppstart0955: 3 };
-const blokkVarighet = { enkel: 1, dobbel: 2, trippel: 3, frippel: 4, fulldag: 9 };
+const blokkVarighet = { enkel: 1, dobbel: 2, trippel: 3, frippel: 4, femmer: 5, turdag: 6, fulldag: 9 };
 
 const starttider = [
   { startRad: 1, tid: "08:15" },
@@ -33,6 +33,7 @@ const fagNavn = {
   engelsk: "Engelsk",
   naturfag: "Naturfag",
   tur: "Skoletur",
+  aktivitet: "Aktivitetsdag",
   od: "OD-dagen",
   programfag: "Programfag",
   programfagda: "Programfag",
@@ -147,12 +148,14 @@ function byggTimeplan() {
 function byggGrupper() {
   const laerereTrinn = {
     programfag: { IMAUD: "Eirik, Stian og Jon" },
+    tur: { TUR: "Eirik, Stian og Jon" },
     yff2: { IMAUD2: "Eirik, Stian og Jon" },
     programfag13: { TUR: "Eirik, Stian og Jon" },
     programfagdb: { IMAUD: "Eirik, Torbjørn og Stian" },
     programfaghjemme: { IMAUD: "Eirik, Stian og Jon" },
     forum: { IMAUD: "Stian og Jon" },
     aapendag: { F21: "Alle IM-lærerne" },
+    matte: { IM: "Gina og Lars Tore" },
   };
 
   // Lærere for fag med klasser (IMA/B/C)
@@ -339,6 +342,7 @@ function leggTilRom() {
 }
 
 const romData = {
+  IM: "ABC-samlet: 112 og 119",
   IMA: "A: 112",
   IMB: "B: 113",
   IMDA: "A: G18",

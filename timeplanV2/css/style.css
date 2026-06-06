@@ -51,6 +51,10 @@ header {
 .firer {
   grid-row-end: span 4;
 }
+.turdag,
+.femmer {
+  grid-row-end: span 5;
+}
 .fulldag {
   grid-row-end: span 9;
 }
@@ -167,7 +171,9 @@ header {
   color: var(--clr-kunzitt);
 }
 .tur h3,
-.tur h4 {
+.tur h4,
+.aktivitet h3,
+.aktivitet h4 {
   color: var(--clr-ametyst);
 }
 section:has(.fri) {
