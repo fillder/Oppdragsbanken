@@ -16,7 +16,7 @@
     <link rel="icon" href="/images/ico/skolelogo.svg" type="image/svg+xml" />
     <link rel="shortcut icon" href="/images/ico/skolelogo.svg" />
     <link rel="apple-touch-icon" href="/images/ico/skolelogo.svg" />
-    <title>Timeplan uke 23</title>
+    <title>Timeplan uke 25</title>
   </head>
   <style>
     #mandag,
@@ -29,7 +29,11 @@
     .lunsj {
       text-align: center;
     }
-    .aapendag .fagbeholder h6 {
+    .aktivitet .fagbeholder h6 {
+      visibility: hidden;
+    }
+    .aktivitet .fagbeholder h6,
+    .undervisning-dialog .fagbeholder h6 {
       visibility: hidden;
     }
   </style>
@@ -40,8 +44,8 @@
       </a>
       <ul class="breadcrumbsMenu" id="breadcrumbs"></ul>
       <div class="logo">
-        <a class="pil maskeTilbakeOutline" href="/timeplan/uke_22.html" target="_self" class="ukeNav" title="Timeplan uke 22"></a>
-        <h1><span>TIMEPLAN - </span>UKE 23</h1>
+        <a class="pil maskeTilbakeOutline" href="/timeplan/uke_24.html" target="_self" class="ukeNav" title="Timeplan uke 24"></a>
+        <h1><span>TIMEPLAN - </span>UKE 25</h1>
         <!-- <a class="pil maskeNesteOutline" href="/timeplan/uke_20.html" target="_self" class="ukeNav" title="Timeplan uke 20"></a> -->
       </div>
       <button id="dark-mode-toggle" class="dag-natt2" aria-label="dark mode toggle">
@@ -83,48 +87,39 @@
     </header>
     <main id="timeplan">
       <!-- MANDAG -->
-      <section id="mandag">
-        <article class="undervisning programfag trippel gruppe oppstart0900">
-          <p>
-            I programfag denne uken er det kun satt opp fagsamtaler. Dere må kun møte opp til fagsamtalene, men kan velge selv om dere vil jobbe med
-            forberedelser i klasserom eller hjemmefra.<b>fellesfag går som normalt</b>
-          </p>
-          <br />
-          <p>Se tidene for fagsamtale i OneNote</p>
-        </article>
-        <div class="lunsj"><p></p></div>
-        <article class="undervisning programfag dobbel klasse"><p>Fagsamtaler</p></article>
-        <article class="undervisning programfag dobbel klasse"><p>Fagsamtaler</p></article>
-      </section>
+      <section id="mandag"></section>
       <section id="tirsdag">
-        <article class="undervisning programfag enkel klasse oppstart0900"><p>Fagsamtaler</p></article>
-        <article class="undervisning matte dobbel klasse"></article>
+        <article class="undervisning programfag enkel klasse oppstart1040"><p>Rydde og vaske klasserommene</p></article>
         <div class="lunsj"><p></p></div>
-        <article class="undervisning naturfag dobbel gruppe"><p>Fagsamtaler. Studieøkt for resten</p></article>
-        <article class="undervisning programfag dobbel klasse AlphaIMB"><p>Fagsamtaler</p></article>
+        <article class="undervisning programfag dobbel klasse"><p>Levere Mac og rydde oss ferdig ved behov</p></article>
       </section>
       <!-- ONSDAG -->
       <section id="onsdag">
-        <article class="undervisning programfag dobbel klasse oppstart0955"><p>Fagsamtaler</p></article>
-        <div class="lunsj"><p></p></div>
-        <article class="undervisning programfag dobbel klasse"><p>Fagsamtaler</p></article>
-        <article class="undervisning programfag dobbel klasse"><p>Fagsamtaler</p></article>
+        <article class="undervisning aktivitet firer trinn oppstart1210">
+          <p><b>Fyrstikken (kl. 12-15)</b></p>
+          <p>
+            Årets største begivenhet på IM/MK braker løs kl. 12:00 på Onsdag. Dagen starter med sosialisering og aktivitet i Gata ved Auditoriet. Årets tema er
+            Tivoli, og kleskoden er tivoli, fest og glam. Det blir spill, enkel servering, utkledningskonkurranse, foto og prisutdeling!
+          </p>
+          <p>Dørene til showet åpner kl. 12:45</p>
+        </article>
       </section>
       <!-- TORSDAG -->
       <section id="torsdag">
-        <article class="undervisning engelsk trippel klasse oppstart0815"><p></p></article>
-        <article class="undervisning programfag enkel klasse MariusIMA"><p>Fagsamtaler</p></article>
-        <div class="lunsj"><p></p></div>
-        <article class="undervisning programfag enkel klasse MariusIMA"><p>Fagsamtaler</p></article>
-        <article class="undervisning programfag dobbel klasse MariusIMA"><p>Fagsamtaler</p></article>
+        <article class="undervisning aktivitet firer klasse oppstart0955">
+          <p><b>Fotorebus i byen</b></p>
+          <p>Vi møtes kl. 10 i byen, mer info om hvor og når kommer senere</p>
+        </article>
       </section>
       <!-- FREDAG -->
       <section id="fredag">
-        <article class="undervisning programfag dobbel klasse oppstart0815 AlphaIMC"><p>Fagsamtaler</p></article>
-        <article class="undervisning kroppsoeving dobbel gruppe"></article>
-        <div class="lunsj"><p></p></div>
-        <article class="undervisning matte enkel klasse"><p></p></article>
-        <article class="undervisning engelsk dobbel klasse"><p></p></article>
+        <article class="undervisning programfagsamlet trippel klasse oppstart0900">
+          <p><b>Siste skoledag</b></p>
+          <p>
+            Vi har samlet avslutning med kos og hygge i klasserom 119. Gjerne ta med noe snacks og godt å drikke. I gammel IM tradisjon blir det
+            quiz-konkurranse og mimring over året som har vært
+          </p>
+        </article>
       </section>
     </main>
     <script src="../timeplanV2/javascript/statiskInnhold.js"></script>

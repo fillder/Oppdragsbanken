@@ -121,7 +121,9 @@ header {
 .programfagdc h3,
 .programfagdc h4,
 .programfag13 h3,
-.programfag13 h4 {
+.programfag13 h4,
+.programfagsamlet h3,
+.programfagsamlet h4 {
   color: var(--clr-safir);
 }
 .programfag13 h4 {

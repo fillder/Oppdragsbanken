@@ -1,5 +1,5 @@
 // Konstanter (delte)
-const startPosisjon = { oppstart0815: 1, oppstart0900: 2, oppstart0955: 3 };
+const startPosisjon = { oppstart0815: 1, oppstart0900: 2, oppstart0955: 3, oppstart1040: 4, oppstart1210: 5 };
 const blokkVarighet = { enkel: 1, dobbel: 2, trippel: 3, frippel: 4, femmer: 5, turdag: 6, fulldag: 9 };
 
 const starttider = [
@@ -35,6 +35,7 @@ const fagNavn = {
   tur: "Skoletur",
   aktivitet: "Aktivitetsdag",
   od: "OD-dagen",
+  programfagsamlet: "Programfag",
   programfag: "Programfag",
   programfagda: "Programfag",
   programfagdb: "Programfag",
@@ -149,6 +150,7 @@ function byggGrupper() {
   const laerereTrinn = {
     programfag: { IMAUD: "Eirik, Stian og Jon" },
     tur: { TUR: "Eirik, Stian og Jon" },
+    programfagsamlet: { IMS: "Eirik, Stian og Jon" },
     yff2: { IMAUD2: "Eirik, Stian og Jon" },
     programfag13: { TUR: "Eirik, Stian og Jon" },
     programfagdb: { IMAUD: "Eirik, Torbjørn og Stian" },
@@ -342,6 +344,7 @@ function leggTilRom() {
 }
 
 const romData = {
+  IMS: "Alle i 119",
   IM: "ABC-samlet: 112 og 119",
   IMA: "A: 112",
   IMB: "B: 113",
