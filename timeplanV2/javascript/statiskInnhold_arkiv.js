@@ -37,6 +37,11 @@ const fagNavn = {
   od: "OD-dagen",
   programfagsamlet: "Programfag",
   programfag: "Programfag",
+  programfagda: "Programfag",
+  programfagdb: "Programfag",
+  programfagdc: "Programfag",
+  programfag13: "Programfag",
+  programfagkl: "Klassen Time",
   aapendag: "Åpen dag",
   standard: "Fridag",
   yff: "YFF",
@@ -143,28 +148,38 @@ function byggTimeplan() {
 
 function byggGrupper() {
   const laerereTrinn = {
-    programfag: { IMAUD: "Marthe, Iver, Jon" },
-    tur: { TUR: "Marthe, Iver, Jon" },
+    programfag: { IMAUD: "Eirik, Stian og Jon" },
+    tur: { TUR: "Eirik, Stian og Jon" },
+    programfagsamlet: { IMS: "Eirik, Stian og Jon" },
+    yff2: { IMAUD2: "Eirik, Stian og Jon" },
+    programfag13: { TUR: "Eirik, Stian og Jon" },
+    programfagdb: { IMAUD: "Eirik, Torbjørn og Stian" },
+    programfaghjemme: { IMAUD: "Eirik, Stian og Jon" },
     forum: { IMAUD: "Stian og Jon" },
     aapendag: { F21: "Alle IM-lærerne" },
+    matte: { IM: "Gina og Lars Tore" },
   };
 
   // Lærere for fag med klasser (IMA/B/C)
   const laerereKlasse = {
     programfag: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
-    yff: { IMC: "Jon", IMB: "Iver", IMA: "Edvin" },
-    yff2: { IMC: "Endre", IMB: "Marius", IMA: "Edvin" },
+    programfagkl: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
+    programfagda: { IMC: "Jon", IMB: "Eirik", IMDA: "Eirik" },
+    programfagdb: { IMC: "Jon", IMDB: "Stian", IMA: "Eirik" },
+    programfagdc: { IMDC: "Jon", IMB: "Stian", IMA: "Eirik" },
+    programfag13: { Gr13A: "Eirik", Gr13B: "Jon", Gr13C: "Stian" },
+    yff: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
     matte: { IMC: "Mikkel", IMB: "Lars Tore", IMA: "Sivert" },
+    engelsk: { IMC: "Sivert H", IMB: "Kjetil", IMA: "Mari G" },
   };
 
   // Lærere for fag med grupper (IMX/Y)
   const laerereGruppe = {
-    engelsk: { IMY: "Runar", IMX: "Ingrid" },
+    engelsk: { IMY: "Kjetil", IMX: "Mari" },
     forum: { IMY: "Stian", IMX: "Jon" },
     kroppsoeving: { IMYK: "Laila Kristin", IMXK: "Ajdin" },
-    naturfag: { IMY: "Sheima", IMX: "Gina" },
-    programfag: { IMY: "Marthe, Iver og Jon", IMX: "Marthe, Iver og Jon" },
-    matte: { IMY: "Anja", IMX: "Mikkel" },
+    naturfag: { IMY: "Sivert", IMX: "Sheima" },
+    programfag: { IMY: "Jon", IMX: "Stian" },
   };
 
   // Bygg .trinn-elementer
@@ -187,6 +202,22 @@ function byggGrupper() {
         h5.textContent = "Eirik, Marius, og Jon";
       } else if (element.classList.contains("MariusIMC")) {
         h5.textContent = "Eirik, Stian, og Marius";
+      } else if (element.classList.contains("GabrielIMA")) {
+        h5.textContent = "Gabriel, Stian, og Jon";
+      } else if (element.classList.contains("GabrielIMC")) {
+        h5.textContent = "Eirik, Stian, og Gabriel";
+      } else if (element.classList.contains("MariusIMX")) {
+        h5.textContent = "Marius og Stian";
+      } else if (element.classList.contains("IverIMC")) {
+        h5.textContent = "Marius, Torbjørn og Iver";
+      } else if (element.classList.contains("TorbjørnIMC")) {
+        h5.textContent = "Eirik, Stian og Torbjørn";
+      } else if (element.classList.contains("MariusIMY")) {
+        h5.textContent = "Jon og Marius";
+      } else if (element.classList.contains("MariusAlene")) {
+        h5.textContent = "Marius";
+      } else if (element.classList.contains("JonAlene")) {
+        h5.textContent = "Jon";
       } else {
         h5.textContent = laerereTrinn[fagNavn][trinn];
       }
@@ -213,6 +244,8 @@ function byggGrupper() {
         h5.textContent = "Marius";
       } else if (element.classList.contains(`Gabriel${klasse}`)) {
         h5.textContent = "Gabriel";
+      } else if (element.classList.contains(`Eirik${klasse}`)) {
+        h5.textContent = "Eirik";
       } else if (element.classList.contains(`Stian${klasse}`)) {
         h5.textContent = "Stian";
       } else if (element.classList.contains(`Jon${klasse}`)) {
@@ -227,6 +260,8 @@ function byggGrupper() {
         h5.textContent = "Iver";
       } else if (element.classList.contains(`Marthe${klasse}`)) {
         h5.textContent = "Marthe";
+      } else if (element.classList.contains(`Alpha${klasse}`)) {
+        h5.textContent = "Alpha";
       } else if (element.classList.contains(`Hassan${klasse}`)) {
         h5.textContent = "Hassan";
       } else {
@@ -253,7 +288,11 @@ function byggGrupper() {
       h4.textContent = gruppe;
       const h5 = document.createElement("h5");
       if (element.classList.contains(`Marius${gruppe}`)) {
-        h5.textContent = "Marius, Iver, Jon";
+        h5.textContent = "Marius";
+      } else if (element.classList.contains(`Iver${gruppe}`)) {
+        h5.textContent = "Iver";
+      } else if (element.classList.contains(`Alpha${gruppe}`)) {
+        h5.textContent = "Alpha";
       } else if (element.classList.contains(`Hassan${gruppe}`)) {
         h5.textContent = "Hassan";
       } else {
@@ -262,16 +301,6 @@ function byggGrupper() {
       div.append(h4, h5);
       gruppeGrid.prepend(div);
     });
-    // Slå sammen like lærerverdier til én felles linje
-    const alleH5 = Array.from(gruppeGrid.querySelectorAll("h5"));
-    const verdier = alleH5.map((h5) => h5.textContent);
-    if (verdier.length > 1 && verdier.every((v) => v === verdier[0] && v !== "")) {
-      alleH5.forEach((h5) => h5.remove());
-      const fellesH5 = document.createElement("h5");
-      fellesH5.textContent = verdier[0];
-      fellesH5.style.gridColumn = "1 / -1"; // span across all grid columns
-      gruppeGrid.appendChild(fellesH5);
-    }
     element.prepend(gruppeGrid);
   });
 }
@@ -296,7 +325,6 @@ function sjekkFridag() {
     }
   });
 }
-/*
 function leggTilRom() {
   const klasseGrid = document.querySelectorAll(".klasseGrid");
 
@@ -308,26 +336,36 @@ function leggTilRom() {
         // Fjern punktum – classList bruker bare klassens navn
         const h4 = div.querySelector("h4"); // Hent h4 inni denne div-en
         if (h4) {
-          h4.textContent = "A: Ø201"; // Endre teksten
+          h4.textContent = "A: 112"; // Endre teksten
         }
       }
     });
   });
-}*/
+}
 
 const romData = {
-  IMA: "A: Ø201",
-  IMB: "B: Ø211",
+  IMS: "Alle i 119",
+  IM: "ABC-samlet: 112 og 119",
+  IMA: "A: 112",
+  IMB: "B: 113",
+  IMDA: "A: G18",
+  IMDB: "B: G18",
+  IMDC: "C: G18",
   IMTA: "A: TV-studio",
   IMTB: "B: TV-studio",
   IMTC: "C: TV-studio",
-  IMC: "C: Ø204",
-  IMY: "Y: Ø204",
-  IMX: "X: Ø201",
+  IMC: "C: 119",
+  IMY: "Y: 119",
+  IMX: "X: 112",
   IMYK: "Y: Sal 1",
   IMXK: "X: Sal 2",
   IMAUD: "Auditoriet",
+  IMAUD2: "Auditoriet øvre del",
   F21: "Hele skolen",
+  IMHJ: "Hjemmeskole",
+  Gr13A: "13A: 112",
+  Gr13C: "13C: 113",
+  Gr13B: "13B: 119",
   TUR: "Skoletur",
 };
 
@@ -348,7 +386,6 @@ function leggTilRom() {
       }
     });
   });
-
   klasseGrid.forEach((Grid) => {
     const divs = Grid.querySelectorAll("div");
 
@@ -361,7 +398,6 @@ function leggTilRom() {
       }
     });
   });
-
   gruppeGrid.forEach((Grid) => {
     const divs = Grid.querySelectorAll("div");
 

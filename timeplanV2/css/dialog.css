@@ -69,15 +69,7 @@ dialog:has(.programfagIkon) h4 {
   color: var(--clr-safir);
 }
 dialog:has(.programfagklIkon) h3,
-dialog:has(.programfagklIkon) h4,
-dialog:has(.programfagdaIkon) h3,
-dialog:has(.programfagdaIkon) h4,
-dialog:has(.programfagdbIkon) h3,
-dialog:has(.programfagdbIkon) h4,
-dialog:has(.programfagdcIkon) h3,
-dialog:has(.programfagdcIkon) h4,
-dialog:has(.programfag13Ikon) h3,
-dialog:has(.programfag13Ikon) h4 {
+dialog:has(.programfagklIkon) h4{
   color: var(--clr-safir);
 }
 dialog:has(.forumIkon) h3,
