@@ -145,22 +145,22 @@ function byggGrupper() {
   const laerereTrinn = {
     programfag: { IMAUD: "Marthe, Iver, Jon" },
     tur: { TUR: "Marthe, Iver, Jon" },
-    forum: { IMAUD: "Stian og Jon" },
+    forum: { IMAUD: "Iver og Jon" },
     aapendag: { F21: "Alle IM-lærerne" },
   };
 
   // Lærere for fag med klasser (IMA/B/C)
   const laerereKlasse = {
-    programfag: { IMC: "Jon", IMB: "Stian", IMA: "Eirik" },
+    programfag: { IMC: "Jon", IMB: "Iver", IMA: "Marthe" },
     yff: { IMC: "Jon", IMB: "Iver", IMA: "Edvin" },
     yff2: { IMC: "Endre", IMB: "Marius", IMA: "Edvin" },
-    matte: { IMC: "Mikkel", IMB: "Lars Tore", IMA: "Sivert" },
+    matte: { IMC: "Mikkel", IMB: "Stian", IMA: "Anja" },
   };
 
   // Lærere for fag med grupper (IMX/Y)
   const laerereGruppe = {
     engelsk: { IMY: "Runar", IMX: "Ingrid" },
-    forum: { IMY: "Stian", IMX: "Jon" },
+    forum: { IMY: "Iver", IMX: "Jon" },
     kroppsoeving: { IMYK: "Laila Kristin", IMXK: "Ajdin" },
     naturfag: { IMY: "Sheima", IMX: "Gina" },
     programfag: { IMY: "Marthe, Iver og Jon", IMX: "Marthe, Iver og Jon" },
@@ -182,11 +182,11 @@ function byggGrupper() {
       h4.textContent = `${trinn}`;
       const h5 = document.createElement("h5");
       if (element.classList.contains("MariusIMA")) {
-        h5.textContent = "Marius, Stian, og Jon";
+        h5.textContent = "Marius, Iver, og Jon";
       } else if (element.classList.contains("MariusIMB")) {
-        h5.textContent = "Eirik, Marius, og Jon";
+        h5.textContent = "Marthe, Marius, og Jon";
       } else if (element.classList.contains("MariusIMC")) {
-        h5.textContent = "Eirik, Stian, og Marius";
+        h5.textContent = "Marthe, Iver, og Marius";
       } else {
         h5.textContent = laerereTrinn[fagNavn][trinn];
       }
@@ -213,8 +213,8 @@ function byggGrupper() {
         h5.textContent = "Marius";
       } else if (element.classList.contains(`Gabriel${klasse}`)) {
         h5.textContent = "Gabriel";
-      } else if (element.classList.contains(`Stian${klasse}`)) {
-        h5.textContent = "Stian";
+      } else if (element.classList.contains(`Iver${klasse}`)) {
+        h5.textContent = "Iver";
       } else if (element.classList.contains(`Jon${klasse}`)) {
         h5.textContent = "Jon";
       } else if (element.classList.contains(`Torbjørn${klasse}`)) {
@@ -296,24 +296,7 @@ function sjekkFridag() {
     }
   });
 }
-/*
-function leggTilRom() {
-  const klasseGrid = document.querySelectorAll(".klasseGrid");
 
-  klasseGrid.forEach((Grid) => {
-    const divs = Grid.querySelectorAll("div"); // Hent alle div-er inni .klasseGrid
-
-    divs.forEach((div) => {
-      if (div.classList.contains("IMA")) {
-        // Fjern punktum – classList bruker bare klassens navn
-        const h4 = div.querySelector("h4"); // Hent h4 inni denne div-en
-        if (h4) {
-          h4.textContent = "A: Ø201"; // Endre teksten
-        }
-      }
-    });
-  });
-}*/
 
 const romData = {
   IMA: "A: Ø201",
